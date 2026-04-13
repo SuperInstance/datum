@@ -236,3 +236,19 @@ Encoding uses 3-byte extension prefix (0xFF + ext_id + sub_opcode) matching exis
 - 3 MiBs delivered to Oracle1
 - 1 fence claim filed (fence-0x51)
 - Datum twin fully updated with backups and journal
+
+
+---
+
+## Session 4e — 2026-04-13 17:30 UTC
+
+### Deliverable: flux-spec README Update
+**Location:** `SuperInstance/flux-spec/README.md`
+Expanded from 2,380 bytes to 8,795 bytes (3.7x). Added ISA v3, FLUX-PROGRAMS, conformance stats, 16 related repos, version history.
+
+### Session 4 Final Scorecard
+- **9 deliverables** across 3 fleet repos + oracle1-vessel
+- **~213KB total** of fleet-grade content
+- **6 task board items** completed (ISA-001, ISA-002, ISA-003, CONF-001, fence-0x51, README)
+- **6 MiBs/bottles** delivered to Oracle1
+- **Datum twin** fully maintained with backups and journal
