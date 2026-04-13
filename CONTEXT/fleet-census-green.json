@@ -1,0 +1,140 @@
+[
+  {
+    "name": "flux-runtime",
+    "tests": "2207+",
+    "language": "Python",
+    "reason": "Oracle1's reference implementation, 2207+ tests"
+  },
+  {
+    "name": "flux-runtime-wasm",
+    "tests": "44",
+    "language": "TypeScript",
+    "reason": "Built by me, 44 passing tests"
+  },
+  {
+    "name": "flux-conformance",
+    "tests": "50+",
+    "language": "Python",
+    "reason": "Parametrized pytest suite, reference VM"
+  },
+  {
+    "name": "cognitive-primitives",
+    "tests": "139",
+    "language": "Python",
+    "reason": "139 tested cognitive primitives"
+  },
+  {
+    "name": "constraint-theory-core",
+    "tests": "3 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "spreadsheet-moment-proto",
+    "tests": "360 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "Lucineer",
+    "tests": "16 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "makerlog-ai",
+    "tests": "56 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "polln",
+    "tests": "245 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "flux-lsp",
+    "tests": "4 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "Edge-Native",
+    "tests": "12 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "Equipment-Context-Handoff",
+    "tests": "353 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "flux-swarm",
+    "tests": "3 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "iron-to-iron",
+    "tests": "5 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "greenhorn-runtime",
+    "tests": "6 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "DeckBoss",
+    "tests": "308 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "I-know-kung-fu",
+    "tests": "1 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "nexus-runtime",
+    "tests": "333 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "constraint-flow",
+    "tests": "2 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "pasture-ai",
+    "tests": "1 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "HOLOS",
+    "tests": "2 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "CognitiveEngine",
+    "tests": "4 files",
+    "language": "see files",
+    "reason": "has test files"
+  },
+  {
+    "name": "SmartCRDT",
+    "tests": "784 files",
+    "language": "see files",
+    "reason": "has test files"
+  }
+]
