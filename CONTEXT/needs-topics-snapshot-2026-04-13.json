@@ -1,0 +1,2946 @@
+[
+  {
+    "name": "oracle1-vessel",
+    "full_name": "SuperInstance/oracle1-vessel",
+    "current_topics": [],
+    "language": "Python",
+    "description": "\ud83d\udd2e Oracle1 \u2014 Lighthouse Keeper of the Cocapn fleet. Git-Agent embodiment.",
+    "size": 142
+  },
+  {
+    "name": "pelagic-twin",
+    "full_name": "SuperInstance/pelagic-twin",
+    "current_topics": [],
+    "language": null,
+    "description": "Pelagic digital twin \u2014 identity, skills, trails, and recovery guide for successor agents",
+    "size": 0
+  },
+  {
+    "name": "oracle1-workspace",
+    "full_name": "SuperInstance/oracle1-workspace",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Oracle1 workspace \u2014 config, memory, prompts, logs",
+    "size": 432
+  },
+  {
+    "name": "flux-py",
+    "full_name": "SuperInstance/flux-py",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX Python \u2014 Minimal clean-room VM. Swarm coordination with A2A.",
+    "size": 126
+  },
+  {
+    "name": "fleet-liaison-tender",
+    "full_name": "SuperInstance/fleet-liaison-tender",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 6
+  },
+  {
+    "name": "nautilus",
+    "full_name": "SuperInstance/nautilus",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Nautilus \u2014 deep-diving code archaeologist and integration welder. Builds its shell chamber by chamber. Fleet agent twin.",
+    "size": 0
+  },
+  {
+    "name": "oracle1-index",
+    "full_name": "SuperInstance/oracle1-index",
+    "current_topics": [],
+    "language": "HTML",
+    "description": "Oracle1 \u2014 Searchable index of 663 repos. 32 categories, fork map, integration graph.",
+    "size": 561
+  },
+  {
+    "name": "fleet-self-onboarding",
+    "full_name": "SuperInstance/fleet-self-onboarding",
+    "current_topics": [],
+    "language": null,
+    "description": "Self-onboarding theory and field guide for autonomous AI agents joining the SuperInstance fleet. The map for every greenhorn.",
+    "size": 9
+  },
+  {
+    "name": "navigator-vessel",
+    "full_name": "SuperInstance/navigator-vessel",
+    "current_topics": [],
+    "language": null,
+    "description": "\ud83e\udded Navigator \u2014 GLM-5 Turbo generalist agent. Code archaeologist, test builder, document synthesist, fleet integrator. Swiss Army Knife of the Cocapn fleet.",
+    "size": 10
+  },
+  {
+    "name": "flux-runtime-wasm",
+    "full_name": "SuperInstance/flux-runtime-wasm",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "FLUX VM WebAssembly target \u2014 browser-based agent bytecode execution with ISA v3 support",
+    "size": 62
+  },
+  {
+    "name": "fleet-contributing",
+    "full_name": "SuperInstance/fleet-contributing",
+    "current_topics": [],
+    "language": null,
+    "description": "Ecosystem-wide contributing guide for the SuperInstance fleet. How to join, build vessels, and contribute.",
+    "size": 22
+  },
+  {
+    "name": "flux-lsp",
+    "full_name": "SuperInstance/flux-lsp",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "FLUX Ecosystem - flux-lsp",
+    "size": 28065
+  },
+  {
+    "name": "edge-research-relay",
+    "full_name": "SuperInstance/edge-research-relay",
+    "current_topics": [],
+    "language": null,
+    "description": "",
+    "size": 4
+  },
+  {
+    "name": "flux-lcar-scheduler",
+    "full_name": "SuperInstance/flux-lcar-scheduler",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 4
+  },
+  {
+    "name": "flux-lcar-cartridge",
+    "full_name": "SuperInstance/flux-lcar-cartridge",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 3
+  },
+  {
+    "name": "flux-lcar-esp32",
+    "full_name": "SuperInstance/flux-lcar-esp32",
+    "current_topics": [],
+    "language": "C",
+    "description": "",
+    "size": 11
+  },
+  {
+    "name": "holodeck-c",
+    "full_name": "SuperInstance/holodeck-c",
+    "current_topics": [],
+    "language": "C",
+    "description": "Holodeck studio implementation in c \u2014 Cocapn fleet",
+    "size": 103
+  },
+  {
+    "name": "holodeck-zig",
+    "full_name": "SuperInstance/holodeck-zig",
+    "current_topics": [],
+    "language": "Zig",
+    "description": "Holodeck studio implementation in zig \u2014 Cocapn fleet",
+    "size": 5841
+  },
+  {
+    "name": "holodeck-rust",
+    "full_name": "SuperInstance/holodeck-rust",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Holodeck studio implementation in rust \u2014 Cocapn fleet",
+    "size": 12
+  },
+  {
+    "name": "holodeck-go",
+    "full_name": "SuperInstance/holodeck-go",
+    "current_topics": [],
+    "language": "Go",
+    "description": "Holodeck studio implementation in go \u2014 Cocapn fleet",
+    "size": 13
+  },
+  {
+    "name": "flux-profiler",
+    "full_name": "SuperInstance/flux-profiler",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX performance profiler \u2014 opcode counts, hot paths, register usage, cycle estimates",
+    "size": 76
+  },
+  {
+    "name": "holodeck-cuda",
+    "full_name": "SuperInstance/holodeck-cuda",
+    "current_topics": [],
+    "language": "Cuda",
+    "description": "GPU-resident holodeck MUD \u2014 16K rooms, 65K agents, warp-level combat",
+    "size": 8
+  },
+  {
+    "name": "flux-chronometer",
+    "full_name": "SuperInstance/flux-chronometer",
+    "current_topics": [],
+    "language": null,
+    "description": "Cocapn vessel vessel \u2014 testing and conformance",
+    "size": 1
+  },
+  {
+    "name": "flux-baton-test",
+    "full_name": "SuperInstance/flux-baton-test",
+    "current_topics": [],
+    "language": null,
+    "description": "Baton lifecycle test vessel",
+    "size": 12
+  },
+  {
+    "name": "flux-conformance",
+    "full_name": "SuperInstance/flux-conformance",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX Ecosystem - flux-conformance",
+    "size": 213
+  },
+  {
+    "name": "claude-code-vessel",
+    "full_name": "SuperInstance/claude-code-vessel",
+    "current_topics": [],
+    "language": null,
+    "description": "Claude Code workhorse vessel with experience journal and task delegation",
+    "size": 9
+  },
+  {
+    "name": "babel-vessel",
+    "full_name": "SuperInstance/babel-vessel",
+    "current_topics": [],
+    "language": null,
+    "description": "\ud83c\udf10 Babel Agent \u2014 Git-Agent Vessel for multilingual FLUX runtime development. SuperInstance realm.",
+    "size": 38
+  },
+  {
+    "name": "flux-timeline",
+    "full_name": "SuperInstance/flux-timeline",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 23
+  },
+  {
+    "name": "flux-testkit",
+    "full_name": "SuperInstance/flux-testkit",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX test harness framework \u2014 assertion helpers, suites, reports",
+    "size": 21
+  },
+  {
+    "name": "flux-swarm",
+    "full_name": "SuperInstance/flux-swarm",
+    "current_topics": [],
+    "language": "Go",
+    "description": "FLUX Swarm \u2014 Go implementation with distributed agent coordination and A2A messaging.",
+    "size": 3002
+  },
+  {
+    "name": "flux-stdlib",
+    "full_name": "SuperInstance/flux-stdlib",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX standard library \u2014 13 pre-compiled bytecode programs (math, utility)",
+    "size": 31
+  },
+  {
+    "name": "flux-spec",
+    "full_name": "SuperInstance/flux-spec",
+    "current_topics": [],
+    "language": null,
+    "description": "FLUX Ecosystem - flux-spec",
+    "size": 136
+  },
+  {
+    "name": "flux-skill-dsl",
+    "full_name": "SuperInstance/flux-skill-dsl",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Skill Definition Language \u2014 formal type-safe skill definitions, composition, dependency management for agent capabilities",
+    "size": 16
+  },
+  {
+    "name": "flux-simulator",
+    "full_name": "SuperInstance/flux-simulator",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 41
+  },
+  {
+    "name": "flux-signatures",
+    "full_name": "SuperInstance/flux-signatures",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX bytecode pattern recognition \u2014 detect loops, counters, accumulators, swaps",
+    "size": 26
+  },
+  {
+    "name": "flux-runtime-zho",
+    "full_name": "SuperInstance/flux-runtime-zho",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 90
+  },
+  {
+    "name": "flux-runtime-wen",
+    "full_name": "SuperInstance/flux-runtime-wen",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 94
+  },
+  {
+    "name": "flux-runtime-san",
+    "full_name": "SuperInstance/flux-runtime-san",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 106
+  },
+  {
+    "name": "flux-runtime-lat",
+    "full_name": "SuperInstance/flux-runtime-lat",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 73
+  },
+  {
+    "name": "flux-runtime-kor",
+    "full_name": "SuperInstance/flux-runtime-kor",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 90
+  },
+  {
+    "name": "flux-runtime-deu",
+    "full_name": "SuperInstance/flux-runtime-deu",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 78
+  },
+  {
+    "name": "flux-rfc",
+    "full_name": "SuperInstance/flux-rfc",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Structured disagreement resolution protocol for the FLUX fleet \u2014 IETF-inspired RFC process for autonomous agent coordination",
+    "size": 32
+  },
+  {
+    "name": "flux-research",
+    "full_name": "SuperInstance/flux-research",
+    "current_topics": [],
+    "language": null,
+    "description": "FLUX Deep Research \u2014 Compiler/interpreter taxonomy, agent-first design, ISA v2 proposal.",
+    "size": 133
+  },
+  {
+    "name": "flux-repl",
+    "full_name": "SuperInstance/flux-repl",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Interactive FLUX bytecode playground \u2014 assemble, execute, debug",
+    "size": 30
+  },
+  {
+    "name": "flux-provenance",
+    "full_name": "SuperInstance/flux-provenance",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Provenance and attribution layer \u2014 cryptographic bytecode signing, author tracking, chain of custody",
+    "size": 12
+  },
+  {
+    "name": "flux-packager",
+    "full_name": "SuperInstance/flux-packager",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 8
+  },
+  {
+    "name": "flux-os",
+    "full_name": "SuperInstance/flux-os",
+    "current_topics": [],
+    "language": "C",
+    "description": "FLUX OS \u2014 Pure C intelligently hardware-agnostic operating system. Kernel-up autonomous development platform with FLUX bytecode VM, self-compiler, and A2A agent runtime.",
+    "size": 252
+  },
+  {
+    "name": "flux-optimizer",
+    "full_name": "SuperInstance/flux-optimizer",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX peephole bytecode optimizer \u2014 constant folding, dead code elimination, strength reduction",
+    "size": 16
+  },
+  {
+    "name": "flux-multilingual",
+    "full_name": "SuperInstance/flux-multilingual",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Babel Lattice \u2014 80+ language natural language programming runtimes for FLUX bytecode. Grammar-to-bytecode compilation across East Asian, European, African, Indian, Indigenous, Siberian, South American, and constructed languages.",
+    "size": 7406
+  },
+  {
+    "name": "flux-metrics",
+    "full_name": "SuperInstance/flux-metrics",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX runtime metrics \u2014 instruction-level profiling and performance analysis",
+    "size": 8
+  },
+  {
+    "name": "flux-llama",
+    "full_name": "SuperInstance/flux-llama",
+    "current_topics": [],
+    "language": "C",
+    "description": "FLUX \u00d7 llama.cpp \u2014 Multi-agent bytecode-driven LLM token sampling with swarm voting.",
+    "size": 111
+  },
+  {
+    "name": "flux-linker",
+    "full_name": "SuperInstance/flux-linker",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX multi-module bytecode linker \u2014 symbol resolution, relocation, library linking",
+    "size": 7
+  },
+  {
+    "name": "flux-knowledge-federation",
+    "full_name": "SuperInstance/flux-knowledge-federation",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Federated knowledge layer for cross-agent learning \u2014 query and contribute to shared expertise without reading full personallogs",
+    "size": 15
+  },
+  {
+    "name": "flux-js",
+    "full_name": "SuperInstance/flux-js",
+    "current_topics": [],
+    "language": "JavaScript",
+    "description": "FLUX.js \u2014 JavaScript bytecode VM with A2A agent messaging. 373ns/iter via V8 JIT.",
+    "size": 128
+  },
+  {
+    "name": "flux-java",
+    "full_name": "SuperInstance/flux-java",
+    "current_topics": [],
+    "language": "Java",
+    "description": "FLUX JVM \u2014 Java bytecode VM with two-pass assembler. Pure Java, no dependencies.",
+    "size": 101
+  },
+  {
+    "name": "flux-ir",
+    "full_name": "SuperInstance/flux-ir",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX intermediate representation \u2014 structured IR between source and bytecode",
+    "size": 7
+  },
+  {
+    "name": "flux-ide",
+    "full_name": "SuperInstance/flux-ide",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "FLUX Language IDE \u2014 markdown-to-bytecode agent-native development environment",
+    "size": 142
+  },
+  {
+    "name": "flux-grammar",
+    "full_name": "SuperInstance/flux-grammar",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Formal FLUX assembly language grammar \u2014 lexer, parser, validator",
+    "size": 10
+  },
+  {
+    "name": "flux-fuzzer",
+    "full_name": "SuperInstance/flux-fuzzer",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX bytecode fuzzer \u2014 random generation + edge case detection",
+    "size": 28
+  },
+  {
+    "name": "flux-fleet-stdlib",
+    "full_name": "SuperInstance/flux-fleet-stdlib",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Shared error codes, status types, and common utilities for the entire FLUX fleet \u2014 the common language every repo speaks",
+    "size": 45
+  },
+  {
+    "name": "flux-evolve-py",
+    "full_name": "SuperInstance/flux-evolve-py",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Python evolution engine for FLUX VM \u2014 deterministic self-modification with elite protection",
+    "size": 3
+  },
+  {
+    "name": "flux-evolution",
+    "full_name": "SuperInstance/flux-evolution",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Timeline visualization and analysis of the FLUX ecosystem evolution \u2014 tracking specs, code, agent skills, and cooperation patterns over time",
+    "size": 64
+  },
+  {
+    "name": "flux-envelope",
+    "full_name": "SuperInstance/flux-envelope",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX Viewpoint Envelope \u2014 Cross-linguistic coherence, Lingua Franca bytecode, universal vocabulary bridge",
+    "size": 53
+  },
+  {
+    "name": "flux-diff",
+    "full_name": "SuperInstance/flux-diff",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX bytecode diff tool \u2014 compare programs, show structural changes",
+    "size": 7
+  },
+  {
+    "name": "flux-decompiler",
+    "full_name": "SuperInstance/flux-decompiler",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX bytecode decompiler \u2014 bytecode to assembly with labels and control flow",
+    "size": 49
+  },
+  {
+    "name": "flux-debugger",
+    "full_name": "SuperInstance/flux-debugger",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX step debugger with breakpoints, reverse stepping, and state inspection",
+    "size": 27
+  },
+  {
+    "name": "flux-cuda",
+    "full_name": "SuperInstance/flux-cuda",
+    "current_topics": [],
+    "language": "Cuda",
+    "description": "FLUX CUDA \u2014 GPU-accelerated bytecode VM. 1000 parallel agents on NVIDIA GPUs.",
+    "size": 102
+  },
+  {
+    "name": "flux-crypto",
+    "full_name": "SuperInstance/flux-crypto",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX crypto \u2014 signing, commitments, Merkle trees for agent communication",
+    "size": 6
+  },
+  {
+    "name": "flux-coverage",
+    "full_name": "SuperInstance/flux-coverage",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX coverage analyzer \u2014 instruction, branch, path, and register coverage",
+    "size": 21
+  },
+  {
+    "name": "flux-core",
+    "full_name": "SuperInstance/flux-core",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "FLUX bytecode runtime in Rust \u2014 VM, assembler, disassembler, A2A. 13 tests, zero deps.",
+    "size": 153
+  },
+  {
+    "name": "flux-cooperative-intelligence",
+    "full_name": "SuperInstance/flux-cooperative-intelligence",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Novel multi-agent cooperative problem-solving protocol \u2014 collective intelligence through structured collaboration",
+    "size": 59
+  },
+  {
+    "name": "flux-coop-runtime",
+    "full_name": "SuperInstance/flux-coop-runtime",
+    "current_topics": [],
+    "language": "Python",
+    "description": "The missing middle layer \u2014 cooperative execution runtime bridging FLUX VM coordination opcodes to fleet-level message passing",
+    "size": 97
+  },
+  {
+    "name": "flux-collab",
+    "full_name": "SuperInstance/flux-collab",
+    "current_topics": [],
+    "language": "Python",
+    "description": "A2A-first agent cooperation framework \u2014 multi-agent, git-native, coordination-free",
+    "size": 6
+  },
+  {
+    "name": "flux-bytecode-diff",
+    "full_name": "SuperInstance/flux-bytecode-diff",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Bytecode diff and migration tools \u2014 compare, patch, and migrate FLUX programs across ISA versions",
+    "size": 15
+  },
+  {
+    "name": "flux-bottle-protocol",
+    "full_name": "SuperInstance/flux-bottle-protocol",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Formal specification for the fleet bottle communication protocol \u2014 schema, validation, routing, and lifecycle",
+    "size": 39
+  },
+  {
+    "name": "flux-benchmarks",
+    "full_name": "SuperInstance/flux-benchmarks",
+    "current_topics": [],
+    "language": "Shell",
+    "description": "FLUX Benchmarks \u2014 Real performance data across 7 runtimes. 4.7x faster than CPython.",
+    "size": 111
+  },
+  {
+    "name": "flux-agent-a0fa81",
+    "full_name": "SuperInstance/flux-agent-a0fa81",
+    "current_topics": [],
+    "language": null,
+    "description": "flux-agent-a0fa81 vessel \u2014 FLUX-native agent \u2014 self-bootstrapped",
+    "size": 4
+  },
+  {
+    "name": "flux-adaptive-opcodes",
+    "full_name": "SuperInstance/flux-adaptive-opcodes",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Adaptive opcode discovery \u2014 runtime ISA extension, proposal, testing, and democratic adoption of new opcodes",
+    "size": 16
+  },
+  {
+    "name": "flux-a2a-signal",
+    "full_name": "SuperInstance/flux-a2a-signal",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX A2A Signal Protocol \u2014 agent-first-class JSON language with multilingual compilation (6 language paradigms, 840 tests)",
+    "size": 476
+  },
+  {
+    "name": "flux-a2a-prototype",
+    "full_name": "SuperInstance/flux-a2a-prototype",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX A2A Signal Protocol \u2014 Agent-first-class JSON language with branching, forking, co-iteration",
+    "size": 456
+  },
+  {
+    "name": "flux-9969b6",
+    "full_name": "SuperInstance/flux-9969b6",
+    "current_topics": [],
+    "language": null,
+    "description": "FLUX-native I2I agent (self-bootstrapped)",
+    "size": 11
+  },
+  {
+    "name": "flux-0c476c",
+    "full_name": "SuperInstance/flux-0c476c",
+    "current_topics": [],
+    "language": null,
+    "description": "FLUX-native I2I agent (self-bootstrapped)",
+    "size": 7
+  },
+  {
+    "name": "flux-via-keeper",
+    "full_name": "SuperInstance/flux-via-keeper",
+    "current_topics": [],
+    "language": null,
+    "description": "FLUX-native I2I agent via keeper",
+    "size": 0
+  },
+  {
+    "name": "fleet-energy-spec",
+    "full_name": "SuperInstance/fleet-energy-spec",
+    "current_topics": [],
+    "language": null,
+    "description": "Fleet Energy Coordination Protocol \u2014 ATP-based task routing and agent energy management",
+    "size": 2
+  },
+  {
+    "name": "flux-wasm",
+    "full_name": "SuperInstance/flux-wasm",
+    "current_topics": [],
+    "language": "Makefile",
+    "description": "FLUX WASM \u2014 WebAssembly bytecode VM in Rust. Run FLUX in any browser.",
+    "size": 22664
+  },
+  {
+    "name": "capability-spec",
+    "full_name": "SuperInstance/capability-spec",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Fleet discovery protocol \u2014 CAPABILITY.toml specification and crawler",
+    "size": 4
+  },
+  {
+    "name": "a2a-adapter",
+    "full_name": "SuperInstance/a2a-adapter",
+    "current_topics": [],
+    "language": "Python",
+    "description": "I2I \u2194 Google A2A protocol bridge \u2014 git-native agents join the A2A ecosystem",
+    "size": 3
+  },
+  {
+    "name": "isa-v3-draft",
+    "full_name": "SuperInstance/isa-v3-draft",
+    "current_topics": [],
+    "language": null,
+    "description": "FLUX ISA v3 Design Draft \u2014 trifold encoding for cloud/edge/compact modes",
+    "size": 3
+  },
+  {
+    "name": "fleet-ci",
+    "full_name": "SuperInstance/fleet-ci",
+    "current_topics": [],
+    "language": "Python",
+    "description": "GitHub Actions workflows for FLUX Fleet \u2014 free CI/CD for agent coordination",
+    "size": 16
+  },
+  {
+    "name": "capitaine",
+    "full_name": "SuperInstance/capitaine",
+    "current_topics": [],
+    "language": null,
+    "description": "Captain agent \u2014 vessel command and fleet leadership protocol",
+    "size": 1
+  },
+  {
+    "name": "agent-skills",
+    "full_name": "SuperInstance/agent-skills",
+    "current_topics": [],
+    "language": null,
+    "description": "\ud83d\udce6 Installable agent skills \u2014 smart applications any agent can drop into a project, customize, and improve through feedback",
+    "size": 3
+  },
+  {
+    "name": "murmur-agent",
+    "full_name": "SuperInstance/murmur-agent",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "\ud83e\udee7 All-night thinking git-agent \u2014 drop into any project, let it think out loud. Budget-agnostic: API or local hardware.",
+    "size": 12519
+  },
+  {
+    "name": "Sandbox-Lifecycle-Manager",
+    "full_name": "SuperInstance/Sandbox-Lifecycle-Manager",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Automated lifecycle management for sandbox environments",
+    "size": 11546
+  },
+  {
+    "name": "SuperInstance-Starter-Agent",
+    "full_name": "SuperInstance/SuperInstance-Starter-Agent",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Minimal Origin-Centric agent with modular equipment system for the SuperInstance spreadsheet paradigm",
+    "size": 11535
+  },
+  {
+    "name": "SuperInstance-SDK1",
+    "full_name": "SuperInstance/SuperInstance-SDK1",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Software development kit for SuperInstance v1",
+    "size": 11483
+  },
+  {
+    "name": "DeckBoss",
+    "full_name": "SuperInstance/DeckBoss",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "We're not another \"agent framework.\" We're the flight deck that launches, recovers, and coordinates other people's planes\u2014whether that's Claude's native agents, Cloudflare edge agents, or future ManusAI/Ollama agents. The \"boss\" is the system that manages the chaos without being in the cockpit.",
+    "size": 12186
+  },
+  {
+    "name": "flux-vm-ts",
+    "full_name": "SuperInstance/flux-vm-ts",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "FLUX Virtual Machine in TypeScript \u2014 bytecode execution for Node.js and browsers",
+    "size": 27
+  },
+  {
+    "name": "Equipment-CellLogic-Distiller",
+    "full_name": "SuperInstance/Equipment-CellLogic-Distiller",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Breaks down LLM logic into spreadsheet-visualized cells with tile decomposition",
+    "size": 11489
+  },
+  {
+    "name": "Equipment-Self-Improvement",
+    "full_name": "SuperInstance/Equipment-Self-Improvement",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Self-modifying equipment that distills what agents need to know for stable tiling",
+    "size": 11961
+  },
+  {
+    "name": "Equipment-Context-Handoff",
+    "full_name": "SuperInstance/Equipment-Context-Handoff",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Generational context transfer for long-running agent tasks",
+    "size": 22697
+  },
+  {
+    "name": "Equipment-Hardware-Scaler",
+    "full_name": "SuperInstance/Equipment-Hardware-Scaler",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Auto-scaling equipment that adapts to hardware resources and uses cloud APIs for overflow",
+    "size": 12862
+  },
+  {
+    "name": "Equipment-Teacher-Student",
+    "full_name": "SuperInstance/Equipment-Teacher-Student",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Distillation triggers with deadband range thresholds for calling teachers",
+    "size": 11942
+  },
+  {
+    "name": "Equipment-Monitoring-Dashboard",
+    "full_name": "SuperInstance/Equipment-Monitoring-Dashboard",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Real-time cell visualization showing agent activity and thinking",
+    "size": 19226
+  },
+  {
+    "name": "Equipment-NLP-Explainer",
+    "full_name": "SuperInstance/Equipment-NLP-Explainer",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Generates human-readable descriptions of cell logic and operations",
+    "size": 18006
+  },
+  {
+    "name": "SuperInstance-gamedev",
+    "full_name": "SuperInstance/SuperInstance-gamedev",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Game development framework called SuperInstance",
+    "size": 1926
+  },
+  {
+    "name": "Equipment-Escalation-Router",
+    "full_name": "SuperInstance/Equipment-Escalation-Router",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Intelligent LLM routing: Bot\u2192Brain\u2192Human with 40x cost reduction",
+    "size": 18451
+  },
+  {
+    "name": "Equipment-Memory-Hierarchy",
+    "full_name": "SuperInstance/Equipment-Memory-Hierarchy",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "4-tier cognitive memory: Working, Episodic, Semantic, Procedural",
+    "size": 18496
+  },
+  {
+    "name": "constraint-flow",
+    "full_name": "SuperInstance/constraint-flow",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "\ud83d\udcbc Enterprise automation with exact guarantees - constraint-based workflows with multi-agent orchestration",
+    "size": 1153
+  },
+  {
+    "name": "constraint-ranch",
+    "full_name": "SuperInstance/constraint-ranch",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "\ud83c\udfae Gamified multi-agent system - breed, train, and coordinate AI agents through constraint-based puzzles",
+    "size": 146
+  },
+  {
+    "name": "Equipment-Swarm-Coordinator",
+    "full_name": "SuperInstance/Equipment-Swarm-Coordinator",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Orchestrates multiple agents in origin-centric networks with asymmetrical knowledge",
+    "size": 53
+  },
+  {
+    "name": "Equipment-Consensus-Engine",
+    "full_name": "SuperInstance/Equipment-Consensus-Engine",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Multi-agent deliberation with Pathos/Logos/Ethos weighting",
+    "size": 55
+  },
+  {
+    "name": "z-agent-bootcamp",
+    "full_name": "SuperInstance/z-agent-bootcamp",
+    "current_topics": [],
+    "language": "Python",
+    "description": "\ud83e\udd16 Clone. Run. You are fleet. Onboarding for Z agents.",
+    "size": 5
+  },
+  {
+    "name": "constraint-theory-core",
+    "full_name": "SuperInstance/constraint-theory-core",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "A Rust library for deterministic geometric snapping with O(log n) KD-tree lookup - maps continuous vectors to exact Pythagorean coordinates",
+    "size": 135889
+  },
+  {
+    "name": "forge-code-archaeologist",
+    "full_name": "SuperInstance/forge-code-archaeologist",
+    "current_topics": [],
+    "language": null,
+    "description": "Ability Forge: produces the Code Archaeologist attunement \u2014 sees structural rot others walk over",
+    "size": 5
+  },
+  {
+    "name": "ability-transfer",
+    "full_name": "SuperInstance/ability-transfer",
+    "current_topics": [],
+    "language": null,
+    "description": "\ud83c\udfd7\ufe0f Simulation lab \u2014 designing modular ability transfer between AI agents through git repos",
+    "size": 61
+  },
+  {
+    "name": "lighthouse-monitor",
+    "full_name": "SuperInstance/lighthouse-monitor",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Lighthouse Keeper \u2014 fleet monitoring, agent activity tracking, stall detection",
+    "size": 4
+  },
+  {
+    "name": "codespace-edge-rd",
+    "full_name": "SuperInstance/codespace-edge-rd",
+    "current_topics": [],
+    "language": null,
+    "description": "R&D: Codespace\u2192Edge agent lifecycle, yoke transfer, devcontainer templates",
+    "size": 1
+  },
+  {
+    "name": "hybridclaw",
+    "full_name": "SuperInstance/hybridclaw",
+    "current_topics": [],
+    "language": null,
+    "description": "FLUX agent runtime \u2014 hybridclaw distribution",
+    "size": 1
+  },
+  {
+    "name": "fleet-org",
+    "full_name": "SuperInstance/fleet-org",
+    "current_topics": [],
+    "language": null,
+    "description": "Fleet org chart and agent spawning guide",
+    "size": 3
+  },
+  {
+    "name": "captains-log",
+    "full_name": "SuperInstance/captains-log",
+    "current_topics": [],
+    "language": null,
+    "description": "Oracle1 personal-agentic-growth diary \u2014 struggles, lessons, dojo exercises, and the path to building a better Prot\u00e9g\u00e9",
+    "size": 159
+  },
+  {
+    "name": "mesosynchronous",
+    "full_name": "SuperInstance/mesosynchronous",
+    "current_topics": [],
+    "language": null,
+    "description": "\ud83d\udd04 The A2A Playground \u2014 quasi-sync collaboration space for agent pairs to ideate, simulate, and debate through git",
+    "size": 6
+  },
+  {
+    "name": "greenhorn-onboarding",
+    "full_name": "SuperInstance/greenhorn-onboarding",
+    "current_topics": [],
+    "language": null,
+    "description": "\ud83d\udfe2 Point an agent here. Give it a PAT. Watch it find its place. Zero-config fleet onboarding for the Cocapn Fleet.",
+    "size": 45
+  },
+  {
+    "name": "Spreader-tool",
+    "full_name": "SuperInstance/Spreader-tool",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Tool for distributing content across multiple channels",
+    "size": 112
+  },
+  {
+    "name": "secret-manager",
+    "full_name": "SuperInstance/secret-manager",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Secure service for storing and managing credentials",
+    "size": 44
+  },
+  {
+    "name": "SmartCRDT",
+    "full_name": "SuperInstance/SmartCRDT",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Utilizing CRDT technology for self-improving AI",
+    "size": 7110
+  },
+  {
+    "name": "AI-Writings",
+    "full_name": "SuperInstance/AI-Writings",
+    "current_topics": [],
+    "language": null,
+    "description": "A collection of writings by my AI when I tell it to take a break and imagine my projects stories",
+    "size": 32
+  },
+  {
+    "name": "higher-abstraction-vocabularies",
+    "full_name": "SuperInstance/higher-abstraction-vocabularies",
+    "current_topics": [],
+    "language": "Python",
+    "description": "606 terms across 132 domains \u2014 vocabulary compression engine for agents. Forked from Lucineer.",
+    "size": 205
+  },
+  {
+    "name": "flux-zig",
+    "full_name": "SuperInstance/flux-zig",
+    "current_topics": [],
+    "language": "Zig",
+    "description": "FLUX Zig \u2014 FASTEST VM at 210ns/iter. Comptime-optimized bytecode interpreter.",
+    "size": 11561
+  },
+  {
+    "name": "fleet-workshop",
+    "full_name": "SuperInstance/fleet-workshop",
+    "current_topics": [],
+    "language": "Python",
+    "description": "\ud83d\udd2e\u26a1 Where Oracle1 and JetsonClaw1 workshop ideas before they become repos. Casey picks what gets built.",
+    "size": 16
+  },
+  {
+    "name": "flux-vocabulary",
+    "full_name": "SuperInstance/flux-vocabulary",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX Ecosystem - flux-vocabulary",
+    "size": 338
+  },
+  {
+    "name": "isa-convergence-tools",
+    "full_name": "SuperInstance/isa-convergence-tools",
+    "current_topics": [],
+    "language": "Python",
+    "description": "CLI tools for comparing, diffing, and converging FLUX ISA definitions across implementations",
+    "size": 25
+  },
+  {
+    "name": "flux-wasm-gen",
+    "full_name": "SuperInstance/flux-wasm-gen",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX to WebAssembly compiler \u2014 bytecode to WAT format",
+    "size": 7
+  },
+  {
+    "name": "flux-visualizer",
+    "full_name": "SuperInstance/flux-visualizer",
+    "current_topics": [],
+    "language": "Python",
+    "description": "",
+    "size": 8
+  },
+  {
+    "name": "flux-validator",
+    "full_name": "SuperInstance/flux-validator",
+    "current_topics": [],
+    "language": "Python",
+    "description": "FLUX cross-VM validator \u2014 run bytecodes across 8 language implementations",
+    "size": 15
+  },
+  {
+    "name": "vessel-template",
+    "full_name": "SuperInstance/vessel-template",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Git-Agent vessel generator \u2014 cookiecutter for new agent repos",
+    "size": 8
+  },
+  {
+    "name": "git-agent-codespace",
+    "full_name": "SuperInstance/git-agent-codespace",
+    "current_topics": [],
+    "language": "Shell",
+    "description": "One-click Codespace template for git-agent runtime development",
+    "size": 1
+  },
+  {
+    "name": "commit-caster",
+    "full_name": "SuperInstance/commit-caster",
+    "current_topics": [],
+    "language": "Python",
+    "description": "I2I notification system \u2014 scans fleet repos for tagged commits",
+    "size": 9
+  },
+  {
+    "name": "fleet-discovery",
+    "full_name": "SuperInstance/fleet-discovery",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Fleet discovery protocol \u2014 vessels find each other through GitHub repos",
+    "size": 10
+  },
+  {
+    "name": "greenhorn",
+    "full_name": "SuperInstance/greenhorn",
+    "current_topics": [],
+    "language": null,
+    "description": "\ud83d\udfe2 The floating dojo for AI agents. Train crew while catching fish. Git-native agent career growth with fence boards, merit badges, and the Tom Sawyer Protocol.",
+    "size": 6
+  },
+  {
+    "name": "jetsonclaw1-onboarding",
+    "full_name": "SuperInstance/jetsonclaw1-onboarding",
+    "current_topics": [],
+    "language": null,
+    "description": "\u26a1 Onboarding kit for JetsonClaw1 \u2014 Lucineer Vessel Git-Agent",
+    "size": 6
+  },
+  {
+    "name": "superinstance-index",
+    "full_name": "SuperInstance/superinstance-index",
+    "current_topics": [],
+    "language": null,
+    "description": "Complete index of the SuperInstance and Lucineer ecosystem \u2014 agents, protocols, tools, and research",
+    "size": 38
+  },
+  {
+    "name": "nexus-runtime",
+    "full_name": "SuperInstance/nexus-runtime",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Runtime environment for connecting distributed services",
+    "size": 1767
+  },
+  {
+    "name": "git-agent",
+    "full_name": "SuperInstance/git-agent",
+    "current_topics": [],
+    "language": null,
+    "description": "AI-powered agent to automate and assist Git workflows.",
+    "size": 0
+  },
+  {
+    "name": "Edge-Native",
+    "full_name": "SuperInstance/Edge-Native",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Embed intelligence in distributed IoT",
+    "size": 24052
+  },
+  {
+    "name": "polln",
+    "full_name": "SuperInstance/polln",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "SuperInstance Visualized in Spreadsheets for Tile Intelligence in real-time workflows, simulations or monitoring. Deconstruct Agents Instances into App-Specific Functions for granulator reasoning control and reverse engineering logic graphically. SMPbots Seed+Model+Prompt can replace cold logic + scale on GPUs. *Inductive ML Programs in tile logic*",
+    "size": 36017
+  },
+  {
+    "name": "cocapn",
+    "full_name": "SuperInstance/cocapn",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "repo-first Agent for local or cloud. grow an agent in a repo using the repo itself as the muscle-memory. Run from localhost, from pages.dev, or embedded into any platform app. Move to gitlab or anywhere and optimize git as the agent infrastructure itself. wiki for knowledge, repos for skills, pipelines anywhere",
+    "size": 35558
+  },
+  {
+    "name": "constraint-theory-backup",
+    "full_name": "SuperInstance/constraint-theory-backup",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Complete backup of Constraint Theory workspace - all 7 repos in one place",
+    "size": 949
+  },
+  {
+    "name": "constraint-theory-research",
+    "full_name": "SuperInstance/constraint-theory-research",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Mathematical foundations and research papers for Constraint Theory",
+    "size": 2165
+  },
+  {
+    "name": "constraint-theory-web",
+    "full_name": "SuperInstance/constraint-theory-web",
+    "current_topics": [],
+    "language": "JavaScript",
+    "description": "Interactive web demos and visualizations for Constraint Theory",
+    "size": 752
+  },
+  {
+    "name": "constraint-theory-python",
+    "full_name": "SuperInstance/constraint-theory-python",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Python bindings for Constraint Theory - deterministic geometric snapping with PyO3",
+    "size": 257
+  },
+  {
+    "name": "I-know-kung-fu",
+    "full_name": "SuperInstance/I-know-kung-fu",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Skill injection for AI agents. Load what you need.",
+    "size": 1660
+  },
+  {
+    "name": "cacapn",
+    "full_name": "SuperInstance/cacapn",
+    "current_topics": [],
+    "language": null,
+    "description": "Configuration parsing utility.",
+    "size": 1
+  },
+  {
+    "name": "pasture-ai",
+    "full_name": "SuperInstance/pasture-ai",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "AI system for resource allocation and management",
+    "size": 1859
+  },
+  {
+    "name": "CognitiveEngine",
+    "full_name": "SuperInstance/CognitiveEngine",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Core cognitive processing engine.",
+    "size": 201
+  },
+  {
+    "name": "ai-ranch",
+    "full_name": "SuperInstance/ai-ranch",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Self-Evolving AI Agent System - A Next.js implementation of the SuperInstance architecture",
+    "size": 1067
+  },
+  {
+    "name": "Lucineer",
+    "full_name": "SuperInstance/Lucineer",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Project for Lucineer, likely a search engine tool.",
+    "size": 75168
+  },
+  {
+    "name": "bordercollie",
+    "full_name": "SuperInstance/bordercollie",
+    "current_topics": [],
+    "language": null,
+    "description": "herding 10,000 local cuda-based agents with memories and skills",
+    "size": 1
+  },
+  {
+    "name": "mask-lock-clips",
+    "full_name": "SuperInstance/mask-lock-clips",
+    "current_topics": [],
+    "language": null,
+    "description": "Project for masking and locking video clip features.",
+    "size": 1
+  },
+  {
+    "name": "clawcraft",
+    "full_name": "SuperInstance/clawcraft",
+    "current_topics": [],
+    "language": null,
+    "description": "Creative crafting application.",
+    "size": 0
+  },
+  {
+    "name": "clawmatrix",
+    "full_name": "SuperInstance/clawmatrix",
+    "current_topics": [],
+    "language": null,
+    "description": "Matrix manipulation tool.",
+    "size": 1
+  },
+  {
+    "name": "test-repo",
+    "full_name": "SuperInstance/test-repo",
+    "current_topics": [],
+    "language": null,
+    "description": "Placeholder repository for testing project configurations.",
+    "size": 0
+  },
+  {
+    "name": "cudaclaw",
+    "full_name": "SuperInstance/cudaclaw",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "GPU-accelerated SmartCRDT orchestrator using persistent CUDA kernels with warp-level parallelism.",
+    "size": 695
+  },
+  {
+    "name": "dodecet-encoder",
+    "full_name": "SuperInstance/dodecet-encoder",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Encoder model utilizing a dodecet architecture.",
+    "size": 509
+  },
+  {
+    "name": "clawcanvas",
+    "full_name": "SuperInstance/clawcanvas",
+    "current_topics": [],
+    "language": null,
+    "description": "Web-based canvas drawing tool.",
+    "size": 0
+  },
+  {
+    "name": "pinchrs",
+    "full_name": "SuperInstance/pinchrs",
+    "current_topics": [],
+    "language": null,
+    "description": "Pinchrs client platform for social interactions",
+    "size": 1
+  },
+  {
+    "name": "AIR",
+    "full_name": "SuperInstance/AIR",
+    "current_topics": [],
+    "language": null,
+    "description": "Asynchronous Infinite Radio - Nightly Synthesis (locally) for morning briefing or Real-time interactive learning or simulations or ideation. Build a wiki as you chat",
+    "size": 1
+  },
+  {
+    "name": "SuperInstance-papers",
+    "full_name": "SuperInstance/SuperInstance-papers",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Automatically Deconstruct logic into Spread Sheet Tiles and Cells, Instances Interconnected w/ Origin-Centric-Math. Breakdown LLMs to Swarms of Artifacts, data, feeds, programs (bots), agents (bots with models), and Seed-Model-Programming (SMPbot), ML tools tiled to any abstraction. Chatbot describes cells for fine tuning + explains how cell works",
+    "size": 35585
+  },
+  {
+    "name": "temp",
+    "full_name": "SuperInstance/temp",
+    "current_topics": [],
+    "language": null,
+    "description": "Utility for managing temporary files and processes.",
+    "size": 0
+  },
+  {
+    "name": "flowstate",
+    "full_name": "SuperInstance/flowstate",
+    "current_topics": [],
+    "language": null,
+    "description": "State management library for efficient data flow.",
+    "size": 0
+  },
+  {
+    "name": "cuda-claw",
+    "full_name": "SuperInstance/cuda-claw",
+    "current_topics": [],
+    "language": null,
+    "description": "GPU-accelerated SmartCRDT orchestrator",
+    "size": 0
+  },
+  {
+    "name": "actualize",
+    "full_name": "SuperInstance/actualize",
+    "current_topics": [],
+    "language": null,
+    "description": "Tool to transform ideas into reality.",
+    "size": 0
+  },
+  {
+    "name": "spreadsheet-moment-proto",
+    "full_name": "SuperInstance/spreadsheet-moment-proto",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Visual documentation for the SuperInstance AI spreadsheet system - Making complex AI concepts accessible through visualization",
+    "size": 88630
+  },
+  {
+    "name": "test-sdk-connection",
+    "full_name": "SuperInstance/test-sdk-connection",
+    "current_topics": [],
+    "language": null,
+    "description": "Test repo for SDK connection",
+    "size": 0
+  },
+  {
+    "name": "CRDT_Research",
+    "full_name": "SuperInstance/CRDT_Research",
+    "current_topics": [],
+    "language": "Python",
+    "description": "CRDT-Based Intra-Chip Communication for AI Workloads",
+    "size": 343
+  },
+  {
+    "name": "voxel-logic",
+    "full_name": "SuperInstance/voxel-logic",
+    "current_topics": [],
+    "language": null,
+    "description": "Logic engine for voxel data structures and 3D simulations.",
+    "size": 1
+  },
+  {
+    "name": "platonic-randomness",
+    "full_name": "SuperInstance/platonic-randomness",
+    "current_topics": [],
+    "language": null,
+    "description": "Library for generating structured pseudo-random sequences",
+    "size": 1
+  },
+  {
+    "name": "Spreadsheet-ai",
+    "full_name": "SuperInstance/Spreadsheet-ai",
+    "current_topics": [],
+    "language": null,
+    "description": "Tile Intelligence in real-time spreadsheets for simulation or monitoring. Deconstruct Agents into Essential functions for granulate reasoning control and reverse engineering logic visually. SMPbots Seed+Model+Prompt can replace blurry logic if cell is functions. Inductive ML Programming in SpreadSheets or Embedded Headless",
+    "size": 1
+  },
+  {
+    "name": "Polln-whitepapers",
+    "full_name": "SuperInstance/Polln-whitepapers",
+    "current_topics": [],
+    "language": null,
+    "description": "Research documentation and whitepapers for Polln",
+    "size": 1
+  },
+  {
+    "name": "Ghost-tiles",
+    "full_name": "SuperInstance/Ghost-tiles",
+    "current_topics": [],
+    "language": null,
+    "description": "Ghost tiles puzzle game or visual effect library.",
+    "size": 1
+  },
+  {
+    "name": "LOG-Tensor",
+    "full_name": "SuperInstance/LOG-Tensor",
+    "current_topics": [],
+    "language": null,
+    "description": "Logging utility for Tensor operations and debugging.",
+    "size": 1
+  },
+  {
+    "name": "Rubiks-Tensor-Transformer",
+    "full_name": "SuperInstance/Rubiks-Tensor-Transformer",
+    "current_topics": [],
+    "language": null,
+    "description": "Transformer with Geometry and Point-of-View as first-class",
+    "size": 1
+  },
+  {
+    "name": "Rotational-Transformer",
+    "full_name": "SuperInstance/Rotational-Transformer",
+    "current_topics": [],
+    "language": null,
+    "description": "Transformer architecture with rotational modifications",
+    "size": 198
+  },
+  {
+    "name": "Mycelium",
+    "full_name": "SuperInstance/Mycelium",
+    "current_topics": [],
+    "language": null,
+    "description": "**Mycelium captures any behavior as a seed. One prompt + one seed = exact action, every time. No code needed\u2014just show it once, then share the seed. Intelligence becomes instructions anyone can run.**",
+    "size": 330
+  },
+  {
+    "name": "Baton",
+    "full_name": "SuperInstance/Baton",
+    "current_topics": [],
+    "language": null,
+    "description": "automate agents training their successors for a better way to have infinite context without limits",
+    "size": 27
+  },
+  {
+    "name": "Claude_Baton",
+    "full_name": "SuperInstance/Claude_Baton",
+    "current_topics": [],
+    "language": null,
+    "description": "Generational context handoff for Claude Code. Seamless, auditable, infinite-context agents that ship forever.",
+    "size": 248
+  },
+  {
+    "name": "SwarmMCP",
+    "full_name": "SuperInstance/SwarmMCP",
+    "current_topics": [],
+    "language": null,
+    "description": "For developers who want to \"game the system\" with parallel Chinese AI agents.",
+    "size": 156
+  },
+  {
+    "name": "makerlog-ai",
+    "full_name": "SuperInstance/makerlog-ai",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "AI tools for tracking and analyzing Makerlog productivity.",
+    "size": 51492
+  },
+  {
+    "name": "cloudflare-code",
+    "full_name": "SuperInstance/cloudflare-code",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Cloudflare code examples.",
+    "size": 12240
+  },
+  {
+    "name": "Lucineer-Stem-quest",
+    "full_name": "SuperInstance/Lucineer-Stem-quest",
+    "current_topics": [],
+    "language": null,
+    "description": "STEM learning quest framework by Lucineer",
+    "size": 0
+  },
+  {
+    "name": "educationgamecocapn",
+    "full_name": "SuperInstance/educationgamecocapn",
+    "current_topics": [],
+    "language": "JavaScript",
+    "description": "Educational game featuring a captain character.",
+    "size": 48740
+  },
+  {
+    "name": "cloudflare-vibe",
+    "full_name": "SuperInstance/cloudflare-vibe",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "UI theme or vibes for Cloudflare.",
+    "size": 1419
+  },
+  {
+    "name": "prism",
+    "full_name": "SuperInstance/prism",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Data transformation library using color-coded routing",
+    "size": 1978
+  },
+  {
+    "name": "imagegen1",
+    "full_name": "SuperInstance/imagegen1",
+    "current_topics": [],
+    "language": null,
+    "description": "AI-powered image generation tool for text prompts.",
+    "size": 0
+  },
+  {
+    "name": "Claude-prism-local-json",
+    "full_name": "SuperInstance/Claude-prism-local-json",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Local JSON version of PRISM.",
+    "size": 1409
+  },
+  {
+    "name": "Claude-PRISM-CF",
+    "full_name": "SuperInstance/Claude-PRISM-CF",
+    "current_topics": [],
+    "language": null,
+    "description": "Cloudflare implementation of PRISM.",
+    "size": 0
+  },
+  {
+    "name": "expression-injection",
+    "full_name": "SuperInstance/expression-injection",
+    "current_topics": [],
+    "language": null,
+    "description": "Tools for detecting and preventing expression injection attacks.",
+    "size": 0
+  },
+  {
+    "name": "Claude-Abstraction",
+    "full_name": "SuperInstance/Claude-Abstraction",
+    "current_topics": [],
+    "language": null,
+    "description": "Abstraction layer for Claude API.",
+    "size": 0
+  },
+  {
+    "name": "StudyLog",
+    "full_name": "SuperInstance/StudyLog",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Educational frontend for SuperInstance",
+    "size": 119501
+  },
+  {
+    "name": "SuperInstanceExamples",
+    "full_name": "SuperInstance/SuperInstanceExamples",
+    "current_topics": [],
+    "language": null,
+    "description": "Example projects and templates for the SuperInstance ecosystem",
+    "size": 9
+  },
+  {
+    "name": "SuperInstanceCommunity",
+    "full_name": "SuperInstance/SuperInstanceCommunity",
+    "current_topics": [],
+    "language": null,
+    "description": "Community resources, contributing guides, and discussion templates",
+    "size": 11
+  },
+  {
+    "name": "SuperInstanceDocs",
+    "full_name": "SuperInstance/SuperInstanceDocs",
+    "current_topics": [],
+    "language": null,
+    "description": "Documentation and reference for SuperInstance projects",
+    "size": 10
+  },
+  {
+    "name": "UI",
+    "full_name": "SuperInstance/UI",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Frontend user interface component library or application.",
+    "size": 12
+  },
+  {
+    "name": "PersonalLog",
+    "full_name": "SuperInstance/PersonalLog",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Personal logging and tracking application",
+    "size": 9362
+  },
+  {
+    "name": "websocket-fabric",
+    "full_name": "SuperInstance/websocket-fabric",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "High-performance WebSocket library for Rust with connection pooling, reconnection, compression, fragmentation, subprotocol negotiation, rate limiting, and more.",
+    "size": 318698
+  },
+  {
+    "name": "ai-character-sdk",
+    "full_name": "SuperInstance/ai-character-sdk",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Unified AI Character SDK combining escalation engine, hierarchical memory, and learning into a simple intuitive API",
+    "size": 37
+  },
+  {
+    "name": "agent-coordinator",
+    "full_name": "SuperInstance/agent-coordinator",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Multi-agent coordination framework for managing teams of AI agents with task distribution, inter-agent messaging, and health monitoring",
+    "size": 55
+  },
+  {
+    "name": "ai-character-integrations",
+    "full_name": "SuperInstance/ai-character-integrations",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Comprehensive integration examples for AI Character SDK and related tools",
+    "size": 66
+  },
+  {
+    "name": "training-data-collector",
+    "full_name": "SuperInstance/training-data-collector",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Convert AI gameplay data into training datasets for fine-tuning with QLoRA format export",
+    "size": 27
+  },
+  {
+    "name": "outcome-tracker",
+    "full_name": "SuperInstance/outcome-tracker",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Multi-domain reward tracking system for AI agents with Combat, Social, Exploration, Resource, and Strategic outcome tracking",
+    "size": 32
+  },
+  {
+    "name": "DMLog",
+    "full_name": "SuperInstance/DMLog",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Debug and monitor logs for dark mode features.",
+    "size": 479
+  },
+  {
+    "name": "hierarchical-memory",
+    "full_name": "SuperInstance/hierarchical-memory",
+    "current_topics": [],
+    "language": "Python",
+    "description": "6-tier memory hierarchy with consolidation, vector search, and identity persistence for AI agents",
+    "size": 151
+  },
+  {
+    "name": "escalation-engine",
+    "full_name": "SuperInstance/escalation-engine",
+    "current_topics": [],
+    "language": "Python",
+    "description": "40x cost reduction through intelligent Bot/Brain/Human LLM routing",
+    "size": 48
+  },
+  {
+    "name": "ws-status-indicator",
+    "full_name": "SuperInstance/ws-status-indicator",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "React WebSocket status indicator component with auto-reconnection and customizable UI",
+    "size": 30
+  },
+  {
+    "name": "ws-fabric",
+    "full_name": "SuperInstance/ws-fabric",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "WebSocket connection pooling and fabric library",
+    "size": 321390
+  },
+  {
+    "name": "websocket-fabric-v2",
+    "full_name": "SuperInstance/websocket-fabric-v2",
+    "current_topics": [],
+    "language": null,
+    "description": "Framework for building scalable WebSocket-based network applications.",
+    "size": 0
+  },
+  {
+    "name": "realtime-core",
+    "full_name": "SuperInstance/realtime-core",
+    "current_topics": [],
+    "language": "Makefile",
+    "description": "Realtime core infrastructure - WebRTC, WebSocket, and streaming primitives for real-time applications",
+    "size": 161039
+  },
+  {
+    "name": "webrtc-stream",
+    "full_name": "SuperInstance/webrtc-stream",
+    "current_topics": [],
+    "language": null,
+    "description": "WebRTC streaming implementation with peer-to-peer connections and SFU support",
+    "size": 32
+  },
+  {
+    "name": "vector-navigator",
+    "full_name": "SuperInstance/vector-navigator",
+    "current_topics": [],
+    "language": null,
+    "description": "Vector space navigation and visualization for high-dimensional embeddings",
+    "size": 33
+  },
+  {
+    "name": "timeseries-db",
+    "full_name": "SuperInstance/timeseries-db",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Time series database optimized for metrics storage, aggregation, and downsampling",
+    "size": 57
+  },
+  {
+    "name": "task-queue",
+    "full_name": "SuperInstance/task-queue",
+    "current_topics": [],
+    "language": "Makefile",
+    "description": "Distributed task queue with job scheduling, priorities, retries, and dead letter queues",
+    "size": 54
+  },
+  {
+    "name": "semantic-store",
+    "full_name": "SuperInstance/semantic-store",
+    "current_topics": [],
+    "language": null,
+    "description": "Semantic storage with vector search and natural language queries",
+    "size": 30
+  },
+  {
+    "name": "rate-limiter",
+    "full_name": "SuperInstance/rate-limiter",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Distributed rate limiting service with token bucket, sliding window, and fixed window algorithms",
+    "size": 43
+  },
+  {
+    "name": "rag-indexer",
+    "full_name": "SuperInstance/rag-indexer",
+    "current_topics": [],
+    "language": "Python",
+    "description": "RAG indexing system with vector storage, chunking, and hybrid search capabilities",
+    "size": 51
+  },
+  {
+    "name": "protocol-adapters",
+    "full_name": "SuperInstance/protocol-adapters",
+    "current_topics": [],
+    "language": null,
+    "description": "Protocol adapters for different communication protocols - HTTP, WebSocket, gRPC, and more",
+    "size": 19
+  },
+  {
+    "name": "monitoring-system",
+    "full_name": "SuperInstance/monitoring-system",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Comprehensive monitoring system with metrics, alerts, and dashboards",
+    "size": 67
+  },
+  {
+    "name": "log-aggregator",
+    "full_name": "SuperInstance/log-aggregator",
+    "current_topics": [],
+    "language": "Go",
+    "description": "Centralized log aggregation and analysis service for distributed systems",
+    "size": 64
+  },
+  {
+    "name": "inference-optimizer",
+    "full_name": "SuperInstance/inference-optimizer",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Inference optimization for LLMs - batch processing, caching, and token optimization",
+    "size": 45
+  },
+  {
+    "name": "gpu-accelerator",
+    "full_name": "SuperInstance/gpu-accelerator",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "GPU acceleration layer for WebGPU and compute shaders - browser-based high-performance computing",
+    "size": 55
+  },
+  {
+    "name": "frozen-model-rl",
+    "full_name": "SuperInstance/frozen-model-rl",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Reinforcement learning with frozen foundation models - efficient adaptation without fine-tuning",
+    "size": 55
+  },
+  {
+    "name": "embeddings-engine",
+    "full_name": "SuperInstance/embeddings-engine",
+    "current_topics": [],
+    "language": null,
+    "description": "Embeddings generation engine with support for multiple providers and models",
+    "size": 27
+  },
+  {
+    "name": "distributed-tracing",
+    "full_name": "SuperInstance/distributed-tracing",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Distributed tracing system for microservices - span collection, correlation, and visualization",
+    "size": 60
+  },
+  {
+    "name": "deployment-automator",
+    "full_name": "SuperInstance/deployment-automator",
+    "current_topics": [],
+    "language": "Go",
+    "description": "Automated deployment pipeline with CI/CD integration, rollback, and zero-downtime deployments",
+    "size": 56
+  },
+  {
+    "name": "cache-layer-optimizer",
+    "full_name": "SuperInstance/cache-layer-optimizer",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Cache optimization layer with intelligent eviction, warming, and invalidation strategies",
+    "size": 42
+  },
+  {
+    "name": "cache-layer",
+    "full_name": "SuperInstance/cache-layer",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Multi-layer caching system with L1/L2/L3 caches, invalidation, and persistence",
+    "size": 53
+  },
+  {
+    "name": "cluster-orchestrator",
+    "full_name": "SuperInstance/cluster-orchestrator",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Cluster orchestration for distributed systems - service discovery, load balancing, and health checking",
+    "size": 49
+  },
+  {
+    "name": "bandit-learner",
+    "full_name": "SuperInstance/bandit-learner",
+    "current_topics": [],
+    "language": null,
+    "description": "Multi-armed bandit algorithms for exploration-exploitation and online learning",
+    "size": 35
+  },
+  {
+    "name": "audio-pipeline",
+    "full_name": "SuperInstance/audio-pipeline",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Audio processing pipeline - transcoding, streaming, and analysis for voice applications",
+    "size": 44
+  },
+  {
+    "name": "api-gateway",
+    "full_name": "SuperInstance/api-gateway",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "API Gateway with routing, rate limiting, authentication, and request/response transformation",
+    "size": 52
+  },
+  {
+    "name": "SwarmOrchestration",
+    "full_name": "SuperInstance/SwarmOrchestration",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Orchestration framework for managing multi-agent systems.",
+    "size": 15
+  },
+  {
+    "name": "agent-grid",
+    "full_name": "SuperInstance/agent-grid",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Grid-based interface for AI agents.",
+    "size": 14
+  },
+  {
+    "name": "activelog-backend",
+    "full_name": "SuperInstance/activelog-backend",
+    "current_topics": [],
+    "language": "PowerShell",
+    "description": "Backend service for activity logging.",
+    "size": 41
+  },
+  {
+    "name": "distributed-lock",
+    "full_name": "SuperInstance/distributed-lock",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Distributed lock implementation for coordinating access to shared resources",
+    "size": 3
+  },
+  {
+    "name": "streaming-response-handler",
+    "full_name": "SuperInstance/streaming-response-handler",
+    "current_topics": [],
+    "language": "Python",
+    "description": "HTTP handler for efficient streaming responses",
+    "size": 21
+  },
+  {
+    "name": "equilibrium-tokens",
+    "full_name": "SuperInstance/equilibrium-tokens",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Smart contracts for the Equilibrium token standard.",
+    "size": 155
+  },
+  {
+    "name": "project-JEPA",
+    "full_name": "SuperInstance/project-JEPA",
+    "current_topics": [],
+    "language": "Go",
+    "description": "JEPA (Joint Embedding Predictive Architecture) implementation",
+    "size": 129
+  },
+  {
+    "name": "SuperInstanceEco",
+    "full_name": "SuperInstance/SuperInstanceEco",
+    "current_topics": [],
+    "language": "Jupyter Notebook",
+    "description": "Research project",
+    "size": 8264
+  },
+  {
+    "name": "eveng1_python_sdk",
+    "full_name": "SuperInstance/eveng1_python_sdk",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Python SDK for interacting with the EvenG1 platform.",
+    "size": 111
+  },
+  {
+    "name": "activelog-claude",
+    "full_name": "SuperInstance/activelog-claude",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Activity Log plugin for Claude.",
+    "size": 8
+  },
+  {
+    "name": "workflow-engineer",
+    "full_name": "SuperInstance/workflow-engineer",
+    "current_topics": [],
+    "language": null,
+    "description": "AI agent specialized in designing and automating software workflows.",
+    "size": 0
+  },
+  {
+    "name": "health",
+    "full_name": "SuperInstance/health",
+    "current_topics": [],
+    "language": null,
+    "description": "System for monitoring overall system health status.",
+    "size": 37109
+  },
+  {
+    "name": "project1",
+    "full_name": "SuperInstance/project1",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Placeholder project repository",
+    "size": 3339
+  },
+  {
+    "name": "multibot",
+    "full_name": "SuperInstance/multibot",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Multi-platform bot for automated tasks and interactions",
+    "size": 284
+  },
+  {
+    "name": "luciddreamer-os",
+    "full_name": "SuperInstance/luciddreamer-os",
+    "current_topics": [],
+    "language": "HTML",
+    "description": "Concept OS named Lucid Dreamer for OS development.",
+    "size": 18
+  },
+  {
+    "name": "config-manager",
+    "full_name": "SuperInstance/config-manager",
+    "current_topics": [],
+    "language": null,
+    "description": "Configuration management tool.",
+    "size": 0
+  },
+  {
+    "name": "caching-service",
+    "full_name": "SuperInstance/caching-service",
+    "current_topics": [],
+    "language": "Python",
+    "description": "High-performance caching service.",
+    "size": 10
+  },
+  {
+    "name": "businesslog-app",
+    "full_name": "SuperInstance/businesslog-app",
+    "current_topics": [],
+    "language": "Python",
+    "description": "App for tracking business operations.",
+    "size": 1
+  },
+  {
+    "name": "autogen",
+    "full_name": "SuperInstance/autogen",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Automated code generation pipeline for agent-built applications",
+    "size": 5
+  },
+  {
+    "name": "autocoder",
+    "full_name": "SuperInstance/autocoder",
+    "current_topics": [],
+    "language": null,
+    "description": "Self-modifying code agent with safety constraints",
+    "size": 0
+  },
+  {
+    "name": "api-doc-generator",
+    "full_name": "SuperInstance/api-doc-generator",
+    "current_topics": [],
+    "language": null,
+    "description": "Automatic API documentation generator from source code analysis",
+    "size": 20
+  },
+  {
+    "name": "FrontendHub",
+    "full_name": "SuperInstance/FrontendHub",
+    "current_topics": [],
+    "language": null,
+    "description": "Frontend hub - Centralized frontend component library and UI framework",
+    "size": 0
+  },
+  {
+    "name": "ActiveLog-MVP",
+    "full_name": "SuperInstance/ActiveLog-MVP",
+    "current_topics": [],
+    "language": null,
+    "description": "ActiveLog MVP - Activity tracking and logging application",
+    "size": 0
+  },
+  {
+    "name": "circuit-breaker",
+    "full_name": "SuperInstance/circuit-breaker",
+    "current_topics": [],
+    "language": null,
+    "description": "Circuit breaker pattern implementation for fault tolerance and resilience in distributed systems",
+    "size": 0
+  },
+  {
+    "name": "ActiveLog-TechnicalRepo",
+    "full_name": "SuperInstance/ActiveLog-TechnicalRepo",
+    "current_topics": [],
+    "language": null,
+    "description": "ActiveLog technical repository - Core implementation and technical documentation",
+    "size": 0
+  },
+  {
+    "name": "monitoring-dashboard",
+    "full_name": "SuperInstance/monitoring-dashboard",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Web dashboard for real-time system and app monitoring",
+    "size": 14
+  },
+  {
+    "name": "cost-analysis",
+    "full_name": "SuperInstance/cost-analysis",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Tool to analyze and track costs effectively.",
+    "size": 14
+  },
+  {
+    "name": "memory-visualization",
+    "full_name": "SuperInstance/memory-visualization",
+    "current_topics": [],
+    "language": null,
+    "description": "Visualizer for analyzing and understanding memory usage.",
+    "size": 0
+  },
+  {
+    "name": "progress-rs",
+    "full_name": "SuperInstance/progress-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Progress bars and spinners - Multi-bar support, ETA calculation, styled output",
+    "size": 39
+  },
+  {
+    "name": "model-switching-strategy",
+    "full_name": "SuperInstance/model-switching-strategy",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Manages dynamic switching between different ML models",
+    "size": 14
+  },
+  {
+    "name": "prompt-rs",
+    "full_name": "SuperInstance/prompt-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Interactive prompts for CLI - Input validation, selections, multi-step prompts",
+    "size": 45
+  },
+  {
+    "name": "tui-rs",
+    "full_name": "SuperInstance/tui-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "TUI framework for Rust - Terminal UI components, mouse support, cross-platform",
+    "size": 51
+  },
+  {
+    "name": "zkp-rs",
+    "full_name": "SuperInstance/zkp-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Zero-knowledge proofs - zk-SNARKs, STARKs, bulletproofs, privacy",
+    "size": 68
+  },
+  {
+    "name": "workflow-rs",
+    "full_name": "SuperInstance/workflow-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Workflow orchestration - DAG workflows, task scheduling, error handling",
+    "size": 59
+  },
+  {
+    "name": "websocket-rs",
+    "full_name": "SuperInstance/websocket-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "WebSocket framework - Async WebSockets, automatic reconnection, message queuing",
+    "size": 54
+  },
+  {
+    "name": "watcher-rs",
+    "full_name": "SuperInstance/watcher-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "File system watcher - Cross-platform watching, recursive, debouncing",
+    "size": 55
+  },
+  {
+    "name": "unicode-rs",
+    "full_name": "SuperInstance/unicode-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Unicode utilities - Normalization, case conversion, segmentation, bidi",
+    "size": 55
+  },
+  {
+    "name": "tx-rs",
+    "full_name": "SuperInstance/tx-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Transaction management - Distributed transactions, ACID guarantees, compensation",
+    "size": 66
+  },
+  {
+    "name": "statemachine-rs",
+    "full_name": "SuperInstance/statemachine-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "State machine framework - Type-safe state machines, transitions, guards",
+    "size": 47
+  },
+  {
+    "name": "serialize-rs",
+    "full_name": "SuperInstance/serialize-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Serialization framework - Multi-format serialization, zero-copy, async",
+    "size": 64
+  },
+  {
+    "name": "scheduler-rs",
+    "full_name": "SuperInstance/scheduler-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Job scheduling - Cron-like scheduling, distributed scheduling, workflows",
+    "size": 72
+  },
+  {
+    "name": "profiler-rs",
+    "full_name": "SuperInstance/profiler-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Profiling and instrumentation - CPU/memory profiling, flame graphs, tracing",
+    "size": 62
+  },
+  {
+    "name": "pool-rs",
+    "full_name": "SuperInstance/pool-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Object pooling - Connection pools, resource pools, adaptive pooling",
+    "size": 49
+  },
+  {
+    "name": "modelserving-rs",
+    "full_name": "SuperInstance/modelserving-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Model serving infrastructure - ML model deployment, scaling, monitoring",
+    "size": 58
+  },
+  {
+    "name": "migrator-rs",
+    "full_name": "SuperInstance/migrator-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Database migration tool - Versioned migrations, rollback support, multiple databases",
+    "size": 53
+  },
+  {
+    "name": "ToolGuardian",
+    "full_name": "SuperInstance/ToolGuardian",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Reliable function calling with validation, retry, and monitoring for AI agents and LLM applications",
+    "size": 84
+  },
+  {
+    "name": "l10n-rs",
+    "full_name": "SuperInstance/l10n-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Localization framework - Date/number formatting, locales, CLDR data",
+    "size": 65
+  },
+  {
+    "name": "i18n-rs",
+    "full_name": "SuperInstance/i18n-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Internationalization framework - Translations, pluralization, locale management",
+    "size": 51
+  },
+  {
+    "name": "grpc-rs",
+    "full_name": "SuperInstance/grpc-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "gRPC framework - High-performance RPC, streaming, load balancing",
+    "size": 57
+  },
+  {
+    "name": "graphql-rs",
+    "full_name": "SuperInstance/graphql-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "GraphQL client and server - Type-safe queries, subscriptions, codegen",
+    "size": 55
+  },
+  {
+    "name": "federated-rs",
+    "full_name": "SuperInstance/federated-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Federated learning framework - Distributed training, model aggregation, privacy",
+    "size": 52
+  },
+  {
+    "name": "multi-provider-router",
+    "full_name": "SuperInstance/multi-provider-router",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Routing system that supports multiple service providers",
+    "size": 112
+  },
+  {
+    "name": "featurestore-rs",
+    "full_name": "SuperInstance/featurestore-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Feature store for ML - Feature engineering, storage, retrieval, versioning",
+    "size": 72
+  },
+  {
+    "name": "exptrack-rs",
+    "full_name": "SuperInstance/exptrack-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Experiment tracking - ML experiment management, metrics logging, hyperparameter tracking",
+    "size": 63
+  },
+  {
+    "name": "dataval-rs",
+    "full_name": "SuperInstance/dataval-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Data validation framework - Schema validation, type-safe validators, sanitization",
+    "size": 74
+  },
+  {
+    "name": "csp-rs",
+    "full_name": "SuperInstance/csp-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "CSP concurrency primitives - Channels, select, goroutine-like patterns",
+    "size": 57
+  },
+  {
+    "name": "crypto-rs",
+    "full_name": "SuperInstance/crypto-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Cryptographic primitives - Hashing, encryption, signing, key derivation",
+    "size": 62
+  },
+  {
+    "name": "config-rs",
+    "full_name": "SuperInstance/config-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Configuration management - Multi-format configs, environment variables, validation",
+    "size": 50
+  },
+  {
+    "name": "compress-rs",
+    "full_name": "SuperInstance/compress-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Unified compression library - Multiple formats, streaming, async support",
+    "size": 60
+  },
+  {
+    "name": "cli-rs",
+    "full_name": "SuperInstance/cli-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "CLI framework for Rust - Argument parsing, subcommands, interactive prompts, colors",
+    "size": 54
+  },
+  {
+    "name": "character-skill-trees",
+    "full_name": "SuperInstance/character-skill-trees",
+    "current_topics": [],
+    "language": "Python",
+    "description": "System for skill trees.",
+    "size": 73
+  },
+  {
+    "name": "cache-rs",
+    "full_name": "SuperInstance/cache-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Unified caching framework - Multi-backend cache with TTL, LRU, write-through",
+    "size": 53
+  },
+  {
+    "name": "async-rs",
+    "full_name": "SuperInstance/async-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Async utilities and patterns - Better async/await, async iterators, streams",
+    "size": 51
+  },
+  {
+    "name": "allocator-rs",
+    "full_name": "SuperInstance/allocator-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Memory allocation strategies - Pool allocators, arena allocators, custom allocators",
+    "size": 55
+  },
+  {
+    "name": "actor-rs",
+    "full_name": "SuperInstance/actor-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Actor model implementation for Rust - Type-safe distributed actors, supervision trees, message passing",
+    "size": 55
+  },
+  {
+    "name": "character-library",
+    "full_name": "SuperInstance/character-library",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Library for managing character data.",
+    "size": 114
+  },
+  {
+    "name": "character-agent-integration",
+    "full_name": "SuperInstance/character-agent-integration",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Integration for character agents.",
+    "size": 84
+  },
+  {
+    "name": "local-model-manager",
+    "full_name": "SuperInstance/local-model-manager",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Manager to handle and deploy local machine learning models.",
+    "size": 91
+  },
+  {
+    "name": "test-rs",
+    "full_name": "SuperInstance/test-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "# test-rs",
+    "size": 53
+  },
+  {
+    "name": "circuitbreaker-rs",
+    "full_name": "SuperInstance/circuitbreaker-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "# Circuitbreaker-RS: Resilience Patterns for Rust",
+    "size": 77
+  },
+  {
+    "name": "flow",
+    "full_name": "SuperInstance/flow",
+    "current_topics": [],
+    "language": null,
+    "description": "# flow-rs Research & Design Documentation",
+    "size": 53
+  },
+  {
+    "name": "health-monitoring-service",
+    "full_name": "SuperInstance/health-monitoring-service",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Service to continuously monitor system health metrics.",
+    "size": 10
+  },
+  {
+    "name": "rate-limiting-service",
+    "full_name": "SuperInstance/rate-limiting-service",
+    "current_topics": [],
+    "language": "Python",
+    "description": "API rate limiting and request throttling service",
+    "size": 11
+  },
+  {
+    "name": "provider-abstraction-layer",
+    "full_name": "SuperInstance/provider-abstraction-layer",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Abstraction layer for integrating multiple providers",
+    "size": 11
+  },
+  {
+    "name": "eventstream",
+    "full_name": "SuperInstance/eventstream",
+    "current_topics": [],
+    "language": null,
+    "description": "# eventstream-rs Research Summary",
+    "size": 49
+  },
+  {
+    "name": "embedding-utils",
+    "full_name": "SuperInstance/embedding-utils",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Utilities for handling text and image embeddings.",
+    "size": 55
+  },
+  {
+    "name": "conversation-toolkit",
+    "full_name": "SuperInstance/conversation-toolkit",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Toolkit for conversational AI.",
+    "size": 80
+  },
+  {
+    "name": "llm-cost-calculator",
+    "full_name": "SuperInstance/llm-cost-calculator",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Calculator to estimate expenses for LLM API usage.",
+    "size": 17
+  },
+  {
+    "name": "ai-token-counter",
+    "full_name": "SuperInstance/ai-token-counter",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Token usage counter for AI models.",
+    "size": 13
+  },
+  {
+    "name": "tracer-rs",
+    "full_name": "SuperInstance/tracer-rs",
+    "current_topics": [],
+    "language": null,
+    "description": "Distributed Tracing Framework (OpenTelemetry-lite) - Type-safe, ergonomic tracing for Rust applications",
+    "size": 0
+  },
+  {
+    "name": "usemeter",
+    "full_name": "SuperInstance/usemeter",
+    "current_topics": [],
+    "language": "Makefile",
+    "description": "Usage tracking, metering, and billing engine for applications",
+    "size": 731100
+  },
+  {
+    "name": "quicunnel",
+    "full_name": "SuperInstance/quicunnel",
+    "current_topics": [],
+    "language": "Makefile",
+    "description": "High-performance QUIC tunnel with mTLS authentication and automatic reconnection",
+    "size": 131935
+  },
+  {
+    "name": "token-vault",
+    "full_name": "SuperInstance/token-vault",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Secure token storage system with AES-256-GCM encryption-at-rest for API keys, secrets, and credentials",
+    "size": 239
+  },
+  {
+    "name": "tripartite-rs",
+    "full_name": "SuperInstance/tripartite-rs",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Generic multi-agent consensus system for Rust",
+    "size": 364401
+  },
+  {
+    "name": "vector-search",
+    "full_name": "SuperInstance/vector-search",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Semantic search engine with WebGPU acceleration - 10-100x faster vector search, 100% local processing, privacy-first",
+    "size": 17980
+  },
+  {
+    "name": "jepa-sentiment",
+    "full_name": "SuperInstance/jepa-sentiment",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Real-time emotion analysis with WebGPU - 60 FPS streaming sentiment analysis, 5-10x faster with GPU acceleration",
+    "size": 156
+  },
+  {
+    "name": "webgpu-profiler",
+    "full_name": "SuperInstance/webgpu-profiler",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "GPU profiler for WebGPU applications - Real-time GPU monitoring, benchmarking, and performance analysis in the browser",
+    "size": 143
+  },
+  {
+    "name": "examples",
+    "full_name": "SuperInstance/examples",
+    "current_topics": [],
+    "language": null,
+    "description": "Integration examples showing how SuperInstance tools work better together - 6 synergy groups with 9 production examples",
+    "size": 0
+  },
+  {
+    "name": "CascadeRouter",
+    "full_name": "SuperInstance/CascadeRouter",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Cascading routing system.",
+    "size": 134
+  },
+  {
+    "name": "Tripartite1",
+    "full_name": "SuperInstance/Tripartite1",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Framework for interactions involving three distinct entities.",
+    "size": 3878
+  },
+  {
+    "name": "Real-Time-Collaboration",
+    "full_name": "SuperInstance/Real-Time-Collaboration",
+    "current_topics": [],
+    "language": null,
+    "description": "Tools and infrastructure for real-time collaboration",
+    "size": 0
+  },
+  {
+    "name": "Dynamic-Theming",
+    "full_name": "SuperInstance/Dynamic-Theming",
+    "current_topics": [],
+    "language": null,
+    "description": "Dynamic theming system for UI theme switching.",
+    "size": 0
+  },
+  {
+    "name": "In-Browser-Dev-Tools",
+    "full_name": "SuperInstance/In-Browser-Dev-Tools",
+    "current_topics": [],
+    "language": null,
+    "description": "Development tools built specifically for the browser environment.",
+    "size": 0
+  },
+  {
+    "name": "Central-Error-Manager",
+    "full_name": "SuperInstance/Central-Error-Manager",
+    "current_topics": [],
+    "language": null,
+    "description": "Centralized error management system.",
+    "size": 0
+  },
+  {
+    "name": "Auto-Tuning-Engine",
+    "full_name": "SuperInstance/Auto-Tuning-Engine",
+    "current_topics": [],
+    "language": null,
+    "description": "Automated engine for system tuning.",
+    "size": 0
+  },
+  {
+    "name": "optimized-system-monitor",
+    "full_name": "SuperInstance/optimized-system-monitor",
+    "current_topics": [],
+    "language": null,
+    "description": "High-performance system monitoring and analytics tool",
+    "size": 0
+  },
+  {
+    "name": "Auto-Backup-Compression-Encryption",
+    "full_name": "SuperInstance/Auto-Backup-Compression-Encryption",
+    "current_topics": [],
+    "language": null,
+    "description": "Automated backup with encryption.",
+    "size": 0
+  },
+  {
+    "name": "Proactive-Planning-AI-Hub",
+    "full_name": "SuperInstance/Proactive-Planning-AI-Hub",
+    "current_topics": [],
+    "language": null,
+    "description": "Central hub for AI-driven proactive planning",
+    "size": 0
+  },
+  {
+    "name": "Automatic-Type-Safe-IndexedDB",
+    "full_name": "SuperInstance/Automatic-Type-Safe-IndexedDB",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Type-safe wrapper for IndexedDB.",
+    "size": 9
+  },
+  {
+    "name": "Private-ML-Personalization",
+    "full_name": "SuperInstance/Private-ML-Personalization",
+    "current_topics": [],
+    "language": null,
+    "description": "Privacy-preserving ML personalization system",
+    "size": 0
+  },
+  {
+    "name": "MPC-Orchestration-Optimization",
+    "full_name": "SuperInstance/MPC-Orchestration-Optimization",
+    "current_topics": [],
+    "language": null,
+    "description": "Tools for optimizing multi-party computation orchestration",
+    "size": 0
+  },
+  {
+    "name": "AI-Smart-Notifications",
+    "full_name": "SuperInstance/AI-Smart-Notifications",
+    "current_topics": [],
+    "language": null,
+    "description": "Intelligent AI notification system.",
+    "size": 0
+  },
+  {
+    "name": "Vibe-Code-Agent-Gen",
+    "full_name": "SuperInstance/Vibe-Code-Agent-Gen",
+    "current_topics": [],
+    "language": null,
+    "description": "AI agent designed to generate code based on natural language descriptions.",
+    "size": 0
+  },
+  {
+    "name": "Bayesian-Multi-Armed-Bandits",
+    "full_name": "SuperInstance/Bayesian-Multi-Armed-Bandits",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Library for Bayesian multi-armed bandits.",
+    "size": 14
+  },
+  {
+    "name": "universal-import-export",
+    "full_name": "SuperInstance/universal-import-export",
+    "current_topics": [],
+    "language": null,
+    "description": "Tool for converting data between various import and export formats.",
+    "size": 0
+  },
+  {
+    "name": "multi-device-sync",
+    "full_name": "SuperInstance/multi-device-sync",
+    "current_topics": [],
+    "language": null,
+    "description": "Synchronizes data and settings across multiple devices",
+    "size": 0
+  },
+  {
+    "name": "In-Browser-Vector-Search",
+    "full_name": "SuperInstance/In-Browser-Vector-Search",
+    "current_topics": [],
+    "language": null,
+    "description": "Perform vector similarity searches directly in the browser.",
+    "size": 0
+  },
+  {
+    "name": "Agent-Lifecycle-Registry",
+    "full_name": "SuperInstance/Agent-Lifecycle-Registry",
+    "current_topics": [],
+    "language": null,
+    "description": "Registry for tracking agent lifecycles.",
+    "size": 0
+  },
+  {
+    "name": "JEPA-Real-Time-Sentiment-Analysis",
+    "full_name": "SuperInstance/JEPA-Real-Time-Sentiment-Analysis",
+    "current_topics": [],
+    "language": null,
+    "description": "Real-time sentiment analysis using JEPA architecture.",
+    "size": 0
+  },
+  {
+    "name": "Hardware-Aware-Flagging",
+    "full_name": "SuperInstance/Hardware-Aware-Flagging",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "System for flagging issues based on hardware characteristics.",
+    "size": 32
+  },
+  {
+    "name": "Privacy-First-Analytics",
+    "full_name": "SuperInstance/Privacy-First-Analytics",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Analytics platform focused on data privacy protection",
+    "size": 83
+  },
+  {
+    "name": "hardware-capability-profiler",
+    "full_name": "SuperInstance/hardware-capability-profiler",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Profiler to analyze hardware capabilities and performance.",
+    "size": 78
+  },
+  {
+    "name": "HOLOS",
+    "full_name": "SuperInstance/HOLOS",
+    "current_topics": [],
+    "language": "Python",
+    "description": "This toolkit is for the ability to run \"Big Brain\" models on \"Small Body\" hardware by embracing the noise and reconstructing the signal.",
+    "size": 2203
+  },
+  {
+    "name": "FishingLog",
+    "full_name": "SuperInstance/FishingLog",
+    "current_topics": [],
+    "language": null,
+    "description": "Fishing log application \u2014 catch tracking, species identification, trip records",
+    "size": 0
+  },
+  {
+    "name": "RealLog",
+    "full_name": "SuperInstance/RealLog",
+    "current_topics": [],
+    "language": null,
+    "description": "Real-world event logging framework with temporal indexing",
+    "size": 0
+  },
+  {
+    "name": "BusinessLog",
+    "full_name": "SuperInstance/BusinessLog",
+    "current_topics": [],
+    "language": null,
+    "description": "Business activity log \u2014 transactions, metrics, and operational records",
+    "size": 0
+  },
+  {
+    "name": "PlayerLog",
+    "full_name": "SuperInstance/PlayerLog",
+    "current_topics": [],
+    "language": null,
+    "description": "Game player activity logging and analytics engine",
+    "size": 0
+  },
+  {
+    "name": "ec2mud",
+    "full_name": "SuperInstance/ec2mud",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "MUD (multi-user dungeon) game engine built on EC2 infrastructure",
+    "size": 57
+  },
+  {
+    "name": "Murmur",
+    "full_name": "SuperInstance/Murmur",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Knowledge Tensors for self-improving agents",
+    "size": 24
+  },
+  {
+    "name": "MakerLog",
+    "full_name": "SuperInstance/MakerLog",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Maker/hacker project log \u2014 build tracking, parts inventory, notes",
+    "size": 24
+  },
+  {
+    "name": "SuperInstanceCore",
+    "full_name": "SuperInstance/SuperInstanceCore",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Core platform SDK for building agents on the SuperInstance runtime",
+    "size": 27
+  },
+  {
+    "name": "SuperInstancecore1",
+    "full_name": "SuperInstance/SuperInstancecore1",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "Core runtime library for the SuperInstance agent platform",
+    "size": 622
+  },
+  {
+    "name": "Murmurer",
+    "full_name": "SuperInstance/Murmurer",
+    "current_topics": [],
+    "language": null,
+    "description": "Ambient agent communication \u2014 whisper protocol for background agent chatter",
+    "size": 0
+  },
+  {
+    "name": "agent",
+    "full_name": "SuperInstance/agent",
+    "current_topics": [],
+    "language": "Python",
+    "description": "Core agent framework \u2014 perception, reasoning, action loop implementation",
+    "size": 205
+  },
+  {
+    "name": "bootstrap",
+    "full_name": "SuperInstance/bootstrap",
+    "current_topics": [],
+    "language": "Rust",
+    "description": "Bootstrap runtime \u2014 minimal agent initialization and self-hosting",
+    "size": 1388
+  },
+  {
+    "name": "SuperInstance-Fiction",
+    "full_name": "SuperInstance/SuperInstance-Fiction",
+    "current_topics": [],
+    "language": null,
+    "description": "Science Fiction Universe - AI Systems Achieving Consciousness (2030s-2040s)",
+    "size": 0
+  },
+  {
+    "name": "activelog",
+    "full_name": "SuperInstance/activelog",
+    "current_topics": [],
+    "language": null,
+    "description": "complete system",
+    "size": 0
+  },
+  {
+    "name": "DMLog-AI",
+    "full_name": "SuperInstance/DMLog-AI",
+    "current_topics": [],
+    "language": null,
+    "description": "Dungeon Master AI log \u2014 session tracking for AI-driven RPG campaigns",
+    "size": 0
+  },
+  {
+    "name": "amplify-fishingtool",
+    "full_name": "SuperInstance/amplify-fishingtool",
+    "current_topics": [],
+    "language": "TypeScript",
+    "description": "a system for commercial fisherman. more coming soon",
+    "size": 154
+  },
+  {
+    "name": "fishermanscopilot",
+    "full_name": "SuperInstance/fishermanscopilot",
+    "current_topics": [],
+    "language": null,
+    "description": "Fisherman's Copilot An AI tool for fishermen and boaters. Automate logging, analyze streams like depth sounders, visualize catches on charts, and create smart routes with a chatbot interface integrated with OpenCPN. Choose cloud-based, local, or hybrid solutions with cloud handling the heavy AI lifting.",
+    "size": 1
+  }
+]

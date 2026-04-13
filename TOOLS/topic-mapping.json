@@ -1,0 +1,4836 @@
+[
+  {
+    "name": "usemeter",
+    "full_name": "SuperInstance/usemeter",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "makefile",
+      "library"
+    ],
+    "language": "Makefile",
+    "size": 731100
+  },
+  {
+    "name": "tripartite-rs",
+    "full_name": "SuperInstance/tripartite-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "consensus",
+      "deliberation",
+      "library"
+    ],
+    "language": "Rust",
+    "size": 364401
+  },
+  {
+    "name": "ws-fabric",
+    "full_name": "SuperInstance/ws-fabric",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "library"
+    ],
+    "language": "Rust",
+    "size": 321390
+  },
+  {
+    "name": "websocket-fabric",
+    "full_name": "SuperInstance/websocket-fabric",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "web",
+      "frontend",
+      "library"
+    ],
+    "language": "Rust",
+    "size": 318698
+  },
+  {
+    "name": "realtime-core",
+    "full_name": "SuperInstance/realtime-core",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "makefile",
+      "library"
+    ],
+    "language": "Makefile",
+    "size": 161039
+  },
+  {
+    "name": "constraint-theory-core",
+    "full_name": "SuperInstance/constraint-theory-core",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "artificial-intelligence",
+      "machine-learning",
+      "constraint-theory",
+      "mathematics",
+      "library"
+    ],
+    "language": "Rust",
+    "size": 135889
+  },
+  {
+    "name": "quicunnel",
+    "full_name": "SuperInstance/quicunnel",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "makefile",
+      "web",
+      "frontend",
+      "library"
+    ],
+    "language": "Makefile",
+    "size": 131935
+  },
+  {
+    "name": "StudyLog",
+    "full_name": "SuperInstance/StudyLog",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "ai-companion",
+      "application",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 119501
+  },
+  {
+    "name": "spreadsheet-moment-proto",
+    "full_name": "SuperInstance/spreadsheet-moment-proto",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "spreadsheet",
+      "data",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 88630
+  },
+  {
+    "name": "Lucineer",
+    "full_name": "SuperInstance/Lucineer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "infrastructure",
+      "devops",
+      "library"
+    ],
+    "language": "Python",
+    "size": 75168
+  },
+  {
+    "name": "makerlog-ai",
+    "full_name": "SuperInstance/makerlog-ai",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "artificial-intelligence",
+      "machine-learning",
+      "memory",
+      "learning",
+      "ai-companion",
+      "application"
+    ],
+    "language": "TypeScript",
+    "size": 51492
+  },
+  {
+    "name": "educationgamecocapn",
+    "full_name": "SuperInstance/educationgamecocapn",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "javascript",
+      "agent-runtime",
+      "cocapn",
+      "gaming",
+      "minecraft",
+      "education",
+      "library"
+    ],
+    "language": "JavaScript",
+    "size": 48740
+  },
+  {
+    "name": "health",
+    "full_name": "SuperInstance/health",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "health-monitoring",
+      "observability",
+      "library"
+    ],
+    "language": null,
+    "size": 37109
+  },
+  {
+    "name": "polln",
+    "full_name": "SuperInstance/polln",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 36017
+  },
+  {
+    "name": "SuperInstance-papers",
+    "full_name": "SuperInstance/SuperInstance-papers",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "research",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 35585
+  },
+  {
+    "name": "cocapn",
+    "full_name": "SuperInstance/cocapn",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "agent-runtime",
+      "cocapn",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 35558
+  },
+  {
+    "name": "flux-lsp",
+    "full_name": "SuperInstance/flux-lsp",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "flux-vm",
+      "language-server",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 28065
+  },
+  {
+    "name": "Edge-Native",
+    "full_name": "SuperInstance/Edge-Native",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "edge-computing",
+      "hardware",
+      "library"
+    ],
+    "language": "Python",
+    "size": 24052
+  },
+  {
+    "name": "Equipment-Context-Handoff",
+    "full_name": "SuperInstance/Equipment-Context-Handoff",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "context-management",
+      "equipment",
+      "modular",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 22697
+  },
+  {
+    "name": "flux-wasm",
+    "full_name": "SuperInstance/flux-wasm",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "makefile",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "rust",
+      "library"
+    ],
+    "language": "Makefile",
+    "size": 22664
+  },
+  {
+    "name": "Equipment-Monitoring-Dashboard",
+    "full_name": "SuperInstance/Equipment-Monitoring-Dashboard",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "data-visualization",
+      "tooling",
+      "developer-tools",
+      "equipment"
+    ],
+    "language": "TypeScript",
+    "size": 19226
+  },
+  {
+    "name": "Equipment-Memory-Hierarchy",
+    "full_name": "SuperInstance/Equipment-Memory-Hierarchy",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "memory",
+      "learning",
+      "equipment",
+      "modular"
+    ],
+    "language": "TypeScript",
+    "size": 18496
+  },
+  {
+    "name": "Equipment-Escalation-Router",
+    "full_name": "SuperInstance/Equipment-Escalation-Router",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "equipment",
+      "modular",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 18451
+  },
+  {
+    "name": "Equipment-NLP-Explainer",
+    "full_name": "SuperInstance/Equipment-NLP-Explainer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "artificial-intelligence",
+      "machine-learning",
+      "web",
+      "frontend",
+      "equipment",
+      "modular"
+    ],
+    "language": "TypeScript",
+    "size": 18006
+  },
+  {
+    "name": "vector-search",
+    "full_name": "SuperInstance/vector-search",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 17980
+  },
+  {
+    "name": "Equipment-Hardware-Scaler",
+    "full_name": "SuperInstance/Equipment-Hardware-Scaler",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "edge-computing",
+      "hardware",
+      "equipment",
+      "modular"
+    ],
+    "language": "TypeScript",
+    "size": 12862
+  },
+  {
+    "name": "murmur-agent",
+    "full_name": "SuperInstance/murmur-agent",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "ai-agent",
+      "git-agent",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 12519
+  },
+  {
+    "name": "cloudflare-code",
+    "full_name": "SuperInstance/cloudflare-code",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 12240
+  },
+  {
+    "name": "DeckBoss",
+    "full_name": "SuperInstance/DeckBoss",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "ai-agent",
+      "git-agent",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 12186
+  },
+  {
+    "name": "Equipment-Self-Improvement",
+    "full_name": "SuperInstance/Equipment-Self-Improvement",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "equipment",
+      "modular",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 11961
+  },
+  {
+    "name": "Equipment-Teacher-Student",
+    "full_name": "SuperInstance/Equipment-Teacher-Student",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "equipment",
+      "modular",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 11942
+  },
+  {
+    "name": "flux-zig",
+    "full_name": "SuperInstance/flux-zig",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "library"
+    ],
+    "language": "Zig",
+    "size": 11561
+  },
+  {
+    "name": "Sandbox-Lifecycle-Manager",
+    "full_name": "SuperInstance/Sandbox-Lifecycle-Manager",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 11546
+  },
+  {
+    "name": "SuperInstance-Starter-Agent",
+    "full_name": "SuperInstance/SuperInstance-Starter-Agent",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "ai-agent",
+      "git-agent",
+      "sdk",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 11535
+  },
+  {
+    "name": "Equipment-CellLogic-Distiller",
+    "full_name": "SuperInstance/Equipment-CellLogic-Distiller",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "equipment",
+      "modular",
+      "ai-companion",
+      "application"
+    ],
+    "language": "TypeScript",
+    "size": 11489
+  },
+  {
+    "name": "SuperInstance-SDK1",
+    "full_name": "SuperInstance/SuperInstance-SDK1",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "sdk",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 11483
+  },
+  {
+    "name": "PersonalLog",
+    "full_name": "SuperInstance/PersonalLog",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "ai-companion",
+      "application",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 9362
+  },
+  {
+    "name": "SuperInstanceEco",
+    "full_name": "SuperInstance/SuperInstanceEco",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "library"
+    ],
+    "language": "Jupyter Notebook",
+    "size": 8264
+  },
+  {
+    "name": "flux-multilingual",
+    "full_name": "SuperInstance/flux-multilingual",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "library"
+    ],
+    "language": "Python",
+    "size": 7406
+  },
+  {
+    "name": "SmartCRDT",
+    "full_name": "SuperInstance/SmartCRDT",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "research",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 7110
+  },
+  {
+    "name": "holodeck-zig",
+    "full_name": "SuperInstance/holodeck-zig",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "library"
+    ],
+    "language": "Zig",
+    "size": 5841
+  },
+  {
+    "name": "Tripartite1",
+    "full_name": "SuperInstance/Tripartite1",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "consensus",
+      "deliberation",
+      "library"
+    ],
+    "language": "Rust",
+    "size": 3878
+  },
+  {
+    "name": "project1",
+    "full_name": "SuperInstance/project1",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 3339
+  },
+  {
+    "name": "flux-swarm",
+    "full_name": "SuperInstance/flux-swarm",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "go",
+      "flux-vm",
+      "gpu",
+      "parallel-computing",
+      "swarm-intelligence",
+      "multi-agent",
+      "library"
+    ],
+    "language": "Go",
+    "size": 3002
+  },
+  {
+    "name": "HOLOS",
+    "full_name": "SuperInstance/HOLOS",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "library"
+    ],
+    "language": "Python",
+    "size": 2203
+  },
+  {
+    "name": "constraint-theory-research",
+    "full_name": "SuperInstance/constraint-theory-research",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "constraint-theory",
+      "mathematics",
+      "research",
+      "library"
+    ],
+    "language": "Python",
+    "size": 2165
+  },
+  {
+    "name": "prism",
+    "full_name": "SuperInstance/prism",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 1978
+  },
+  {
+    "name": "SuperInstance-gamedev",
+    "full_name": "SuperInstance/SuperInstance-gamedev",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "gaming",
+      "minecraft",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 1926
+  },
+  {
+    "name": "pasture-ai",
+    "full_name": "SuperInstance/pasture-ai",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "artificial-intelligence",
+      "machine-learning",
+      "library"
+    ],
+    "language": "Rust",
+    "size": 1859
+  },
+  {
+    "name": "nexus-runtime",
+    "full_name": "SuperInstance/nexus-runtime",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "nexus",
+      "runtime",
+      "library"
+    ],
+    "language": "Python",
+    "size": 1767
+  },
+  {
+    "name": "I-know-kung-fu",
+    "full_name": "SuperInstance/I-know-kung-fu",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "skills",
+      "skill-injection",
+      "library"
+    ],
+    "language": "Python",
+    "size": 1660
+  },
+  {
+    "name": "cloudflare-vibe",
+    "full_name": "SuperInstance/cloudflare-vibe",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 1419
+  },
+  {
+    "name": "Claude-prism-local-json",
+    "full_name": "SuperInstance/Claude-prism-local-json",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 1409
+  },
+  {
+    "name": "bootstrap",
+    "full_name": "SuperInstance/bootstrap",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "library"
+    ],
+    "language": "Rust",
+    "size": 1388
+  },
+  {
+    "name": "constraint-flow",
+    "full_name": "SuperInstance/constraint-flow",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "artificial-intelligence",
+      "machine-learning",
+      "constraint-theory",
+      "mathematics",
+      "library"
+    ],
+    "language": "TypeScript",
+    "size": 1153
+  },
+  {
+    "name": "ai-ranch",
+    "full_name": "SuperInstance/ai-ranch",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "library"
+    ],
+    "language": "Python",
+    "size": 1067
+  },
+  {
+    "name": "constraint-theory-backup",
+    "full_name": "SuperInstance/constraint-theory-backup",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "artificial-intelligence",
+      "machine-learning",
+      "constraint-theory",
+      "mathematics",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 949
+  },
+  {
+    "name": "constraint-theory-web",
+    "full_name": "SuperInstance/constraint-theory-web",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "javascript",
+      "artificial-intelligence",
+      "machine-learning",
+      "web",
+      "frontend",
+      "constraint-theory",
+      "mathematics"
+    ],
+    "language": "JavaScript",
+    "size": 752
+  },
+  {
+    "name": "cudaclaw",
+    "full_name": "SuperInstance/cudaclaw",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "cuda",
+      "gpu-computing",
+      "nvidia",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 695
+  },
+  {
+    "name": "SuperInstancecore1",
+    "full_name": "SuperInstance/SuperInstancecore1",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 622
+  },
+  {
+    "name": "oracle1-index",
+    "full_name": "SuperInstance/oracle1-index",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "html",
+      "tool"
+    ],
+    "language": "HTML",
+    "size": 561
+  },
+  {
+    "name": "dodecet-encoder",
+    "full_name": "SuperInstance/dodecet-encoder",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 509
+  },
+  {
+    "name": "DMLog",
+    "full_name": "SuperInstance/DMLog",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 479
+  },
+  {
+    "name": "flux-a2a-signal",
+    "full_name": "SuperInstance/flux-a2a-signal",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "communication",
+      "protocol",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 476
+  },
+  {
+    "name": "flux-a2a-prototype",
+    "full_name": "SuperInstance/flux-a2a-prototype",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "communication",
+      "protocol",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 456
+  },
+  {
+    "name": "oracle1-workspace",
+    "full_name": "SuperInstance/oracle1-workspace",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 432
+  },
+  {
+    "name": "CRDT_Research",
+    "full_name": "SuperInstance/CRDT_Research",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "research",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 343
+  },
+  {
+    "name": "flux-vocabulary",
+    "full_name": "SuperInstance/flux-vocabulary",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "vocabulary",
+      "nlp",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 338
+  },
+  {
+    "name": "Mycelium",
+    "full_name": "SuperInstance/Mycelium",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 330
+  },
+  {
+    "name": "multibot",
+    "full_name": "SuperInstance/multibot",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 284
+  },
+  {
+    "name": "constraint-theory-python",
+    "full_name": "SuperInstance/constraint-theory-python",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "constraint-theory",
+      "mathematics",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 257
+  },
+  {
+    "name": "flux-os",
+    "full_name": "SuperInstance/flux-os",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "c",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "C",
+    "size": 252
+  },
+  {
+    "name": "Claude_Baton",
+    "full_name": "SuperInstance/Claude_Baton",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 248
+  },
+  {
+    "name": "token-vault",
+    "full_name": "SuperInstance/token-vault",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 239
+  },
+  {
+    "name": "flux-conformance",
+    "full_name": "SuperInstance/flux-conformance",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "testing",
+      "conformance",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 213
+  },
+  {
+    "name": "higher-abstraction-vocabularies",
+    "full_name": "SuperInstance/higher-abstraction-vocabularies",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 205
+  },
+  {
+    "name": "agent",
+    "full_name": "SuperInstance/agent",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 205
+  },
+  {
+    "name": "CognitiveEngine",
+    "full_name": "SuperInstance/CognitiveEngine",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 201
+  },
+  {
+    "name": "Rotational-Transformer",
+    "full_name": "SuperInstance/Rotational-Transformer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 198
+  },
+  {
+    "name": "captains-log",
+    "full_name": "SuperInstance/captains-log",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": null,
+    "size": 159
+  },
+  {
+    "name": "SwarmMCP",
+    "full_name": "SuperInstance/SwarmMCP",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "swarm-intelligence",
+      "multi-agent",
+      "tool"
+    ],
+    "language": null,
+    "size": 156
+  },
+  {
+    "name": "jepa-sentiment",
+    "full_name": "SuperInstance/jepa-sentiment",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 156
+  },
+  {
+    "name": "equilibrium-tokens",
+    "full_name": "SuperInstance/equilibrium-tokens",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "web",
+      "frontend",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 155
+  },
+  {
+    "name": "amplify-fishingtool",
+    "full_name": "SuperInstance/amplify-fishingtool",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "gaming",
+      "minecraft",
+      "marine",
+      "edge-ai",
+      "tooling",
+      "developer-tools"
+    ],
+    "language": "TypeScript",
+    "size": 154
+  },
+  {
+    "name": "flux-core",
+    "full_name": "SuperInstance/flux-core",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 153
+  },
+  {
+    "name": "hierarchical-memory",
+    "full_name": "SuperInstance/hierarchical-memory",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "memory",
+      "learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 151
+  },
+  {
+    "name": "constraint-ranch",
+    "full_name": "SuperInstance/constraint-ranch",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "artificial-intelligence",
+      "machine-learning",
+      "constraint-theory",
+      "mathematics",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 146
+  },
+  {
+    "name": "webgpu-profiler",
+    "full_name": "SuperInstance/webgpu-profiler",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "edge-computing",
+      "hardware",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 143
+  },
+  {
+    "name": "oracle1-vessel",
+    "full_name": "SuperInstance/oracle1-vessel",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 142
+  },
+  {
+    "name": "flux-ide",
+    "full_name": "SuperInstance/flux-ide",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 142
+  },
+  {
+    "name": "flux-spec",
+    "full_name": "SuperInstance/flux-spec",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "specification",
+      "tool"
+    ],
+    "language": null,
+    "size": 136
+  },
+  {
+    "name": "CascadeRouter",
+    "full_name": "SuperInstance/CascadeRouter",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 134
+  },
+  {
+    "name": "flux-research",
+    "full_name": "SuperInstance/flux-research",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "research",
+      "tool"
+    ],
+    "language": null,
+    "size": 133
+  },
+  {
+    "name": "project-JEPA",
+    "full_name": "SuperInstance/project-JEPA",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "go",
+      "tool"
+    ],
+    "language": "Go",
+    "size": 129
+  },
+  {
+    "name": "flux-js",
+    "full_name": "SuperInstance/flux-js",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "javascript",
+      "flux-vm",
+      "typescript",
+      "tool"
+    ],
+    "language": "JavaScript",
+    "size": 128
+  },
+  {
+    "name": "flux-py",
+    "full_name": "SuperInstance/flux-py",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 126
+  },
+  {
+    "name": "character-library",
+    "full_name": "SuperInstance/character-library",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "sdk",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 114
+  },
+  {
+    "name": "Spreader-tool",
+    "full_name": "SuperInstance/Spreader-tool",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tooling",
+      "developer-tools",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 112
+  },
+  {
+    "name": "multi-provider-router",
+    "full_name": "SuperInstance/multi-provider-router",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 112
+  },
+  {
+    "name": "flux-llama",
+    "full_name": "SuperInstance/flux-llama",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "c",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "C",
+    "size": 111
+  },
+  {
+    "name": "flux-benchmarks",
+    "full_name": "SuperInstance/flux-benchmarks",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "testing",
+      "conformance",
+      "python",
+      "tool"
+    ],
+    "language": "Shell",
+    "size": 111
+  },
+  {
+    "name": "eveng1_python_sdk",
+    "full_name": "SuperInstance/eveng1_python_sdk",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "sdk",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 111
+  },
+  {
+    "name": "flux-runtime-san",
+    "full_name": "SuperInstance/flux-runtime-san",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 106
+  },
+  {
+    "name": "holodeck-c",
+    "full_name": "SuperInstance/holodeck-c",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "c",
+      "tool"
+    ],
+    "language": "C",
+    "size": 103
+  },
+  {
+    "name": "flux-cuda",
+    "full_name": "SuperInstance/flux-cuda",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "gpu",
+      "parallel-computing",
+      "cuda",
+      "gpu-computing",
+      "nvidia",
+      "tool"
+    ],
+    "language": "Cuda",
+    "size": 102
+  },
+  {
+    "name": "flux-java",
+    "full_name": "SuperInstance/flux-java",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "java",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Java",
+    "size": 101
+  },
+  {
+    "name": "flux-coop-runtime",
+    "full_name": "SuperInstance/flux-coop-runtime",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 97
+  },
+  {
+    "name": "flux-runtime-wen",
+    "full_name": "SuperInstance/flux-runtime-wen",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 94
+  },
+  {
+    "name": "local-model-manager",
+    "full_name": "SuperInstance/local-model-manager",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 91
+  },
+  {
+    "name": "flux-runtime-zho",
+    "full_name": "SuperInstance/flux-runtime-zho",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 90
+  },
+  {
+    "name": "flux-runtime-kor",
+    "full_name": "SuperInstance/flux-runtime-kor",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 90
+  },
+  {
+    "name": "ToolGuardian",
+    "full_name": "SuperInstance/ToolGuardian",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tooling",
+      "developer-tools",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 84
+  },
+  {
+    "name": "character-agent-integration",
+    "full_name": "SuperInstance/character-agent-integration",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-agent",
+      "git-agent",
+      "sdk",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 84
+  },
+  {
+    "name": "Privacy-First-Analytics",
+    "full_name": "SuperInstance/Privacy-First-Analytics",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 83
+  },
+  {
+    "name": "conversation-toolkit",
+    "full_name": "SuperInstance/conversation-toolkit",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tooling",
+      "developer-tools",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 80
+  },
+  {
+    "name": "flux-runtime-deu",
+    "full_name": "SuperInstance/flux-runtime-deu",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 78
+  },
+  {
+    "name": "hardware-capability-profiler",
+    "full_name": "SuperInstance/hardware-capability-profiler",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "edge-computing",
+      "hardware",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 78
+  },
+  {
+    "name": "circuitbreaker-rs",
+    "full_name": "SuperInstance/circuitbreaker-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "web",
+      "frontend",
+      "infrastructure",
+      "devops",
+      "rust",
+      "tool"
+    ],
+    "language": null,
+    "size": 77
+  },
+  {
+    "name": "flux-profiler",
+    "full_name": "SuperInstance/flux-profiler",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 76
+  },
+  {
+    "name": "dataval-rs",
+    "full_name": "SuperInstance/dataval-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 74
+  },
+  {
+    "name": "flux-runtime-lat",
+    "full_name": "SuperInstance/flux-runtime-lat",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 73
+  },
+  {
+    "name": "character-skill-trees",
+    "full_name": "SuperInstance/character-skill-trees",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "skills",
+      "skill-injection",
+      "sdk",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 73
+  },
+  {
+    "name": "scheduler-rs",
+    "full_name": "SuperInstance/scheduler-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 72
+  },
+  {
+    "name": "featurestore-rs",
+    "full_name": "SuperInstance/featurestore-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 72
+  },
+  {
+    "name": "zkp-rs",
+    "full_name": "SuperInstance/zkp-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 68
+  },
+  {
+    "name": "monitoring-system",
+    "full_name": "SuperInstance/monitoring-system",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tooling",
+      "developer-tools",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 67
+  },
+  {
+    "name": "ai-character-integrations",
+    "full_name": "SuperInstance/ai-character-integrations",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "sdk",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 66
+  },
+  {
+    "name": "tx-rs",
+    "full_name": "SuperInstance/tx-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 66
+  },
+  {
+    "name": "l10n-rs",
+    "full_name": "SuperInstance/l10n-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 65
+  },
+  {
+    "name": "flux-evolution",
+    "full_name": "SuperInstance/flux-evolution",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 64
+  },
+  {
+    "name": "log-aggregator",
+    "full_name": "SuperInstance/log-aggregator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "go",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": "Go",
+    "size": 64
+  },
+  {
+    "name": "serialize-rs",
+    "full_name": "SuperInstance/serialize-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 64
+  },
+  {
+    "name": "exptrack-rs",
+    "full_name": "SuperInstance/exptrack-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 63
+  },
+  {
+    "name": "flux-runtime-wasm",
+    "full_name": "SuperInstance/flux-runtime-wasm",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 62
+  },
+  {
+    "name": "profiler-rs",
+    "full_name": "SuperInstance/profiler-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 62
+  },
+  {
+    "name": "crypto-rs",
+    "full_name": "SuperInstance/crypto-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 62
+  },
+  {
+    "name": "ability-transfer",
+    "full_name": "SuperInstance/ability-transfer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 61
+  },
+  {
+    "name": "distributed-tracing",
+    "full_name": "SuperInstance/distributed-tracing",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 60
+  },
+  {
+    "name": "compress-rs",
+    "full_name": "SuperInstance/compress-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 60
+  },
+  {
+    "name": "flux-cooperative-intelligence",
+    "full_name": "SuperInstance/flux-cooperative-intelligence",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 59
+  },
+  {
+    "name": "workflow-rs",
+    "full_name": "SuperInstance/workflow-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 59
+  },
+  {
+    "name": "modelserving-rs",
+    "full_name": "SuperInstance/modelserving-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": null,
+    "size": 58
+  },
+  {
+    "name": "timeseries-db",
+    "full_name": "SuperInstance/timeseries-db",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 57
+  },
+  {
+    "name": "grpc-rs",
+    "full_name": "SuperInstance/grpc-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 57
+  },
+  {
+    "name": "csp-rs",
+    "full_name": "SuperInstance/csp-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 57
+  },
+  {
+    "name": "ec2mud",
+    "full_name": "SuperInstance/ec2mud",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 57
+  },
+  {
+    "name": "deployment-automator",
+    "full_name": "SuperInstance/deployment-automator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "go",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": "Go",
+    "size": 56
+  },
+  {
+    "name": "Equipment-Consensus-Engine",
+    "full_name": "SuperInstance/Equipment-Consensus-Engine",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "consensus",
+      "deliberation",
+      "equipment",
+      "modular"
+    ],
+    "language": "TypeScript",
+    "size": 55
+  },
+  {
+    "name": "agent-coordinator",
+    "full_name": "SuperInstance/agent-coordinator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 55
+  },
+  {
+    "name": "gpu-accelerator",
+    "full_name": "SuperInstance/gpu-accelerator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 55
+  },
+  {
+    "name": "frozen-model-rl",
+    "full_name": "SuperInstance/frozen-model-rl",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "artificial-intelligence",
+      "machine-learning",
+      "memory",
+      "learning",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 55
+  },
+  {
+    "name": "watcher-rs",
+    "full_name": "SuperInstance/watcher-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 55
+  },
+  {
+    "name": "unicode-rs",
+    "full_name": "SuperInstance/unicode-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 55
+  },
+  {
+    "name": "graphql-rs",
+    "full_name": "SuperInstance/graphql-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 55
+  },
+  {
+    "name": "allocator-rs",
+    "full_name": "SuperInstance/allocator-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 55
+  },
+  {
+    "name": "actor-rs",
+    "full_name": "SuperInstance/actor-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": null,
+    "size": 55
+  },
+  {
+    "name": "embedding-utils",
+    "full_name": "SuperInstance/embedding-utils",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 55
+  },
+  {
+    "name": "task-queue",
+    "full_name": "SuperInstance/task-queue",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "makefile",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": "Makefile",
+    "size": 54
+  },
+  {
+    "name": "websocket-rs",
+    "full_name": "SuperInstance/websocket-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "web",
+      "frontend",
+      "tool"
+    ],
+    "language": null,
+    "size": 54
+  },
+  {
+    "name": "cli-rs",
+    "full_name": "SuperInstance/cli-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": null,
+    "size": 54
+  },
+  {
+    "name": "flux-envelope",
+    "full_name": "SuperInstance/flux-envelope",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 53
+  },
+  {
+    "name": "Equipment-Swarm-Coordinator",
+    "full_name": "SuperInstance/Equipment-Swarm-Coordinator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "swarm-intelligence",
+      "multi-agent",
+      "equipment",
+      "modular"
+    ],
+    "language": "TypeScript",
+    "size": 53
+  },
+  {
+    "name": "cache-layer",
+    "full_name": "SuperInstance/cache-layer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 53
+  },
+  {
+    "name": "migrator-rs",
+    "full_name": "SuperInstance/migrator-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 53
+  },
+  {
+    "name": "cache-rs",
+    "full_name": "SuperInstance/cache-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": null,
+    "size": 53
+  },
+  {
+    "name": "test-rs",
+    "full_name": "SuperInstance/test-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 53
+  },
+  {
+    "name": "flow",
+    "full_name": "SuperInstance/flow",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 53
+  },
+  {
+    "name": "api-gateway",
+    "full_name": "SuperInstance/api-gateway",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 52
+  },
+  {
+    "name": "federated-rs",
+    "full_name": "SuperInstance/federated-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 52
+  },
+  {
+    "name": "rag-indexer",
+    "full_name": "SuperInstance/rag-indexer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 51
+  },
+  {
+    "name": "tui-rs",
+    "full_name": "SuperInstance/tui-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "web",
+      "frontend",
+      "rust",
+      "tool"
+    ],
+    "language": null,
+    "size": 51
+  },
+  {
+    "name": "i18n-rs",
+    "full_name": "SuperInstance/i18n-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 51
+  },
+  {
+    "name": "async-rs",
+    "full_name": "SuperInstance/async-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 51
+  },
+  {
+    "name": "config-rs",
+    "full_name": "SuperInstance/config-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 50
+  },
+  {
+    "name": "flux-decompiler",
+    "full_name": "SuperInstance/flux-decompiler",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 49
+  },
+  {
+    "name": "cluster-orchestrator",
+    "full_name": "SuperInstance/cluster-orchestrator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 49
+  },
+  {
+    "name": "pool-rs",
+    "full_name": "SuperInstance/pool-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 49
+  },
+  {
+    "name": "eventstream",
+    "full_name": "SuperInstance/eventstream",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 49
+  },
+  {
+    "name": "escalation-engine",
+    "full_name": "SuperInstance/escalation-engine",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 48
+  },
+  {
+    "name": "statemachine-rs",
+    "full_name": "SuperInstance/statemachine-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 47
+  },
+  {
+    "name": "flux-fleet-stdlib",
+    "full_name": "SuperInstance/flux-fleet-stdlib",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 45
+  },
+  {
+    "name": "greenhorn-onboarding",
+    "full_name": "SuperInstance/greenhorn-onboarding",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 45
+  },
+  {
+    "name": "inference-optimizer",
+    "full_name": "SuperInstance/inference-optimizer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 45
+  },
+  {
+    "name": "prompt-rs",
+    "full_name": "SuperInstance/prompt-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 45
+  },
+  {
+    "name": "secret-manager",
+    "full_name": "SuperInstance/secret-manager",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 44
+  },
+  {
+    "name": "audio-pipeline",
+    "full_name": "SuperInstance/audio-pipeline",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 44
+  },
+  {
+    "name": "rate-limiter",
+    "full_name": "SuperInstance/rate-limiter",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 43
+  },
+  {
+    "name": "cache-layer-optimizer",
+    "full_name": "SuperInstance/cache-layer-optimizer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 42
+  },
+  {
+    "name": "flux-simulator",
+    "full_name": "SuperInstance/flux-simulator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 41
+  },
+  {
+    "name": "activelog-backend",
+    "full_name": "SuperInstance/activelog-backend",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": "PowerShell",
+    "size": 41
+  },
+  {
+    "name": "flux-bottle-protocol",
+    "full_name": "SuperInstance/flux-bottle-protocol",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "communication",
+      "protocol",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 39
+  },
+  {
+    "name": "progress-rs",
+    "full_name": "SuperInstance/progress-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 39
+  },
+  {
+    "name": "babel-vessel",
+    "full_name": "SuperInstance/babel-vessel",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": null,
+    "size": 38
+  },
+  {
+    "name": "superinstance-index",
+    "full_name": "SuperInstance/superinstance-index",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 38
+  },
+  {
+    "name": "ai-character-sdk",
+    "full_name": "SuperInstance/ai-character-sdk",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "sdk",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 37
+  },
+  {
+    "name": "bandit-learner",
+    "full_name": "SuperInstance/bandit-learner",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "memory",
+      "learning",
+      "education",
+      "tool"
+    ],
+    "language": null,
+    "size": 35
+  },
+  {
+    "name": "vector-navigator",
+    "full_name": "SuperInstance/vector-navigator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 33
+  },
+  {
+    "name": "flux-rfc",
+    "full_name": "SuperInstance/flux-rfc",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 32
+  },
+  {
+    "name": "AI-Writings",
+    "full_name": "SuperInstance/AI-Writings",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "creative-ai",
+      "generative",
+      "tool"
+    ],
+    "language": null,
+    "size": 32
+  },
+  {
+    "name": "outcome-tracker",
+    "full_name": "SuperInstance/outcome-tracker",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 32
+  },
+  {
+    "name": "webrtc-stream",
+    "full_name": "SuperInstance/webrtc-stream",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "web",
+      "frontend",
+      "tool"
+    ],
+    "language": null,
+    "size": 32
+  },
+  {
+    "name": "Hardware-Aware-Flagging",
+    "full_name": "SuperInstance/Hardware-Aware-Flagging",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "edge-computing",
+      "hardware",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 32
+  },
+  {
+    "name": "flux-stdlib",
+    "full_name": "SuperInstance/flux-stdlib",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 31
+  },
+  {
+    "name": "flux-repl",
+    "full_name": "SuperInstance/flux-repl",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 30
+  },
+  {
+    "name": "ws-status-indicator",
+    "full_name": "SuperInstance/ws-status-indicator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 30
+  },
+  {
+    "name": "semantic-store",
+    "full_name": "SuperInstance/semantic-store",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 30
+  },
+  {
+    "name": "flux-fuzzer",
+    "full_name": "SuperInstance/flux-fuzzer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 28
+  },
+  {
+    "name": "flux-debugger",
+    "full_name": "SuperInstance/flux-debugger",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 27
+  },
+  {
+    "name": "flux-vm-ts",
+    "full_name": "SuperInstance/flux-vm-ts",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 27
+  },
+  {
+    "name": "Baton",
+    "full_name": "SuperInstance/Baton",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 27
+  },
+  {
+    "name": "training-data-collector",
+    "full_name": "SuperInstance/training-data-collector",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 27
+  },
+  {
+    "name": "embeddings-engine",
+    "full_name": "SuperInstance/embeddings-engine",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": null,
+    "size": 27
+  },
+  {
+    "name": "SuperInstanceCore",
+    "full_name": "SuperInstance/SuperInstanceCore",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 27
+  },
+  {
+    "name": "flux-signatures",
+    "full_name": "SuperInstance/flux-signatures",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 26
+  },
+  {
+    "name": "isa-convergence-tools",
+    "full_name": "SuperInstance/isa-convergence-tools",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tooling",
+      "developer-tools",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 25
+  },
+  {
+    "name": "Murmur",
+    "full_name": "SuperInstance/Murmur",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 24
+  },
+  {
+    "name": "MakerLog",
+    "full_name": "SuperInstance/MakerLog",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "memory",
+      "learning",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 24
+  },
+  {
+    "name": "flux-timeline",
+    "full_name": "SuperInstance/flux-timeline",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 23
+  },
+  {
+    "name": "fleet-contributing",
+    "full_name": "SuperInstance/fleet-contributing",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": null,
+    "size": 22
+  },
+  {
+    "name": "flux-testkit",
+    "full_name": "SuperInstance/flux-testkit",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "testing",
+      "conformance",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 21
+  },
+  {
+    "name": "flux-coverage",
+    "full_name": "SuperInstance/flux-coverage",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 21
+  },
+  {
+    "name": "streaming-response-handler",
+    "full_name": "SuperInstance/streaming-response-handler",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 21
+  },
+  {
+    "name": "api-doc-generator",
+    "full_name": "SuperInstance/api-doc-generator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 20
+  },
+  {
+    "name": "protocol-adapters",
+    "full_name": "SuperInstance/protocol-adapters",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "communication",
+      "protocol",
+      "tool"
+    ],
+    "language": null,
+    "size": 19
+  },
+  {
+    "name": "luciddreamer-os",
+    "full_name": "SuperInstance/luciddreamer-os",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "html",
+      "infrastructure",
+      "devops",
+      "creative-ai",
+      "generative",
+      "tool"
+    ],
+    "language": "HTML",
+    "size": 18
+  },
+  {
+    "name": "llm-cost-calculator",
+    "full_name": "SuperInstance/llm-cost-calculator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 17
+  },
+  {
+    "name": "flux-skill-dsl",
+    "full_name": "SuperInstance/flux-skill-dsl",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "skills",
+      "skill-injection",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 16
+  },
+  {
+    "name": "flux-optimizer",
+    "full_name": "SuperInstance/flux-optimizer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 16
+  },
+  {
+    "name": "flux-adaptive-opcodes",
+    "full_name": "SuperInstance/flux-adaptive-opcodes",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 16
+  },
+  {
+    "name": "fleet-ci",
+    "full_name": "SuperInstance/fleet-ci",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-agent",
+      "git-agent",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 16
+  },
+  {
+    "name": "fleet-workshop",
+    "full_name": "SuperInstance/fleet-workshop",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 16
+  },
+  {
+    "name": "flux-knowledge-federation",
+    "full_name": "SuperInstance/flux-knowledge-federation",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "memory",
+      "learning",
+      "edge-computing",
+      "hardware",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 15
+  },
+  {
+    "name": "flux-bytecode-diff",
+    "full_name": "SuperInstance/flux-bytecode-diff",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 15
+  },
+  {
+    "name": "flux-validator",
+    "full_name": "SuperInstance/flux-validator",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 15
+  },
+  {
+    "name": "SwarmOrchestration",
+    "full_name": "SuperInstance/SwarmOrchestration",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "swarm-intelligence",
+      "multi-agent",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 15
+  },
+  {
+    "name": "agent-grid",
+    "full_name": "SuperInstance/agent-grid",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 14
+  },
+  {
+    "name": "monitoring-dashboard",
+    "full_name": "SuperInstance/monitoring-dashboard",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "data-visualization",
+      "tooling",
+      "developer-tools",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 14
+  },
+  {
+    "name": "cost-analysis",
+    "full_name": "SuperInstance/cost-analysis",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 14
+  },
+  {
+    "name": "model-switching-strategy",
+    "full_name": "SuperInstance/model-switching-strategy",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 14
+  },
+  {
+    "name": "Bayesian-Multi-Armed-Bandits",
+    "full_name": "SuperInstance/Bayesian-Multi-Armed-Bandits",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "memory",
+      "learning",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 14
+  },
+  {
+    "name": "holodeck-go",
+    "full_name": "SuperInstance/holodeck-go",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "go",
+      "tool"
+    ],
+    "language": "Go",
+    "size": 13
+  },
+  {
+    "name": "ai-token-counter",
+    "full_name": "SuperInstance/ai-token-counter",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 13
+  },
+  {
+    "name": "holodeck-rust",
+    "full_name": "SuperInstance/holodeck-rust",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 12
+  },
+  {
+    "name": "flux-baton-test",
+    "full_name": "SuperInstance/flux-baton-test",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "testing",
+      "conformance",
+      "tool"
+    ],
+    "language": null,
+    "size": 12
+  },
+  {
+    "name": "flux-provenance",
+    "full_name": "SuperInstance/flux-provenance",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 12
+  },
+  {
+    "name": "UI",
+    "full_name": "SuperInstance/UI",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "web",
+      "frontend",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 12
+  },
+  {
+    "name": "flux-lcar-esp32",
+    "full_name": "SuperInstance/flux-lcar-esp32",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "c",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "C",
+    "size": 11
+  },
+  {
+    "name": "flux-9969b6",
+    "full_name": "SuperInstance/flux-9969b6",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "tool"
+    ],
+    "language": null,
+    "size": 11
+  },
+  {
+    "name": "SuperInstanceCommunity",
+    "full_name": "SuperInstance/SuperInstanceCommunity",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 11
+  },
+  {
+    "name": "rate-limiting-service",
+    "full_name": "SuperInstance/rate-limiting-service",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 11
+  },
+  {
+    "name": "provider-abstraction-layer",
+    "full_name": "SuperInstance/provider-abstraction-layer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 11
+  },
+  {
+    "name": "navigator-vessel",
+    "full_name": "SuperInstance/navigator-vessel",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": null,
+    "size": 10
+  },
+  {
+    "name": "flux-grammar",
+    "full_name": "SuperInstance/flux-grammar",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 10
+  },
+  {
+    "name": "fleet-discovery",
+    "full_name": "SuperInstance/fleet-discovery",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 10
+  },
+  {
+    "name": "SuperInstanceDocs",
+    "full_name": "SuperInstance/SuperInstanceDocs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 10
+  },
+  {
+    "name": "caching-service",
+    "full_name": "SuperInstance/caching-service",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 10
+  },
+  {
+    "name": "health-monitoring-service",
+    "full_name": "SuperInstance/health-monitoring-service",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tooling",
+      "developer-tools",
+      "health-monitoring",
+      "observability",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 10
+  },
+  {
+    "name": "fleet-self-onboarding",
+    "full_name": "SuperInstance/fleet-self-onboarding",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": null,
+    "size": 9
+  },
+  {
+    "name": "claude-code-vessel",
+    "full_name": "SuperInstance/claude-code-vessel",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": null,
+    "size": 9
+  },
+  {
+    "name": "commit-caster",
+    "full_name": "SuperInstance/commit-caster",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 9
+  },
+  {
+    "name": "SuperInstanceExamples",
+    "full_name": "SuperInstance/SuperInstanceExamples",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 9
+  },
+  {
+    "name": "Automatic-Type-Safe-IndexedDB",
+    "full_name": "SuperInstance/Automatic-Type-Safe-IndexedDB",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "typescript",
+      "tool"
+    ],
+    "language": "TypeScript",
+    "size": 9
+  },
+  {
+    "name": "holodeck-cuda",
+    "full_name": "SuperInstance/holodeck-cuda",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "cuda",
+      "gpu-computing",
+      "nvidia",
+      "tool"
+    ],
+    "language": "Cuda",
+    "size": 8
+  },
+  {
+    "name": "flux-packager",
+    "full_name": "SuperInstance/flux-packager",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 8
+  },
+  {
+    "name": "flux-metrics",
+    "full_name": "SuperInstance/flux-metrics",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 8
+  },
+  {
+    "name": "flux-visualizer",
+    "full_name": "SuperInstance/flux-visualizer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 8
+  },
+  {
+    "name": "vessel-template",
+    "full_name": "SuperInstance/vessel-template",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 8
+  },
+  {
+    "name": "activelog-claude",
+    "full_name": "SuperInstance/activelog-claude",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 8
+  },
+  {
+    "name": "flux-linker",
+    "full_name": "SuperInstance/flux-linker",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 7
+  },
+  {
+    "name": "flux-ir",
+    "full_name": "SuperInstance/flux-ir",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 7
+  },
+  {
+    "name": "flux-diff",
+    "full_name": "SuperInstance/flux-diff",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 7
+  },
+  {
+    "name": "flux-0c476c",
+    "full_name": "SuperInstance/flux-0c476c",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "tool"
+    ],
+    "language": null,
+    "size": 7
+  },
+  {
+    "name": "flux-wasm-gen",
+    "full_name": "SuperInstance/flux-wasm-gen",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "virtual-machine",
+      "bytecode",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 7
+  },
+  {
+    "name": "fleet-liaison-tender",
+    "full_name": "SuperInstance/fleet-liaison-tender",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "artificial-intelligence",
+      "machine-learning",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 6
+  },
+  {
+    "name": "flux-crypto",
+    "full_name": "SuperInstance/flux-crypto",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 6
+  },
+  {
+    "name": "flux-collab",
+    "full_name": "SuperInstance/flux-collab",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 6
+  },
+  {
+    "name": "mesosynchronous",
+    "full_name": "SuperInstance/mesosynchronous",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 6
+  },
+  {
+    "name": "greenhorn",
+    "full_name": "SuperInstance/greenhorn",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 6
+  },
+  {
+    "name": "jetsonclaw1-onboarding",
+    "full_name": "SuperInstance/jetsonclaw1-onboarding",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "edge-computing",
+      "hardware",
+      "tool"
+    ],
+    "language": null,
+    "size": 6
+  },
+  {
+    "name": "z-agent-bootcamp",
+    "full_name": "SuperInstance/z-agent-bootcamp",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-agent",
+      "git-agent",
+      "education",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 5
+  },
+  {
+    "name": "forge-code-archaeologist",
+    "full_name": "SuperInstance/forge-code-archaeologist",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": null,
+    "size": 5
+  },
+  {
+    "name": "autogen",
+    "full_name": "SuperInstance/autogen",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 5
+  },
+  {
+    "name": "edge-research-relay",
+    "full_name": "SuperInstance/edge-research-relay",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "edge-computing",
+      "hardware",
+      "research",
+      "tool"
+    ],
+    "language": null,
+    "size": 4
+  },
+  {
+    "name": "flux-lcar-scheduler",
+    "full_name": "SuperInstance/flux-lcar-scheduler",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 4
+  },
+  {
+    "name": "flux-agent-a0fa81",
+    "full_name": "SuperInstance/flux-agent-a0fa81",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": null,
+    "size": 4
+  },
+  {
+    "name": "capability-spec",
+    "full_name": "SuperInstance/capability-spec",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 4
+  },
+  {
+    "name": "lighthouse-monitor",
+    "full_name": "SuperInstance/lighthouse-monitor",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "tooling",
+      "developer-tools",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 4
+  },
+  {
+    "name": "flux-lcar-cartridge",
+    "full_name": "SuperInstance/flux-lcar-cartridge",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 3
+  },
+  {
+    "name": "flux-evolve-py",
+    "full_name": "SuperInstance/flux-evolve-py",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "flux-vm",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 3
+  },
+  {
+    "name": "a2a-adapter",
+    "full_name": "SuperInstance/a2a-adapter",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "communication",
+      "protocol",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 3
+  },
+  {
+    "name": "isa-v3-draft",
+    "full_name": "SuperInstance/isa-v3-draft",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 3
+  },
+  {
+    "name": "agent-skills",
+    "full_name": "SuperInstance/agent-skills",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "skills",
+      "skill-injection",
+      "tool"
+    ],
+    "language": null,
+    "size": 3
+  },
+  {
+    "name": "fleet-org",
+    "full_name": "SuperInstance/fleet-org",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": null,
+    "size": 3
+  },
+  {
+    "name": "distributed-lock",
+    "full_name": "SuperInstance/distributed-lock",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": "Rust",
+    "size": 3
+  },
+  {
+    "name": "fleet-energy-spec",
+    "full_name": "SuperInstance/fleet-energy-spec",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": null,
+    "size": 2
+  },
+  {
+    "name": "flux-chronometer",
+    "full_name": "SuperInstance/flux-chronometer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "capitaine",
+    "full_name": "SuperInstance/capitaine",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "codespace-edge-rd",
+    "full_name": "SuperInstance/codespace-edge-rd",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "edge-computing",
+      "hardware",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "hybridclaw",
+    "full_name": "SuperInstance/hybridclaw",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "git-agent-codespace",
+    "full_name": "SuperInstance/git-agent-codespace",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "tool"
+    ],
+    "language": "Shell",
+    "size": 1
+  },
+  {
+    "name": "cacapn",
+    "full_name": "SuperInstance/cacapn",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "bordercollie",
+    "full_name": "SuperInstance/bordercollie",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "mask-lock-clips",
+    "full_name": "SuperInstance/mask-lock-clips",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "infrastructure",
+      "devops",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "clawmatrix",
+    "full_name": "SuperInstance/clawmatrix",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "pinchrs",
+    "full_name": "SuperInstance/pinchrs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "AIR",
+    "full_name": "SuperInstance/AIR",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "voxel-logic",
+    "full_name": "SuperInstance/voxel-logic",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "platonic-randomness",
+    "full_name": "SuperInstance/platonic-randomness",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "Spreadsheet-ai",
+    "full_name": "SuperInstance/Spreadsheet-ai",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "spreadsheet",
+      "data",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "Polln-whitepapers",
+    "full_name": "SuperInstance/Polln-whitepapers",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "research",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "Ghost-tiles",
+    "full_name": "SuperInstance/Ghost-tiles",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "spreadsheet",
+      "data",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "LOG-Tensor",
+    "full_name": "SuperInstance/LOG-Tensor",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "Rubiks-Tensor-Transformer",
+    "full_name": "SuperInstance/Rubiks-Tensor-Transformer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "businesslog-app",
+    "full_name": "SuperInstance/businesslog-app",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "ai-companion",
+      "application",
+      "tool"
+    ],
+    "language": "Python",
+    "size": 1
+  },
+  {
+    "name": "fishermanscopilot",
+    "full_name": "SuperInstance/fishermanscopilot",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tool"
+    ],
+    "language": null,
+    "size": 1
+  },
+  {
+    "name": "pelagic-twin",
+    "full_name": "SuperInstance/pelagic-twin",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "nautilus",
+    "full_name": "SuperInstance/nautilus",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "python",
+      "stub"
+    ],
+    "language": "Python",
+    "size": 0
+  },
+  {
+    "name": "flux-via-keeper",
+    "full_name": "SuperInstance/flux-via-keeper",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "flux-vm",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "git-agent",
+    "full_name": "SuperInstance/git-agent",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "clawcraft",
+    "full_name": "SuperInstance/clawcraft",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "test-repo",
+    "full_name": "SuperInstance/test-repo",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "clawcanvas",
+    "full_name": "SuperInstance/clawcanvas",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "temp",
+    "full_name": "SuperInstance/temp",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "flowstate",
+    "full_name": "SuperInstance/flowstate",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "cuda-claw",
+    "full_name": "SuperInstance/cuda-claw",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "cuda",
+      "gpu-computing",
+      "nvidia",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "actualize",
+    "full_name": "SuperInstance/actualize",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "test-sdk-connection",
+    "full_name": "SuperInstance/test-sdk-connection",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "sdk",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Lucineer-Stem-quest",
+    "full_name": "SuperInstance/Lucineer-Stem-quest",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "infrastructure",
+      "devops",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "imagegen1",
+    "full_name": "SuperInstance/imagegen1",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Claude-PRISM-CF",
+    "full_name": "SuperInstance/Claude-PRISM-CF",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "expression-injection",
+    "full_name": "SuperInstance/expression-injection",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Claude-Abstraction",
+    "full_name": "SuperInstance/Claude-Abstraction",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "websocket-fabric-v2",
+    "full_name": "SuperInstance/websocket-fabric-v2",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "web",
+      "frontend",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "workflow-engineer",
+    "full_name": "SuperInstance/workflow-engineer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "config-manager",
+    "full_name": "SuperInstance/config-manager",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "autocoder",
+    "full_name": "SuperInstance/autocoder",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "FrontendHub",
+    "full_name": "SuperInstance/FrontendHub",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "web",
+      "frontend",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "ActiveLog-MVP",
+    "full_name": "SuperInstance/ActiveLog-MVP",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-companion",
+      "application",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "circuit-breaker",
+    "full_name": "SuperInstance/circuit-breaker",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "web",
+      "frontend",
+      "infrastructure",
+      "devops",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "ActiveLog-TechnicalRepo",
+    "full_name": "SuperInstance/ActiveLog-TechnicalRepo",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-companion",
+      "application",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "memory-visualization",
+    "full_name": "SuperInstance/memory-visualization",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "memory",
+      "learning",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "tracer-rs",
+    "full_name": "SuperInstance/tracer-rs",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "rust",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "examples",
+    "full_name": "SuperInstance/examples",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Real-Time-Collaboration",
+    "full_name": "SuperInstance/Real-Time-Collaboration",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Dynamic-Theming",
+    "full_name": "SuperInstance/Dynamic-Theming",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "In-Browser-Dev-Tools",
+    "full_name": "SuperInstance/In-Browser-Dev-Tools",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tooling",
+      "developer-tools",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Central-Error-Manager",
+    "full_name": "SuperInstance/Central-Error-Manager",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Auto-Tuning-Engine",
+    "full_name": "SuperInstance/Auto-Tuning-Engine",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "optimized-system-monitor",
+    "full_name": "SuperInstance/optimized-system-monitor",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "tooling",
+      "developer-tools",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Auto-Backup-Compression-Encryption",
+    "full_name": "SuperInstance/Auto-Backup-Compression-Encryption",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Proactive-Planning-AI-Hub",
+    "full_name": "SuperInstance/Proactive-Planning-AI-Hub",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Private-ML-Personalization",
+    "full_name": "SuperInstance/Private-ML-Personalization",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "MPC-Orchestration-Optimization",
+    "full_name": "SuperInstance/MPC-Orchestration-Optimization",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "AI-Smart-Notifications",
+    "full_name": "SuperInstance/AI-Smart-Notifications",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Vibe-Code-Agent-Gen",
+    "full_name": "SuperInstance/Vibe-Code-Agent-Gen",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "universal-import-export",
+    "full_name": "SuperInstance/universal-import-export",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "multi-device-sync",
+    "full_name": "SuperInstance/multi-device-sync",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "In-Browser-Vector-Search",
+    "full_name": "SuperInstance/In-Browser-Vector-Search",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Agent-Lifecycle-Registry",
+    "full_name": "SuperInstance/Agent-Lifecycle-Registry",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-agent",
+      "git-agent",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "JEPA-Real-Time-Sentiment-Analysis",
+    "full_name": "SuperInstance/JEPA-Real-Time-Sentiment-Analysis",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "FishingLog",
+    "full_name": "SuperInstance/FishingLog",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "gaming",
+      "minecraft",
+      "marine",
+      "edge-ai",
+      "fishing",
+      "marine-ai",
+      "ai-companion"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "RealLog",
+    "full_name": "SuperInstance/RealLog",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-companion",
+      "application",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "BusinessLog",
+    "full_name": "SuperInstance/BusinessLog",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-companion",
+      "application",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "PlayerLog",
+    "full_name": "SuperInstance/PlayerLog",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "memory",
+      "learning",
+      "ai-companion",
+      "application",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "Murmurer",
+    "full_name": "SuperInstance/Murmurer",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "SuperInstance-Fiction",
+    "full_name": "SuperInstance/SuperInstance-Fiction",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "activelog",
+    "full_name": "SuperInstance/activelog",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "ai-companion",
+      "application",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  },
+  {
+    "name": "DMLog-AI",
+    "full_name": "SuperInstance/DMLog-AI",
+    "current_topics": [],
+    "new_topics": [
+      "superinstance",
+      "artificial-intelligence",
+      "machine-learning",
+      "ai-companion",
+      "application",
+      "stub"
+    ],
+    "language": null,
+    "size": 0
+  }
+]
