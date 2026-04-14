@@ -157,7 +157,7 @@ class ProgressDisplay:
             self._progress.stop()
 
 
-def show_banner(tui: Optional[TUI] = None, version: str = "0.1.0") -> None:
+def show_banner(tui: Optional[TUI] = None, version: str = "0.2.0") -> None:
     """Display the framework banner."""
     tui = tui or TUI()
     tui.print_panel(

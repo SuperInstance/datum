@@ -14,9 +14,8 @@ Functions:
 from __future__ import annotations
 
 import json
+import logging
 import os
-import re
-import shutil
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -26,8 +25,6 @@ from typing import Any, Dict, List, Optional
 from rich.console import Console
 from rich.panel import Panel
 from rich.progress import Progress, SpinnerColumn, TextColumn
-from rich.table import Table
-
 from datum_runtime.superagent.core import AgentConfig, AgentState
 from datum_runtime.superagent.datum import DatumAgent
 from datum_runtime.superagent.workshop import Workshop, DEFAULT_TEMPLATE
@@ -35,6 +32,7 @@ from datum_runtime.superagent.tui import TUI
 
 console = Console()
 tui = TUI()
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # Minimum Python version
@@ -475,8 +473,8 @@ def _create_workshop(ws_path: Path) -> bool:
             ["git", "commit", "-m", "feat: initialize workshop from datum-runtime template"],
             cwd=str(ws_path), capture_output=True, check=True,
         )
-    except Exception:
-        pass  # Git might not be available in all environments
+    except Exception as e:
+        logger.warning(f"Git init skipped: {e}")
 
     console.print(f"  [green]ok[/] Workshop created at {ws_path}")
     return True

@@ -30,7 +30,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 
-from datum_runtime.superagent.core import AgentConfig, AgentState
+from datum_runtime.superagent.core import AgentConfig
 from datum_runtime.superagent.datum import DatumAgent
 from datum_runtime.superagent.tui import TUI
 

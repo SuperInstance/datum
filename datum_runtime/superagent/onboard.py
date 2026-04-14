@@ -16,7 +16,6 @@ Flow:
 
 from __future__ import annotations
 
-import json
 import logging
 import os
 from datetime import datetime, timezone
@@ -145,7 +144,7 @@ class OnboardingFlow:
         print()
         print("  ╔═══════════════════════════════════════════════════╗")
         print("  ║     SuperInstance Agent Framework — Onboarding    ║")
-        print("  ║                    v0.1.0                        ║")
+        print("  ║                    v0.2.0                        ║")
         print("  ╚═══════════════════════════════════════════════════╝")
         print()
 

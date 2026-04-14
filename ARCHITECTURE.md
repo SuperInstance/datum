@@ -57,33 +57,46 @@ The main entry point is `datum_runtime/cli.py`, which provides a comprehensive c
 ```
 datum-rt
 ├── boot              # Initialize full agent stack
-├── audit             # Fleet repository auditing
-│   ├── --org NAME    # Target organization
-│   ├── --severity    # Minimum severity to report
-│   └── --output FILE # Output report path
-├── analyze           # Cross-repo workshop profiling
-│   ├── --workshops   # Workshop directory path
-│   └── --format      # Output format (md, json)
-├── journal           # Operational journal management
-│   ├── --add TEXT    # Append journal entry
-│   ├── --search TERM # Search journal history
-│   ├── --list        # List recent entries
-│   └── --export FILE # Export journal
-├── report            # Generate fleet status reports
-│   ├── --output FILE # Report output path
-│   └── --sections    # Sections to include
+│   ├── --keeper URL  # Keeper URL to connect to
+│   ├── --workshop    # Workshop path
+│   └── --non-interactive  # Skip prompts
+├── audit             # Run workshop, fleet, or conformance audits
+│   ├── --type TYPE   # workshop | fleet | conformance
+│   ├── --path PATH   # Path to audit
+│   └── --workshop    # Workshop path
+├── analyze           # Profile a workshop and show stats
+│   ├── --path PATH   # Workshop path to analyze
+│   └── --workshop    # Workshop path
+├── journal           # Add entries to the work journal
+│   ├── CATEGORY      # (arg) Entry category
+│   ├── CONTENT       # (arg) Entry content
+│   ├── --agent NAME  # Agent name
+│   └── --tag TAG     # Tags (repeatable)
+├── report            # Generate markdown reports
+│   ├── TYPE          # (arg) workshop | fleet | conformance
+│   └── --workshop    # Workshop path
 ├── status            # Runtime health check
-│   ├── --verbose     # Detailed status
-│   └── --json        # JSON output
-├── resume            # Resume from checkpoint
-│   └── --checkpoint  # Checkpoint identifier
-├── tools             # Fleet hygiene tools
-│   ├── scan          # Scan fleet for issues
-│   ├── tag           # Batch topic management
-│   └── license       # License deployment
-└── fleet             # Fleet-wide operations
-    ├── census        # Repository census
-    └── health        # Fleet health assessment
+│   └── --workshop    # Workshop path
+├── resume            # Resume from previous session
+│   └── --workshop    # Workshop path
+├── tools             # List and run bundled tools
+│   ├── list          # List all tools
+│   └── run NAME      # Run a tool (audit-scanner, fleet-scanner, etc.)
+├── fleet             # Fleet hygiene operations (GitHub API)
+│   ├── scan --org ORG          # Scan repos for health status
+│   ├── tag --org ORG           # Add topics/tags to repos
+│   ├── license --org ORG       # Add LICENSE files
+│   └── report --org ORG        # Generate fleet report
+├── bottle            # Message-in-a-Bottle operations
+│   ├── drop AGENT SUBJECT      # Drop a bottle for an agent
+│   ├── check                  # Check inbox for new bottles
+│   ├── read PATH              # Read a bottle file
+│   ├── broadcast SUBJECT      # Broadcast to all vessels
+│   ├── summary                # Summarize inbox bottles
+│   └── delete PATH            # Delete a bottle
+└── onboard            # Interactive onboarding flow
+    ├── --keeper URL  # Keeper URL
+    └── --workshop    # Workshop path
 ```
 
 ### Entry Points

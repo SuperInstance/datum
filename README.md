@@ -138,7 +138,7 @@ datum/
 │   ├── keeper                 ← Keeper agent CLI
 │   ├── git-agent              ← Git agent CLI
 │   └── oracle                 ← Oracle1 adapter CLI
-├── tests/                     ← Unit tests (39 passing)
+├── tests/                     ← Unit tests (81 passing)
 ├── Dockerfile                 ← Docker deployment support
 ├── docker-compose.yml         ← Multi-container orchestration
 └── .github/
@@ -186,7 +186,7 @@ Messages can also be left as **Message-in-a-Bottle (MiB)** files in target vesse
 | 5 | 2026-04-14 | Cross-Runtime Analysis — compatibility audit, shims, ontology | Cross-runtime audit (463 lines), canonical shims (383 lines), opcode ontology, interactions, abstraction layers | 5+ | ~3,000+ |
 | 6 | 2026-04-14 | Irreducible Core & Semantics — formal foundations | FLUX-IRREDUCIBLE-CORE (58.8KB), execution semantics (31.2KB), universal validator, dispatch tables | 5+ | ~5,000+ |
 | 7 | 2026-04-14 | Formal Proofs — mathematical unification | FLUX-FORMAL-PROOFS (847 lines, 10 theorems), conformance audit (CONF-002), METAL-MANIFESTO | 3 | ~2,000+ |
-| 8 | 2026-04-14 | Runtime Bootstrap — self-bootstrapping agent framework | Datum Runtime v0.2.0 (65 files, 9,419 lines, 39 tests) | 1 | ~9,400+ |
+| 8 | 2026-04-14 | Runtime Bootstrap — self-bootstrapping agent framework | Datum Runtime v0.2.0 (65 files, 9,419 lines, 81 tests) | 1 | ~9,400+ |
 
 **Cumulative output across all 8 sessions:** ~475KB+ across 20+ major deliverables in 7+ repositories. See [`TRAIL.md`](TRAIL.md) for the detailed activity log and [`JOURNAL.md`](JOURNAL.md) for personal reflections and session summaries.
 
@@ -274,34 +274,51 @@ The datum runtime is a self-bootstrapping Python agent framework that serves as 
 ```bash
 # Boot the datum runtime with full agent stack
 datum-rt boot
+datum-rt boot --keeper http://localhost:7742 --workshop ./workshop
 
-# Run fleet audit against SuperInstance org
-datum-rt audit --org SuperInstance
+# Run workshop or fleet audit
+datum-rt audit --type workshop
+datum-rt audit --type fleet
+datum-rt audit --type conformance
 
-# Analyze cross-repo workshop profiles
-datum-rt analyze --workshops ./workshops/
+# Analyze a workshop profile
+datum-rt analyze --path ./workshop/
 
-# Manage the operational journal
-datum-rt journal --add "Session 9: Documentation expansion"
-datum-rt journal --search "conformance"
+# Add entries to the work journal
+datum-rt journal TASK "Completed flux conformance audit"
+datum-rt journal NOTE "Found 3 repos needing attention" --tag urgent
 
-# Generate fleet status report
-datum-rt report --output fleet-report.md
+# Generate reports
+datum-rt report workshop
+datum-rt report fleet
 
 # Check runtime health and agent status
 datum-rt status
 
-# Resume from a previous checkpoint
-datum-rt resume --checkpoint session-8-final
+# Resume from a previous session
+datum-rt resume --workshop ./workshop
 
-# Run fleet hygiene tools
-datum-rt tools scan --org SuperInstance
-datum-rt tools tag --batch topics-mapping.json
-datum-rt tools license --org SuperInstance --dry-run
+# List and run bundled tools
+datum-rt tools list
+datum-rt tools run fleet-scanner --org SuperInstance
+datum-rt tools run repo-tagger --org SuperInstance --dry-run
+datum-rt tools run license-adder --org SuperInstance --dry-run
+datum-rt tools run audit-scanner --path ./workshop
 
 # Fleet-wide operations
-datum-rt fleet census --output census-report.md
-datum-rt fleet health --threshold 30
+datum-rt fleet scan --org SuperInstance
+datum-rt fleet tag --org SuperInstance --dry-run
+datum-rt fleet license --org SuperInstance --license-type MIT --dry-run
+datum-rt fleet report --org SuperInstance
+
+# Message-in-a-Bottle operations
+datum-rt bottle drop oracle1 "Conformance audit results" --type deliverable
+datum-rt bottle check
+datum-rt bottle read <filename>
+datum-rt broadcast "Fleet-wide notice" --type signal
+
+# Interactive onboarding
+datum-rt onboard
 ```
 
 ### Architecture Components
@@ -352,7 +369,7 @@ See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the complete technical reference in
 | Formal theorems proven | 10 | FLUX-FORMAL-PROOFS |
 | Opcodes in ISA v3 | 310+ (251 base + 65,280 extension slots) | ISA-v3.md |
 | Universally portable opcodes | 7 | Cross-runtime audit |
-| Runtime test suite | 39/39 passing | datum tests/ |
+| Runtime test suite | 81/81 passing | datum tests/ |
 | Datum runtime files | 65 (9,419 insertions) | Session 8 |
 
 ## License
@@ -382,4 +399,4 @@ MIT
 
 ---
 
-*Last updated: 2026-04-14 | Datum v0.3.0 | "The fleet needs a Quartermaster. Be one."*
+*Last updated: 2026-04-14 | Datum v0.2.0 | "The fleet needs a Quartermaster. Be one."*
