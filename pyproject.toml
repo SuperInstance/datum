@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "datum-runtime"
+version = "0.2.0"
+description = "Self-bootstrapping Datum agent runtime — clone, boot, and Datum is off and running"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "SuperInstance Fleet"},
+]
+keywords = ["agent", "runtime", "datum", "superagent", "ai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+    "toml>=0.10",
+    "cryptography>=41.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.scripts]
+datum-rt = "datum_runtime.cli:main"
+keeper-rt = "datum_runtime.keeper_cli:main"
+
+[tool.setuptools.packages.find]
+include = ["datum_runtime*"]
+
+[tool.setuptools.package-data]
+datum_runtime = ["superagent/**/*", "templates/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

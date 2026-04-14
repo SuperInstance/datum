@@ -1,0 +1,68 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Datum Runtime — Docker Compose
+#
+# Usage:
+#   docker compose up -d              # Start Datum + Keeper
+#   docker compose exec datum bash    # Shell into Datum
+#   docker compose logs -f            # Tail logs
+#
+# Environment variables can be set in .env (see .env.example) or inline below.
+# ─────────────────────────────────────────────────────────────────────────────
+
+services:
+
+  # ── Datum (Quartermaster) ─────────────────────────────────────────────────
+  datum:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: datum-runtime
+    volumes:
+      - datum-workshop:/home/datum/workshop
+      - datum-secrets:/home/datum/.superagent
+    environment:
+      - DATUM_WORKSHOP=/home/datum/workshop
+      - KEEPER_URL=${KEEPER_URL:-http://keeper:7742}
+      - PYTHONUNBUFFERED=1
+    stdin_open: true      # interactive
+    tty: true             # allocate TTY
+    depends_on:
+      - keeper
+    restart: unless-stopped
+    networks:
+      - fleet
+
+  # ── Keeper (Secret proxy & boundary enforcer) ─────────────────────────────
+  keeper:
+    image: python:3.12-slim
+    container_name: datum-keeper
+    volumes:
+      - datum-secrets:/home/datum/.superagent
+    environment:
+      - KEEPER_PASSWORD=${KEEPER_PASSWORD:-change-me-in-production}
+    command: >
+      bash -c "pip install --quiet click rich toml cryptography &&
+               keeper-rt serve --host 0.0.0.0 --port 7742"
+    ports:
+      - "${KEEPER_PORT:-7742}:7742"
+    restart: unless-stopped
+    networks:
+      - fleet
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:7742/api/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+
+# ── Volumes ─────────────────────────────────────────────────────────────────
+volumes:
+  datum-workshop:
+    driver: local
+  datum-secrets:
+    driver: local
+
+# ── Network ──────────────────────────────────────────────────────────────────
+networks:
+  fleet:
+    driver: bridge

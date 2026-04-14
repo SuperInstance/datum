@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+"""
+keeper-rt — Keeper Agent CLI (datum-runtime entry point)
+
+The Keeper holds all secrets and enforces the SuperInstance boundary.
+No other agent stores secrets — they request them through the proxy.
+
+Usage:
+    keeper-rt serve [--host HOST] [--port PORT] [--password PASSWORD]
+    keeper-rt add-secret KEY VALUE [--description DESC]
+    keeper-rt list-secrets
+    keeper-rt list-agents
+    keeper-rt audit-log [--last N]
+"""
+
+import sys
+import os
+
+# Ensure the package can be found
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from datum_runtime.keeper_cli import main
+
+if __name__ == "__main__":
+    main()

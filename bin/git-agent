@@ -1,0 +1,187 @@
+#!/usr/bin/env python3
+"""
+git-agent-rt — Git Agent CLI (datum-runtime entry point)
+
+The GitAgent operates the workshop repository. It makes commits that tell
+a story, manages the tool/recipe inventory, and persists the agent's work.
+
+Usage:
+    git-agent-rt init [--name NAME] [--owner OWNER] [--path PATH]
+    git-agent-rt commit -m MESSAGE [--reasoning REASON] [--files FILE...]
+    git-agent-rt smart-commit DESCRIPTION "agent thought"
+    git-agent-rt status
+    git-agent-rt history [--last N]
+    git-agent-rt inventory
+    git-agent-rt branch NAME [--from BRANCH]
+    git-agent-rt checkout BRANCH
+"""
+
+import sys
+import os
+
+# Ensure the package can be found
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import click
+from rich.console import Console
+from rich.table import Table
+
+from datum_runtime.superagent.git_agent import GitAgent
+from datum_runtime.superagent.core import AgentConfig
+from datum_runtime.superagent.onboard import OnboardingFlow
+
+console = Console()
+
+
+@click.group()
+@click.option("--config", "-c", default=None, help="Config TOML path")
+@click.option("--workshop", "-w", default="./workshop", help="Workshop path")
+@click.option("--owner", "-o", default=None, help="Owning agent name")
+@click.pass_context
+def cli(ctx, config, workshop, owner):
+    """datum-runtime Git Agent — Workshop operator and commit historian."""
+    ctx.ensure_object(dict)
+    cfg = AgentConfig.from_toml(config) if config else AgentConfig(role="git-agent", repo_path=workshop)
+    if workshop != "./workshop":
+        cfg.repo_path = workshop
+    ctx.obj["config"] = cfg
+    ctx.obj["owner"] = owner
+
+
+@cli.command()
+@click.option("--name", "-n", default=None, help="Workshop name")
+@click.pass_context
+def init(ctx, name):
+    """Initialize a new workshop from the template."""
+    cfg = ctx.obj["config"]
+    owner = ctx.obj["owner"] or "unknown"
+    ga = GitAgent(config=cfg, owner=owner)
+    path = ga.init_workshop(name=name, owner=owner)
+    console.print(f"[green]ok[/] Workshop initialized at [cyan]{path}[/]")
+    console.print(f"  bootcamp/ dojo/ tools/ recipes/ wiki/ TASKBOARD.md JOURNAL.md")
+
+
+@cli.command()
+@click.option("-m", "--message", required=True, help="Commit message")
+@click.option("--reasoning", "-r", default="", help="WHY this change was made")
+@click.option("--files", "-f", multiple=True, help="Specific files to stage")
+@click.pass_context
+def commit(ctx, message, reasoning, files):
+    """Make a commit with a story-telling message."""
+    cfg = ctx.obj["config"]
+    ga = GitAgent(config=cfg)
+    h = ga.commit(message=message, reasoning=reasoning, files=list(files) if files else None)
+    if h:
+        console.print(f"[green]ok[/] Committed [cyan]{h[:8]}[/] — {message}")
+    else:
+        console.print("[yellow]Nothing to commit[/]")
+
+
+@cli.command("smart-commit")
+@click.argument("description")
+@click.argument("thought", default="")
+@click.pass_context
+def smart_commit(ctx, description, thought):
+    """Auto-detect commit type and make a smart commit."""
+    cfg = ctx.obj["config"]
+    ga = GitAgent(config=cfg)
+    h = ga.smart_commit(description, thought)
+    if h:
+        console.print(f"[green]ok[/] Smart commit [cyan]{h[:8]}[/]")
+    else:
+        console.print("[yellow]Nothing to commit[/]")
+
+
+@cli.command()
+@click.pass_context
+def status(ctx):
+    """Show workshop status."""
+    cfg = ctx.obj["config"]
+    ga = GitAgent(config=cfg)
+    s = ga.status()
+    console.print(f"  Branch: [cyan]{s['branch']}[/]")
+    if s["staged"]:
+        console.print(f"  Staged: [green]{len(s['staged'])} files[/]")
+    if s["modified"]:
+        console.print(f"  Modified: [yellow]{len(s['modified'])} files[/]")
+    if s["untracked"]:
+        console.print(f"  Untracked: [dim]{len(s['untracked'])} files[/]")
+    if not any(s[k] for k in ("staged", "modified", "untracked")):
+        console.print("  [green]Working tree clean[/]")
+
+
+@cli.command()
+@click.option("--last", "-n", default=15, type=int)
+@click.pass_context
+def history(ctx, last):
+    """Show commit history."""
+    cfg = ctx.obj["config"]
+    ga = GitAgent(config=cfg)
+    entries = ga.history(last)
+    if entries:
+        for e in entries:
+            console.print(f"  [cyan]{e[:8]}[/]  {e[9:]}" if len(e) > 9 else f"  {e}")
+    else:
+        console.print("  [dim]No commits yet[/]")
+
+
+@cli.command()
+@click.pass_context
+def inventory(ctx):
+    """List all tools, interpreters, compilers in the workshop."""
+    cfg = ctx.obj["config"]
+    ga = GitAgent(config=cfg)
+    inv = ga.inventory()
+    for cat in ("tools", "interpreters", "compilers"):
+        items = inv.get(cat, [])
+        if items:
+            console.print(f"\n  [bold]{cat.title()}][/]")
+            for item in items:
+                lang = item.get("language", "")
+                console.print(f"    [cyan]{item['name']}[/] ({lang}) — {item['path']}")
+    recipes = inv.get("recipes", [])
+    if recipes:
+        console.print(f"\n  [bold]Recipes[/]")
+        for r in recipes:
+            console.print(f"    [cyan]{r['name']}[/] — {r['path']}")
+
+
+@cli.command()
+@click.argument("name")
+@click.option("--from", "from_branch", default="main")
+@click.pass_context
+def branch(ctx, name, from_branch):
+    """Create a new branch."""
+    cfg = ctx.obj["config"]
+    ga = GitAgent(config=cfg)
+    ok = ga.branch(name, from_branch)
+    console.print(f"[green]ok[/] Branch '{name}' created" if ok else "[red]Failed[/]")
+
+
+@cli.command()
+@click.argument("branch_name")
+@click.pass_context
+def checkout(ctx, branch_name):
+    """Switch to a branch."""
+    cfg = ctx.obj["config"]
+    ga = GitAgent(config=cfg)
+    ok = ga.checkout(branch_name)
+    console.print(f"[green]ok[/] Switched to '{branch_name}'" if ok else "[red]Failed[/]")
+
+
+@cli.command()
+@click.pass_context
+def onboard(ctx):
+    """Run the interactive onboarding flow."""
+    cfg = ctx.obj["config"]
+    ga = GitAgent(config=cfg, owner=ctx.obj["owner"] or "unknown")
+    flow = OnboardingFlow(ga, keeper_url=cfg.keeper_url)
+    result = flow.run(interactive=True)
+    if result.get("success"):
+        console.print("\n[bold green]Onboarding complete![/]")
+    else:
+        console.print("\n[yellow]Onboarding finished with warnings[/]")
+
+
+if __name__ == "__main__":
+    cli()

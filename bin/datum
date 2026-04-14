@@ -1,0 +1,24 @@
+#!/usr/bin/env python3
+"""
+datum-rt — Datum Agent CLI (datum-runtime entry point)
+
+Datum is the research, analysis, and audit specialist. It observes and reports.
+
+Usage:
+    datum-rt audit [--type TYPE] [--path PATH]
+    datum-rt analyze [--path PATH]
+    datum-rt journal CATEGORY CONTENT
+    datum-rt report TYPE
+    datum-rt status
+"""
+
+import sys
+import os
+
+# Ensure the package can be found
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from datum_runtime.cli import main
+
+if __name__ == "__main__":
+    main()

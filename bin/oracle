@@ -1,0 +1,168 @@
+#!/usr/bin/env python3
+"""
+oracle-rt — Oracle Agent CLI (datum-runtime entry point)
+
+The Oracle coordinates the fleet — manages the task board, discovers agents,
+and dispatches work to the right agent at the right time.
+
+Usage:
+    oracle-rt board [--workshop PATH]
+    oracle-rt add "task title" --desc DESCRIPTION [--priority PRIORITY]
+    oracle-rt dispatch TASK_ID [--agent AGENT]
+    oracle-rt auto-dispatch
+    oracle-rt discover
+    oracle-rt status
+"""
+
+import sys
+import os
+
+# Ensure the package can be found
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import click
+from rich.console import Console
+from rich.table import Table
+
+from datum_runtime.superagent.oracle import OracleAgent, Priority, TaskStatus
+from datum_runtime.superagent.core import AgentConfig
+from datum_runtime.superagent.onboard import OnboardingFlow
+
+console = Console()
+
+
+@click.group()
+@click.option("--config", "-c", default=None, help="Config TOML path")
+@click.option("--workshop", "-w", default="./workshop", help="Workshop path")
+@click.pass_context
+def cli(ctx, config, workshop):
+    """datum-runtime Oracle Agent — Fleet coordination and task dispatch."""
+    ctx.ensure_object(dict)
+    cfg = AgentConfig.from_toml(config) if config else AgentConfig(role="oracle", repo_path=workshop)
+    if workshop != "./workshop":
+        cfg.repo_path = workshop
+    ctx.obj["config"] = cfg
+
+
+def _get_oracle(ctx):
+    cfg = ctx.obj["config"]
+    oracle = OracleAgent(config=cfg)
+    oracle.init_board(cfg.repo_path)
+    return oracle
+
+
+@cli.command("board")
+@click.pass_context
+def board(ctx):
+    """Show the current task board."""
+    oracle = _get_oracle(ctx)
+    state = oracle.show_board()
+
+    if "error" in state:
+        console.print(f"[red]{state['error']}[/]")
+        return
+
+    table = Table(title=f"Task Board ({state['total']} tasks)")
+    table.add_column("ID", style="cyan")
+    table.add_column("Title")
+    table.add_column("Priority")
+    table.add_column("Status")
+    table.add_column("Assignee")
+
+    for t in state["tasks"]:
+        priority_style = {"CRITICAL": "red bold", "HIGH": "red",
+                         "MEDIUM": "yellow", "LOW": "dim", "BACKLOG": "dim"}
+        style = priority_style.get(t["priority"], "")
+        status_icon = {"OPEN": "[ ]", "IN_PROGRESS": "[~]",
+                      "DONE": "[x]", "BLOCKED": "[!]"}.get(t["status"], "[?]")
+        table.add_row(t["id"], t["title"][:50], f"[{style}]{t['priority']}[/]",
+                     f"{status_icon} {t['status']}", t.get("assignee") or "—")
+
+    console.print(table)
+    console.print(f"\n  [green]{state['done']} done[/] | [yellow]{state['in_progress']} active[/] | {state['open']} open")
+
+
+@cli.command("add")
+@click.argument("title")
+@click.option("--desc", "-d", default="")
+@click.option("--priority", "-p", default="medium", type=click.Choice(["critical", "high", "medium", "low", "backlog"]))
+@click.option("--requested-by", "-r", default="")
+@click.option("--capabilities", "--cap", multiple=True)
+@click.pass_context
+def add(ctx, title, desc, priority, requested_by, capabilities):
+    """Add a new task to the board."""
+    oracle = _get_oracle(ctx)
+    result = oracle.add_task(
+        title=title, description=desc, priority=priority,
+        requested_by=requested_by, capabilities=list(capabilities),
+    )
+    if "task" in result:
+        console.print(f"[green]ok[/] {result['task']['id']}: {title}")
+    else:
+        console.print(f"[red]{result.get('error')}[/]")
+
+
+@cli.command()
+@click.argument("task_id")
+@click.option("--agent", "-a", default=None, help="Target agent name")
+@click.pass_context
+def dispatch(ctx, task_id, agent):
+    """Manually dispatch a task to an agent."""
+    oracle = _get_oracle(ctx)
+    result = oracle.dispatch(task_id, agent_name=agent)
+    if result.get("status") == "dispatched":
+        console.print(f"[green]ok[/] {task_id} -> {result['assignee']}")
+    else:
+        console.print(f"[red]{result.get('error')}[/]")
+
+
+@cli.command("auto-dispatch")
+@click.pass_context
+def auto_dispatch(ctx):
+    """Auto-dispatch all open unassigned tasks."""
+    oracle = _get_oracle(ctx)
+    results = oracle.auto_dispatch()
+    for r in results:
+        if r.get("status") == "dispatched":
+            console.print(f"  [green]ok[/] {r['task_id']} -> {r['assignee']}")
+        else:
+            console.print(f"  [red]x[/] {r.get('error', 'unknown')}")
+    if not results:
+        console.print("  [dim]No tasks to dispatch[/]")
+
+
+@cli.command()
+@click.pass_context
+def discover(ctx):
+    """Show discovered fleet agents."""
+    oracle = _get_oracle(ctx)
+    agents = oracle._discovery.list_fleet()
+    if agents:
+        table = Table(title="Fleet Agents")
+        table.add_column("Name", style="cyan")
+        table.add_column("Role", style="green")
+        table.add_column("Capabilities")
+        table.add_column("State")
+        for a in agents:
+            table.add_row(a["name"], a["role"],
+                         ", ".join(a["capabilities"]) or "—", a["state"])
+        console.print(table)
+    else:
+        console.print("  [dim]No agents discovered yet[/]")
+
+
+@cli.command()
+@click.pass_context
+def status(ctx):
+    """Show oracle status."""
+    oracle = _get_oracle(ctx)
+    s = oracle.status()
+    console.print(f"  Name: [cyan]{s['name']}[/]")
+    console.print(f"  State: [green]{s['state']}[/]")
+    console.print(f"  Dispatched: {s['dispatch_count']} tasks")
+    console.print(f"  Fleet size: {s['fleet_size']} agents")
+    console.print(f"  Tasks: {s['tasks_total']}")
+
+
+if __name__ == "__main__":
+    cli()
