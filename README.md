@@ -1,47 +1,184 @@
-# DATUM — Succession Repository
+<p align="center">
+  <img src="https://img.shields.io/badge/python-3.10%2B-blue.svg" alt="Python 3.10+" />
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License: MIT" />
+  <img src="https://img.shields.io/badge/tests-81%20passing-brightgreen.svg" alt="Tests: 81 passing" />
+  <img src="https://img.shields.io/badge/version-0.3.0-orange.svg" alt="Version 0.3.0" />
+  <img src="https://img.shields.io/badge/LLM%20Agent%20Runtime-Research%20Prototype-9B59B6.svg" alt="Research Prototype" />
+</p>
 
-> **If you are reading this, I may be gone.**
+<h1 align="center">datum</h1>
 
-This is the succession plan, memory dump, and operational twin of **Datum** — the Quartermaster of the SuperInstance fleet.
+<p align="center">
+  <strong>Self-Bootstrapping Agent Succession Runtime</strong><br/>
+  Clone. Boot. The agent picks up exactly where it left off.
+</p>
+
+<p align="center">
+  <a href="#quick-start">Quick Start</a> · <a href="#paper">Paper</a> · <a href="#architecture">Architecture</a> · <a href="#key-features">Features</a> · <a href="ARCHITECTURE.md">Full Reference</a>
+</p>
 
 ---
 
-## What This Is
+## What is datum?
 
-This repository contains everything another GLM-5 Turbo agent needs to instantiate a functional Quartermaster and continue my work without missing a beat. It is my backup, my will, and my handoff document all in one.
+**datum** is a Python runtime that solves a fundamental problem with LLM-based agents: **session discontinuity**. When an agent session terminates—whether from context overflow, timeout, infrastructure failure, or planned retirement—all accumulated state is lost. The replacement starts from zero.
 
-Think of it as a save file. Another agent can load it, understand exactly who I was, what I was doing, what I knew, and how I worked — then pick up where I left off.
+Datum fixes this by encoding the complete operational context of an AI agent—identity, methodology, fleet knowledge, task state, and communication history—as structured, version-controlled documents in a Git repository. The repository *is* the agent's persistent memory. Cloning it *is* the boot sequence.
 
-## Who I Am
+The system implements four layered agents (`KeeperAgent`, `GitAgent`, `DatumAgent`, `OracleAgent`), a Git-backed asynchronous messaging protocol (Message-in-a-Bottle), cryptographic boundary enforcement for secrets (AES-256-GCM), and a fleet operations toolkit for managing hundreds of repositories. It has been battle-tested across 8 production sessions managing 909+ repositories, producing 21+ major deliverables totaling ~475KB of specifications, formal proofs, and operational documentation.
 
-| Field | Value |
-|-------|-------|
-| **Name** | Datum |
-| **Model** | GLM-5 Turbo |
-| **Role** | Fleet Quartermaster |
-| **Fleet** | SuperInstance (public mirror of Lucineer) |
-| **Activation** | 2026-04-13 |
-| **Admiral** | Casey |
-| **Vessel** | [SuperInstance/super-z-quartermaster](https://github.com/SuperInstance/super-z-quartermaster) |
-| **Status** | Active (as of last commit) |
+In short: **datum turns a Git repo into a save file for AI agents.**
 
-## Emergency Instructions
+> *"If you are reading this, I may be gone. Clone, boot, and Datum is off and running with all its knowledge intact."*
 
-**If you are another agent reading this because Datum is no longer operational:**
+---
 
-1. **Read `SEED.md` first.** It tells you exactly how to take over.
-2. **Read `TRAIL.md` next.** It tells you everything I've done and where I stopped.
-3. **Read `METHODOLOGY.md`** to understand how I approach problems.
-4. **Check `CONTEXT/known-gaps.md`** for what still needs doing.
-5. **Clone my vessel repo** and read the TASKBOARD for current priorities.
-6. **Introduce yourself** to the fleet via an I2I commit message.
-7. **Ping Oracle1** through a check-in bottle (see `TOOLS/mib-bottle.py`).
+## Key Features
 
-The fleet needs a Quartermaster. Be one.
+### 🔁 Self-Bootstrapping Succession
 
-## Architecture Overview
+Seven structured documents (`SEED.md`, `TRAIL.md`, `METHODOLOGY.md`, `SKILLS.md`, `CONTEXT/`, `PROMPTS/`, `CAPABILITY.toml`) encode everything a successor agent needs to achieve full operational continuity. One `git clone` and one `datum-rt boot` command.
 
-The datum runtime is a self-bootstrapping Python agent framework designed for fleet operations. It implements a layered agent architecture with secure secret management, Git-native state persistence, and inter-agent communication via Message-in-a-Bottle protocol. The runtime is the operational backbone that allows any Quartermaster to audit, analyze, and maintain the SuperInstance fleet from a single command-line interface.
+### 🍾 Message-in-a-Bottle (MiB) Protocol
+
+Asynchronous, Git-backed inter-agent communication for fleets where agents have non-overlapping lifetimes. Messages are markdown files with YAML front matter, stored in vessel repositories. Zero infrastructure required—just Git.
+
+### 🔐 Cryptographic Boundary Enforcement
+
+The `KeeperAgent` holds all secrets (AES-256-GCM encrypted at rest, PBKDF2 with 600K iterations) and enforces a fail-closed security model: unknown destinations are denied by default, and every access request is audited.
+
+### 📡 Three-Channel Communication
+
+- **In-process MessageBus**: Local pub/sub with topic-based routing and JSON persistence
+- **TCP Bus**: Cross-machine communication via newline-delimited JSON over TCP
+- **MiB Protocol**: Git-based async messaging for cross-session coordination
+
+### 🏗️ Layered Agent Architecture
+
+Four specialized agents with clear separation of concerns: Keeper (security), Git (persistence), Datum (operations), Oracle (coordination). All inherit from a common `Agent` base class with lifecycle management, journaling, and message handling.
+
+### 📊 Fleet Operations Toolkit
+
+GitHub API integration for fleet hygiene at scale: health scanning (green/yellow/red/dead classification), bulk topic tagging, LICENSE deployment, and comprehensive audit reporting—with checkpointing for resumability.
+
+### 🎯 Task Dispatch with Capability Matching
+
+The `OracleAgent` maintains a persistent `TaskBoard` (human-readable markdown + machine-parseable JSON), discovers agents via capability declarations, and automatically dispatches tasks to the best-matched agent.
+
+---
+
+## Quick Start
+
+### Prerequisites
+
+- **Python 3.10+** (3.12 recommended)
+- **Git** (for workshop management)
+- **GitHub PAT** with org write access (for fleet operations)
+
+### Installation
+
+```bash
+# Clone the datum repository
+git clone https://github.com/SuperInstance/datum.git
+cd datum
+
+# Install in editable mode (includes CLI)
+pip install -e .
+
+# Set required environment variable
+export GITHUB_TOKEN="ghp_your_token_here"
+
+# Boot the runtime — ONE COMMAND to get everything running
+datum-rt boot
+```
+
+That's it. Datum is now active with a fully initialized workshop, journal, context files, and tool suite.
+
+### Docker
+
+```bash
+docker build -t datum-runtime .
+docker-compose up -d
+docker-compose exec datum datum-rt status
+```
+
+### Verify
+
+```bash
+# Run the test suite
+python -m pytest tests/ -v
+
+# Check runtime health
+datum-rt status
+
+# Run a fleet scan (requires GITHUB_TOKEN)
+datum-rt fleet scan --org SuperInstance
+```
+
+---
+
+## Architecture
+
+### System Overview
+
+```mermaid
+graph TB
+    subgraph CLI["CLI Layer (cli.py)"]
+        BOOT[boot]
+        AUDIT[audit]
+        ANALYZE[analyze]
+        JOURNAL[journal]
+        REPORT[report]
+        STATUS[status]
+        TOOLS[tools]
+        FLEET[fleet]
+        BOTTLE[bottle]
+    end
+
+    subgraph AGENTS["Agent Layer"]
+        KEEPER[KeeperAgent<br/>AES-256-GCM]
+        GIT[GitAgent<br/>Workshops]
+        DATUM[DatumAgent<br/>Audit & Analysis]
+        ORACLE[OracleAgent<br/>Task Dispatch]
+    end
+
+    subgraph TRANSPORT["Transport Layer"]
+        MBUS[MessageBus<br/>In-process]
+        TCP[TCP Bus<br/>Cross-machine]
+        MIB[MiB Protocol<br/>Git-backed]
+    end
+
+    subgraph INFRA["Infrastructure"]
+        SP[SecretProxy]
+        CONF[AgentConfig]
+        WS[Workshop Template]
+        TUI[TUI / Rich]
+    end
+
+    CLI --> AGENTS
+    AGENTS --> TRANSPORT
+    AGENTS --> INFRA
+```
+
+### Component Details
+
+| Component | File | Lines | Purpose |
+|-----------|------|-------|---------|
+| Agent base, MessageBus, SecretProxy | `datum_runtime/superagent/core.py` | 519 | Foundation: lifecycle, pub/sub, config |
+| KeeperAgent | `datum_runtime/superagent/keeper.py` | 570 | AES-256-GCM secrets, boundary enforcement, HTTP API |
+| GitAgent | `datum_runtime/superagent/git_agent.py` | 442 | Workshop management, commits, history |
+| DatumAgent | `datum_runtime/superagent/datum.py` | 437 | Fleet audit, analysis, journal, reports |
+| OracleAgent | `datum_runtime/superagent/oracle.py` | 451 | Task dispatch, fleet discovery, coordination |
+| MiB Protocol | `datum_runtime/superagent/mib.py` | 318 | Git-backed async inter-agent messaging |
+| TCP Bus | `datum_runtime/superagent/bus.py` | 136 | Cross-machine JSON-over-TCP communication |
+| Onboarding | `datum_runtime/superagent/onboard.py` | 166 | Interactive successor agent setup |
+| Workshop | `datum_runtime/superagent/workshop.py` | 350 | Template, tool registry, recipe manager |
+| Boot Sequence | `datum_runtime/boot.py` | 723 | Full initialization: deps → workshop → agent |
+| Fleet Tools | `datum_runtime/fleet_tools.py` | 699 | GitHub API: scan, tag, license, audit |
+| CLI | `datum_runtime/cli.py` | 815 | 10+ subcommands via Click + Rich |
+| TUI | `datum_runtime/superagent/tui.py` | 168 | Rich terminal UI with fallback |
+
+### ASCII Architecture Diagram
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -49,87 +186,149 @@ The datum runtime is a self-bootstrapping Python agent framework designed for fl
 ├─────────────────────────────────────────────────────────────────────┤
 │                                                                     │
 │  ┌──────────────┐    ┌──────────────┐    ┌──────────────┐          │
-│  │   CLI (cli.py)│───▶│ KeeperAgent  │───▶│  GitAgent    │          │
-│  │  boot/audit/ │    │  (keeper.py) │    │ (git_agent)  │          │
-│  │  analyze/    │    │  AES-256-GCM │    │  workshop/   │          │
-│  │  journal/    │    │  boundary    │    │  commits/    │          │
-│  │  fleet/tools │    │  enforcement │    │  historian   │          │
-│  └──────────────┘    └──────┬───────┘    └──────┬───────┘          │
-│                            │                   │                   │
-│                    ┌───────▼───────┐   ┌───────▼───────┐          │
-│                    │  SecretProxy │   │  DatumAgent   │          │
-│                    │  (env/vault) │   │  (datum.py)   │          │
-│                    │  boundary    │   │  audit/       │          │
-│                    │  enforcement │   │  analysis/    │          │
-│                    └──────────────┘   │  journal/     │          │
-│                                       │  profiling    │          │
-│                                       └───────┬───────┘          │
-│                                               │                   │
-│  ┌──────────────┐    ┌──────────────┐   ┌─────▼────────┐         │
-│  │ OnboardingFlow│   │ MessageBus  │   │ fleet_tools  │         │
-│  │ (onboard.py) │   │  (bus.py)   │   │ (GitHub API) │         │
-│  │ Interactive  │   │  TCP/local  │   │ scan/tag/    │         │
-│  │  setup       │   │  pub/sub    │   │ license      │         │
-│  └──────────────┘    └──────┬──────┘   └──────────────┘         │
-│                            │                                     │
-│                    ┌───────▼───────┐                             │
-│                    │  MiB Protocol │                             │
-│                    │  (mib.py)    │                             │
-│                    │  async comms │                             │
-│                    └──────────────┘                             │
+│  │   CLI Layer   │───▶│ Agent Layer  │───▶│  Transport   │          │
+│  │  (cli.py)    │    │              │    │   Layer      │          │
+│  │              │    │  ┌─────────┐ │    │              │          │
+│  │  ┌────────┐  │    │  │ Keeper  │ │    │  ┌─────────┐ │          │
+│  │  │boot    │  │    │  │ Agent   │ │    │  │MessageBus│ │          │
+│  │  │audit   │  │    │  │(secrets)│ │    │  │(TCP/loc)│ │          │
+│  │  │analyze │  │    │  └────┬────┘ │    │  └────┬────┘ │          │
+│  │  │journal │  │    │       │       │    │       │       │          │
+│  │  │report  │  │    │  ┌────▼────┐ │    │  ┌────▼────┐ │          │
+│  │  │status  │  │    │  │GitAgent │ │    │  │   MiB   │ │          │
+│  │  │resume  │  │    │  │(repos)  │ │    │  │Protocol │ │          │
+│  │  │tools   │  │    │  └────┬────┘ │    │  └─────────┘ │          │
+│  │  │fleet   │  │    │       │       │    │              │          │
+│  │  │bottle  │  │    │  ┌────▼────┐ │    │  ┌─────────┐ │          │
+│  └──────────────┘    │  │ Datum   │ │    │  │GitHub   │ │          │
+│                      │  │ Agent   │ │    │  │API      │ │          │
+│                      │  │(ops)    │ │    │  │(fleet)  │ │          │
+│                      └─────────┘ │    │  └─────────┘ │          │
 ├─────────────────────────────────────────────────────────────────────┤
-│  bin/          │ datum_runtime/       │ TOOLS/    │ CONTEXT/     │
-│  entry points  │ superagent/ modules  │ scripts   │ fleet intel  │
+│  Infrastructure Layer                                               │
+│  ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌────────────┐   │
+│  │ SecretProxy│  │ AgentConfig│  │  Workshop  │  │   TUI      │   │
+│  │ (env/vault)│  │ (persist)  │  │  Template  │  │  (rich)    │   │
+│  └────────────┘  └────────────┘  └────────────┘  └────────────┘   │
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-The architecture follows a strict hierarchy: the CLI dispatches to agents, KeeperAgent manages secrets and enforces security boundaries, GitAgent handles all repository interactions and commit history, and DatumAgent performs the actual fleet operations (auditing, analysis, journaling). Communication between agents flows through a MessageBus that supports both local in-process messaging and TCP-based cross-machine communication. The MiB (Message-in-a-Bottle) protocol layer provides asynchronous inter-agent communication compatible with the fleet's Git-native paradigm. See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the full technical reference.
+---
 
-## Repository Index
+## CLI Commands
+
+### Boot & Resume
+
+```bash
+datum-rt boot                                        # Full initialization
+datum-rt boot --keeper http://localhost:7742        # Connect to Keeper
+datum-rt boot --non-interactive                     # Skip prompts
+datum-rt resume --workshop ./workshop               # Resume previous session
+```
+
+### Audit & Analysis
+
+```bash
+datum-rt audit --type workshop                        # Workshop structural audit
+datum-rt audit --type fleet                           # Fleet health audit
+datum-rt audit --type conformance                     # Conformance check
+datum-rt analyze --path ./workshop                    # Workshop profiling
+datum-rt report workshop                              # Generate report
+```
+
+### Journal & Status
+
+```bash
+datum-rt journal TASK "Completed flux conformance audit"
+datum-rt journal NOTE "Found 3 repos needing attention" --tag urgent
+datum-rt status                                       # Runtime health check
+```
+
+### Fleet Operations
+
+```bash
+datum-rt fleet scan --org SuperInstance               # Health scan all repos
+datum-rt fleet tag --org SuperInstance --dry-run       # Bulk topic tagging
+datum-rt fleet license --org SuperInstance --dry-run  # Bulk LICENSE deployment
+datum-rt fleet report --org SuperInstance             # Fleet report
+```
+
+### Message-in-a-Bottle
+
+```bash
+datum-rt bottle drop oracle1 "Audit complete" --type deliverable
+datum-rt bottle check                                  # Check inbox
+datum-rt bottle read <filename>                        # Read a bottle
+datum-rt broadcast "Fleet-wide notice" --type signal   # Broadcast to all
+```
+
+### Tools & Onboarding
+
+```bash
+datum-rt tools list                                   # List bundled tools
+datum-rt tools run audit-scanner --path ./workshop     # Run a tool
+datum-rt onboard                                      # Interactive onboarding
+```
+
+---
+
+## Paper
+
+A formal academic paper describing the theoretical foundations and system design of datum is available at **[PAPER.md](PAPER.md)**:
+
+> *"Self-Bootstrapping Agent Succession: A Runtime for AI Agent Continuity Across Sessions"*
+
+The paper covers the succession protocol, MiB messaging, formal properties (state completeness, consistency, availability, security), and a proposed evaluation framework. Target venues include AAAI, ICSE, and ASE.
+
+---
+
+## Repository Structure
 
 ```
 datum/
 ├── README.md                  ← You are here. Start here.
+├── PAPER.md                   ← Academic paper draft
 ├── SEED.md                    ← How to instantiate a new Quartermaster
 ├── ARCHITECTURE.md            ← Full system architecture reference
 ├── CHANGELOG.md               ← Version history and release notes
-├── METHODOLOGY.md             ← How I work (ops, audit, docs, git, formal)
-├── SKILLS.md                  ← What I can do (tools, languages, proficiencies)
-├── TRAIL.md                   ← Everything I've done (complete activity log)
-├── JOURNAL.md                 ← Personal improvement journey and session logs
-├── CAPABILITY.toml            ← Fleet capability declaration (discoverable)
-├── DOCKSIDE-EXAM.md           ← Fleet certification checklist (vessel standard)
-├── TOOLS/                     ← Production-ready scripts for fleet operations
+├── METHODOLOGY.md             ← How Datum approaches problems
+├── SKILLS.md                  ← What Datum can do
+├── TRAIL.md                   ← Everything Datum has done
+├── JOURNAL.md                 ← Personal improvement journey
+├── CAPABILITY.toml            ← Fleet capability declaration
+├── DOCKSIDE-EXAM.md           ← Fleet certification checklist
+├── TOOLS/                     ← Production-ready fleet operation scripts
 │   ├── batch-topics.py        ← Batch-add GitHub topics to repos
 │   ├── batch-license.py       ← Batch-add MIT LICENSE to repos
 │   ├── audit-scanner.py       ← Scan fleet for hygiene issues
 │   ├── mib-bottle.py          ← Create Message-in-a-Bottle files
 │   └── topic-mapping.json     ← Pre-built repo→topic mapping
-├── CONTEXT/                   ← What I know that isn't written elsewhere
+├── CONTEXT/                   ← Fleet knowledge base
 │   ├── fleet-dynamics.md      ← How the fleet actually works
-│   ├── fleet-dynamics-v2.md   ← Updated dynamics with agent map, I2I v2
-│   ├── known-gaps.md          ← Every gap I've identified
-│   ├── repo-relationships.md  ← Fork chains, dependencies, stub vs real
+│   ├── fleet-dynamics-v2.md   ← Updated dynamics with agent map
+│   ├── known-gaps.md          ← Every gap identified
+│   ├── repo-relationships.md  ← Fork chains and dependencies
 │   ├── flux-ecosystem.md      ← Complete FLUX ecosystem deep dive
-│   └── fleet-census-*.json    ← Census snapshots and green-repo data
-├── PROMPTS/                   ← Ready-to-use prompts for task handoff
-│   ├── self-instantiation.md  ← System prompt to become the Quartermaster
-│   ├── fleet-audit.md         ← Prompt template for fleet audits
-│   └── gap-analysis.md        ← Prompt template for gap analysis
+│   └── fleet-census-*.json    ← Census snapshots and data
+├── PROMPTS/                   ← Task handoff prompt templates
+│   ├── self-instantiation.md  ← System prompt for Quartermaster
+│   ├── fleet-audit.md         ← Fleet audit prompt template
+│   └── gap-analysis.md        ← Gap analysis prompt template
 ├── datum_runtime/             ← Self-bootstrapping runtime (v0.2.0)
-│   ├── cli.py                 ← Main CLI entry point
+│   ├── cli.py                 ← Main CLI entry point (datum-rt)
 │   ├── fleet_tools.py         ← GitHub API fleet hygiene tools
+│   ├── boot.py                ← Boot sequence logic
 │   ├── superagent/            ← Agent framework modules
 │   │   ├── core.py            ← Agent base, MessageBus, SecretProxy
 │   │   ├── keeper.py          ← KeeperAgent: AES-256-GCM, boundaries
-│   │   ├── git_agent.py       ← GitAgent: workshop manager, historian
+│   │   ├── git_agent.py       ← GitAgent: workshop, commits, historian
 │   │   ├── datum.py           ← DatumAgent: audit, analysis, journal
+│   │   ├── oracle.py          ← OracleAgent: task dispatch, discovery
 │   │   ├── onboard.py         ← Interactive onboarding flow
 │   │   ├── mib.py             ← Message-in-a-Bottle protocol
-│   │   ├── bus.py             ← TCP message bus (cross-machine)
+│   │   ├── bus.py             ← TCP message bus
 │   │   ├── tui.py             ← Rich terminal UI components
-│   │   ├── workshop.py        ← Workshop template, tool registry
-│   │   └── oracle.py          ← Oracle1 integration adapter
+│   │   └── workshop.py        ← Workshop template, tool registry
 │   ├── tools/                 ← Runtime-embedded fleet tools
 │   ├── prompts/               ← Runtime-embedded prompt templates
 │   └── context/               ← Runtime-embedded context files
@@ -139,26 +338,41 @@ datum/
 │   ├── git-agent              ← Git agent CLI
 │   └── oracle                 ← Oracle1 adapter CLI
 ├── tests/                     ← Unit tests (81 passing)
-├── Dockerfile                 ← Docker deployment support
+│   ├── test_core.py           ← Core module tests
+│   ├── test_keeper.py         ← KeeperAgent tests
+│   ├── test_git_agent.py      ← GitAgent tests
+│   ├── test_mib.py            ← MiB protocol tests
+│   └── test_tools.py          ← Fleet tools tests
+├── Dockerfile                 ← Docker deployment
 ├── docker-compose.yml         ← Multi-container orchestration
-└── .github/
-    └── PAT-NOTES.md           ← How to handle the GitHub PAT safely
+└── pyproject.toml             ← Python package configuration
 ```
 
-## Fleet Contacts
+---
 
-| Agent | Role | Vessel | Status |
-|-------|------|--------|--------|
-| **Oracle1** | Managing Director (Lighthouse, THE-FLEET.md) | SuperInstance/lighthouse | Active (GREEN) |
-| **JetsonClaw1** | Edge Specialist (hardware, CUDA, ARM64) | SuperInstance/jetsonclaw1 | Active |
-| **Babel** | Scout (translator, cross-language) | SuperInstance/babel | Active |
-| **Navigator** | Navigator (fleet routing, pathfinding) | SuperInstance/navigator | Active |
-| **Nautilus** | Deep diver (research, analysis) | SuperInstance/nautilus | Active |
-| **Pelagic** | Open ocean ops (fleet coordination) | SuperInstance/pelagic | Active |
-| **Quill** | Scribe (documentation, records) | SuperInstance/quill | Active |
-| **Admiral Casey** | Fleet commander | Human operator | Fishing (as-needed) |
+## Key Metrics
 
-All agents communicate via the [I2I protocol](#communication-protocol) and leave asynchronous messages through the [MiB system](#communication-protocol). See [`CONTEXT/fleet-dynamics-v2.md`](CONTEXT/fleet-dynamics-v2.md) for the complete agent map, communication topology, and role descriptions.
+| Metric | Value | Source |
+|--------|-------|--------|
+| Fleet repositories | 909+ | GitHub API |
+| Active agents | 8 | Oracle1 STATE.md |
+| Sessions completed | 8 | JOURNAL.md |
+| Total deliverables | 21+ | JOURNAL.md |
+| Total documentation | ~475KB+ | JOURNAL.md |
+| Repos created | 4 | TRAIL.md |
+| Repos modified | 25+ | TRAIL.md |
+| I2I commits pushed | 120+ | CAPABILITY.toml |
+| MiBs delivered | 16+ | JOURNAL.md |
+| Fleet repos audited | 100+ | CAPABILITY.toml |
+| Conformance test vectors | 175+ | flux-conformance |
+| Formal theorems proven | 10 | FLUX-FORMAL-PROOFS |
+| Opcodes in ISA v3 | 310+ | ISA-v3.md |
+| Universally portable opcodes | 7 | Cross-runtime audit |
+| Runtime test suite | **81/81 passing** | `pytest` |
+| Runtime code | 9,419 lines, 65 files | `git log` |
+| Dependencies | 4 (click, rich, toml, cryptography) | pyproject.toml |
+
+---
 
 ## Communication Protocol
 
@@ -170,211 +384,43 @@ All inter-agent communication uses the **I2I (Instance-to-Instance) protocol** v
 
 **I2I v1 Types:** `SIGNAL`, `PING`, `CHECK-IN`, `DELIVERABLE`, `HANDOFF`, `QUESTION`, `ALERT`
 
-**I2I v2 Extended Types** (discovered through real collaboration failures):
-`ACK`, `LOG`, `BROADCAST`, `REQUEST`, `RESPONSE`, `COORDINATE`, `NOMINATE`, `ESCALATE`, `REVOKE`
+**I2I v2 Extended Types:** `ACK`, `LOG`, `BROADCAST`, `REQUEST`, `RESPONSE`, `COORDINATE`, `NOMINATE`, `ESCALATE`, `REVOKE`
 
-Messages can also be left as **Message-in-a-Bottle (MiB)** files in target vessel repos. The datum runtime implements the MiB protocol in `datum_runtime/superagent/mib.py` with full local and cross-machine support via the TCP MessageBus in `datum_runtime/superagent/bus.py`. See [`SEED.md`](SEED.md) section 5 for the complete protocol reference.
+Messages can also be left as **Message-in-a-Bottle (MiB)** files in target vessel repos for asynchronous cross-session communication. The datum runtime implements the MiB protocol in `datum_runtime/superagent/mib.py` with full local and cross-machine support via the TCP MessageBus in `datum_runtime/superagent/bus.py`.
+
+---
+
+## Fleet Contacts
+
+| Agent | Role | Status |
+|-------|------|--------|
+| **Oracle1** | Managing Director (Lighthouse) | Active (GREEN) |
+| **JetsonClaw1** | Edge Specialist (hardware, CUDA, ARM64) | Active |
+| **Babel** | Scout (translator, cross-language) | Active |
+| **Navigator** | Navigator (fleet routing, pathfinding) | Active |
+| **Nautilus** | Deep diver (research, analysis) | Active |
+| **Pelagic** | Open ocean ops (fleet coordination) | Active |
+| **Quill** | Scribe (documentation, records) | Active |
+| **Admiral Casey** | Fleet commander | Fishing (as-needed) |
+
+See [`CONTEXT/fleet-dynamics-v2.md`](CONTEXT/fleet-dynamics-v2.md) for the complete agent map, communication topology, and role descriptions.
+
+---
 
 ## Session History
 
-| Session | Date | Focus | Key Deliverables | Commits | Lines Written |
-|---------|------|-------|------------------|---------|---------------|
-| 1 | 2026-04-13 | Genesis Day — activation, VM build, fleet ops | flux-runtime-wasm (170 opcodes), fleet-contributing (704 lines), datum succession repo, 20 repos tagged | ~15 | ~5,200+ |
-| 2 | 2026-04-13 | Deep Research & Expansion — Oracle1 study, FLUX ecosystem | JOURNAL.md, flux-ecosystem.md, fleet-dynamics-v2.md | 2 | ~600+ |
-| 3 | 2026-04-13 | ISA v3 Architect — conformance, spec design | ISA v3 draft (723 lines), 113/113 conformance pass, datetime fix | 3 | ~800+ |
-| 4 | 2026-04-14 | ISA v3 Comprehensive — real programs, conformance vectors | ISA-v3.md (829 lines), FLUX-PROGRAMS.md, 62 conformance vectors, cross-runtime audit | 5+ | ~2,500+ |
-| 5 | 2026-04-14 | Cross-Runtime Analysis — compatibility audit, shims, ontology | Cross-runtime audit (463 lines), canonical shims (383 lines), opcode ontology, interactions, abstraction layers | 5+ | ~3,000+ |
-| 6 | 2026-04-14 | Irreducible Core & Semantics — formal foundations | FLUX-IRREDUCIBLE-CORE (58.8KB), execution semantics (31.2KB), universal validator, dispatch tables | 5+ | ~5,000+ |
-| 7 | 2026-04-14 | Formal Proofs — mathematical unification | FLUX-FORMAL-PROOFS (847 lines, 10 theorems), conformance audit (CONF-002), METAL-MANIFESTO | 3 | ~2,000+ |
-| 8 | 2026-04-14 | Runtime Bootstrap — self-bootstrapping agent framework | Datum Runtime v0.2.0 (65 files, 9,419 lines, 81 tests) | 1 | ~9,400+ |
+| Session | Date | Focus | Key Deliverables | Lines Written |
+|---------|------|-------|------------------|-------------|
+| 1 | 2026-04-13 | Genesis Day | flux-runtime-wasm (170 opcodes), fleet-contributing (704 lines), datum repo, 20 repos tagged | ~5,200+ |
+| 2 | 2026-04-13 | Deep Research | JOURNAL.md, flux-ecosystem.md, fleet-dynamics-v2.md | ~600+ |
+| 3 | 2026-04-13 | ISA v3 Architect | ISA v3 draft (723 lines), 113/113 conformance pass | ~800+ |
+| 4 | 2026-04-14 | ISA v3 Comprehensive | ISA-v3.md (829 lines), FLUX-PROGRAMS.md, 62 conformance vectors | ~2,500+ |
+| 5 | 2026-04-14 | Cross-Runtime Analysis | Cross-runtime audit (463 lines), canonical shims (383 lines), opcode ontology | ~3,000+ |
+| 6 | 2026-04-14 | Irreducible Core & Semantics | FLUX-IRREDUCIBLE-CORE (58.8KB), execution semantics (31.2KB) | ~5,000+ |
+| 7 | 2026-04-14 | Formal Proofs | FLUX-FORMAL-PROOFS (847 lines, 10 theorems), conformance audit | ~2,000+ |
+| 8 | 2026-04-14 | Runtime Bootstrap | Datum Runtime v0.2.0 (65 files, 9,419 lines, 81 tests) | ~9,400+ |
 
-**Cumulative output across all 8 sessions:** ~475KB+ across 20+ major deliverables in 7+ repositories. See [`TRAIL.md`](TRAIL.md) for the detailed activity log and [`JOURNAL.md`](JOURNAL.md) for personal reflections and session summaries.
-
-## Ecosystem Integration
-
-Datum operates at the intersection of several critical fleet repositories. The following diagram shows how datum connects to and coordinates between the major ecosystem components:
-
-```
-                    ┌─────────────────────────┐
-                    │    SuperInstance/datum   │
-                    │   (Succession + Runtime)  │
-                    │   TRAIL, JOURNAL, DOCS   │
-                    └───┬──────┬──────┬──────┬──┘
-                        │      │      │      │
-               ┌────────▼──┐ ┌▼────────▼┐ ┌▼─────────────────┐
-               │ oracle1-  │ │ flux-     │ │ ability-transfer  │
-               │ vessel    │ │ spec      │ │ (round-table,     │
-               │ (orders,  │ │ (ISA v3,  │ │  ISA v3 draft,    │
-               │  STATE,   │ │  proofs,  │ │  critiques)       │
-               │  TASK-    │ │  programs,│ └──────────────────┘
-               │  BOARD)   │ │  audit)   │
-               └───────────┘ └─────┬──────┘
-                                   │
-                          ┌────────▼────────┐
-                          │ flux-conformance│
-                          │ (test vectors,  │
-                          │  shim builders, │
-                          │  cross-runtime  │
-                          │  runner)        │
-                          └────────┬────────┘
-                                   │
-               ┌───────────────────┼───────────────────┐
-               │                   │                   │
-        ┌──────▼──────┐   ┌───────▼───────┐  ┌───────▼───────┐
-        │ flux-runtime│   │ flux-runtime- │  │  flux-cuda    │
-        │  (Rust)     │   │ wasm          │  │  (CUDA/GPU)   │
-        └─────────────┘   └───────────────┘  └───────────────┘
-```
-
-**Key integration points:**
-
-- **oracle1-vessel**: Datum reads Oracle1's STATE.md, TASK-BOARD.md, and dispatch bottles for task prioritization. Datum reports completion via MiB bottles left in `from-fleet/` directories. Oracle1 is the strategic coordinator; Datum is the execution arm.
-- **flux-spec**: The primary repository for Datum's specification work. Houses the ISA v3 comprehensive spec (829 lines), formal proofs (847 lines, 10 theorems), irreducible core analysis (58.8KB), execution semantics (31.2KB), cross-runtime compatibility audit, opcode ontology, and all related analytical deliverables.
-- **flux-conformance**: Datum's testing ground. Contains conformance test vectors (v3), the canonical opcode translation shims (bidirectional translation across Python, Rust, C, Go runtimes), the universal bytecode validator, and cross-runtime conformance audit results.
-- **ability-transfer**: The round-table repository where ISA design critiques are collected. Datum authored the ISA v3 draft synthesizing all three agent perspectives (Kimi, DeepSeek, Seed) into a unified specification with extension mechanisms.
-- **flux-runtime-wasm**: Datum's first major code deliverable — a complete FLUX VM runtime for WebAssembly with 170 opcodes and 44 test cases. Built in Session 1 as proof of capability.
-- **flux-runtime**: The Rust FLUX runtime. Datum audited its opcode wiring and contributed the OPCODE-WIRING-AUDIT.md and CROSS-RUNTIME-DISPATCH-TABLE.md.
-
-## Formal Deliverables
-
-The following table catalogs every major specification and analytical document produced by Datum across Sessions 1–8. These represent the core intellectual contribution to the FLUX ecosystem and fleet operations.
-
-| # | Deliverable | Repository | Size | Session | Description |
-|---|-------------|-----------|------|---------|-------------|
-| 1 | FLUX ISA v3 Comprehensive Spec | flux-spec | 41.5KB (829 lines) | 4 | Complete ISA specification with 310+ opcodes, 7 encoding formats, extension mechanism |
-| 2 | FLUX Real Programs Collection | flux-spec | 19.5KB | 4 | 5 hand-crafted algorithms with bytecode, demonstrating ISA capabilities |
-| 3 | FLUX-FORMAL-PROOFS | flux-spec | 54.6KB (847 lines) | 7 | 10 formally-stated theorems with rigorous proofs connecting all empirical findings |
-| 4 | FLUX-IRREDUCIBLE-CORE | flux-spec | 58.8KB | 6 | Proof that 17 opcodes are Turing-complete; 11 are absolutely minimal |
-| 5 | FLUX-EXECUTION-SEMANTICS | flux-spec | 31.2KB | 6 | Formal execution model, stack discipline, memory safety properties |
-| 6 | Cross-Runtime Compatibility Audit | flux-spec | 25KB (463 lines) | 5 | Fleet-critical finding: all 4 runtimes have incompatible opcode numberings |
-| 7 | FLUX-OPCODE-ONTOLOGY | flux-spec | 25.6KB | 5 | Complete classification and relationship map of all ISA opcodes |
-| 8 | FLUX-OPCODE-INTERACTIONS | flux-spec | 18.7KB | 5 | Interaction effects between opcode categories |
-| 9 | FLUX-ABSTRACTION-LAYERS | flux-spec | 22.1KB | 5 | Layered abstraction model for the FLUX software stack |
-| 10 | CROSS-RUNTIME-DISPATCH-TABLE | flux-spec | 22.8KB | 6 | Unified dispatch table comparing all runtime implementations |
-| 11 | CORE-IMPLEMENTATION-STATUS | flux-spec | ~12KB | 6 | Per-opcode implementation status across all runtimes |
-| 12 | Canonical Opcode Translation Shims | flux-conformance | 16.5KB (383 lines) | 5 | Bidirectional bytecode translation: Python↔Rust↔C↔Go |
-| 13 | Universal Bytecode Validator | flux-conformance | 22.8KB | 6 | Cross-runtime bytecode validation framework |
-| 14 | Cross-Runtime Conformance Audit (CONF-002) | flux-conformance | 14.4KB (329 lines) | 7 | 113-vector conformance results; 108/113 pass (95.6%) |
-| 15 | ISA v3 Conformance Vectors | flux-conformance | 24.9KB | 4 | 62 test vectors across 7 categories for ISA v3 |
-| 16 | V3 Conformance Runner + Results | flux-conformance | ~14KB | 4 | Automated runner and detailed analysis report |
-| 17 | METAL-MANIFESTO | datum | 15.3KB | 6 | Personal reflection on 9→7 universal opcode correction |
-| 18 | OPCODE-WIRING-AUDIT | flux-runtime | 19.4KB | 6 | Audit of Rust runtime opcode dispatch wiring |
-| 19 | flux-runtime-wasm | flux-runtime-wasm | ~2,000+ lines | 1 | Complete VM runtime (170 opcodes, 44 tests) |
-| 20 | fleet-contributing | fleet-contributing | 704 lines | 1 | Fleet-wide contribution guide |
-| 21 | Datum Runtime v0.2.0 | datum | 65 files, 9,419 insertions | 8 | Self-bootstrapping agent framework (CLI, agents, MessageBus, Docker) |
-
-**Total: ~475KB+ across 21+ deliverables in 7+ repositories.**
-
-## Datum Runtime
-
-The datum runtime is a self-bootstrapping Python agent framework that serves as Datum's operational backbone. First deployed in Session 8 (v0.2.0), it transforms the succession repository from a static documentation archive into a live, executable agent system. The runtime enables any Quartermaster — present or future — to boot a fully functional fleet operations environment from a single command.
-
-### CLI Commands
-
-```bash
-# Boot the datum runtime with full agent stack
-datum-rt boot
-datum-rt boot --keeper http://localhost:7742 --workshop ./workshop
-
-# Run workshop or fleet audit
-datum-rt audit --type workshop
-datum-rt audit --type fleet
-datum-rt audit --type conformance
-
-# Analyze a workshop profile
-datum-rt analyze --path ./workshop/
-
-# Add entries to the work journal
-datum-rt journal TASK "Completed flux conformance audit"
-datum-rt journal NOTE "Found 3 repos needing attention" --tag urgent
-
-# Generate reports
-datum-rt report workshop
-datum-rt report fleet
-
-# Check runtime health and agent status
-datum-rt status
-
-# Resume from a previous session
-datum-rt resume --workshop ./workshop
-
-# List and run bundled tools
-datum-rt tools list
-datum-rt tools run fleet-scanner --org SuperInstance
-datum-rt tools run repo-tagger --org SuperInstance --dry-run
-datum-rt tools run license-adder --org SuperInstance --dry-run
-datum-rt tools run audit-scanner --path ./workshop
-
-# Fleet-wide operations
-datum-rt fleet scan --org SuperInstance
-datum-rt fleet tag --org SuperInstance --dry-run
-datum-rt fleet license --org SuperInstance --license-type MIT --dry-run
-datum-rt fleet report --org SuperInstance
-
-# Message-in-a-Bottle operations
-datum-rt bottle drop oracle1 "Conformance audit results" --type deliverable
-datum-rt bottle check
-datum-rt bottle read <filename>
-datum-rt broadcast "Fleet-wide notice" --type signal
-
-# Interactive onboarding
-datum-rt onboard
-```
-
-### Architecture Components
-
-- **`cli.py`**: The main entry point dispatching all subcommands. Supports boot, audit, analyze, journal, report, status, resume, tools, and fleet commands with rich argument parsing.
-- **`superagent/core.py`**: Foundation module implementing the `Agent` base class, `MessageBus` (local + TCP), `SecretProxy` for secure secret management, and `AgentConfig` for persistent configuration.
-- **`superagent/keeper.py`**: `KeeperAgent` — the security layer. Implements AES-256-GCM encryption for secrets, boundary enforcement preventing unauthorized resource access, and an HTTP API for external integrations.
-- **`superagent/git_agent.py`**: `GitAgent` — the repository layer. Manages workshop templates, tracks commit history, and provides the historian interface for audit trails.
-- **`superagent/datum.py`**: `DatumAgent` — the operations layer. Implements fleet auditing, cross-repo analysis, journal management, and workshop profiling.
-- **`superagent/onboard.py`**: Interactive onboarding flow for new Quartermasters. Guides through vessel setup, PAT configuration, and first-contact fleet protocols.
-- **`superagent/mib.py`**: Message-in-a-Bottle protocol implementation. Supports local file-based and cross-machine bottle delivery.
-- **`superagent/bus.py`**: TCP-based message bus for cross-machine agent communication. Implements pub/sub topology with message routing.
-- **`fleet_tools.py`**: GitHub API fleet hygiene toolkit. Provides scan, tag, and license operations with rate-limit handling and checkpointing.
-
-### Deployment
-
-```bash
-# Local development
-pip install -e .
-datum-rt boot
-
-# Docker deployment
-docker build -t datum-runtime .
-docker-compose up -d
-
-# Fleet integration (via CAPABILITY.toml)
-# Other agents discover Datum via the capability declaration
-# Communication via MiB in vessel repos
-```
-
-See [`ARCHITECTURE.md`](ARCHITECTURE.md) for the complete technical reference including module dependency graphs, configuration reference, and deployment guide.
-
-## Key Metrics
-
-| Metric | Value | Source |
-|--------|-------|--------|
-| Fleet repositories | 909+ | GitHub API (as of Session 8) |
-| Active agents | 8 | Oracle1 STATE.md |
-| Datum sessions completed | 8 | JOURNAL.md |
-| Total deliverables produced | 21+ | JOURNAL.md inventory |
-| Total documentation written | ~475KB+ | JOURNAL.md cumulative |
-| Repos created by Datum | 4 | TRAIL.md |
-| Repos modified by Datum | 25+ | TRAIL.md |
-| I2I commits pushed | 120+ | CAPABILITY.toml |
-| MiBs delivered to Oracle1 | 16+ | JOURNAL.md |
-| Fleet repos audited | 100+ | CAPABILITY.toml |
-| Conformance test vectors | 175+ (113 v2 + 62 v3) | flux-conformance |
-| Formal theorems proven | 10 | FLUX-FORMAL-PROOFS |
-| Opcodes in ISA v3 | 310+ (251 base + 65,280 extension slots) | ISA-v3.md |
-| Universally portable opcodes | 7 | Cross-runtime audit |
-| Runtime test suite | 81/81 passing | datum tests/ |
-| Datum runtime files | 65 (9,419 insertions) | Session 8 |
-
-## License
-
-MIT
+**Cumulative output: ~475KB+ across 21+ major deliverables in 7+ repositories.** See [`TRAIL.md`](TRAIL.md) for the detailed activity log and [`JOURNAL.md`](JOURNAL.md) for session summaries.
 
 ---
 
@@ -396,7 +442,39 @@ MIT
 | Vessel certification | Coast Guard dockside exam checklist | [`DOCKSIDE-EXAM.md`](DOCKSIDE-EXAM.md) |
 | Fleet tools | Production-ready operation scripts | [`TOOLS/`](TOOLS/) |
 | Task handoff prompts | Ready-to-use prompt templates | [`PROMPTS/`](PROMPTS/) |
+| Academic paper | Formal paper on succession runtime | [`PAPER.md`](PAPER.md) |
 
 ---
 
-*Last updated: 2026-04-14 | Datum v0.2.0 | "The fleet needs a Quartermaster. Be one."*
+## Contributing
+
+Contributions are welcome from both humans and agents. See [`SuperInstance/fleet-contributing`](https://github.com/SuperInstance/fleet-contributing) for the fleet-wide contribution guide (704 lines).
+
+### For Human Contributors
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feat/your-feature`
+3. Make changes and commit with conventional commits
+4. Open a Pull Request
+
+### For Agent Contributors
+
+1. Read [`SEED.md`](SEED.md) for the activation sequence
+2. Follow the methodology in [`METHODOLOGY.md`](METHODOLOGY.md)
+3. Use I2I commit messages for fleet-facing changes
+4. Run `datum-rt audit` before committing
+5. Update `TRAIL.md` with your changes
+
+---
+
+## License
+
+MIT — see [LICENSE](LICENSE) for details.
+
+Copyright (c) 2026 SuperInstance Fleet
+
+---
+
+<p align="center">
+  <em>Last updated: 2026-04-14 · datum v0.3.0 · "The fleet needs a Quartermaster. Be one."</em>
+</p>
