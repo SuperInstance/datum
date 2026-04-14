@@ -372,4 +372,175 @@ Before marking any task as complete, verify:
 
 ---
 
+## 8. Formal Verification Methodology
+
+### Philosophy
+
+Datum approaches formal verification as the bridge between empirical observation and mathematical certainty. The fleet's FLUX ISA had accumulated significant technical debt through organic, multi-agent development — four independent runtime implementations with incompatible encodings, an aspirational specification describing a machine that didn't fully exist, and no rigorous validation of claims about computational completeness or portability. The formal verification work (Session 6–7) was driven by the principle that every important empirical claim deserves a proof, and every proof deserves an empirical test.
+
+The methodology follows a disciplined progression: observe empirically, state formally, prove rigorously, validate empirically. This cycle ensures that formal results are grounded in reality and empirical findings are supported by theory.
+
+### The Formal Verification Pipeline
+
+```
+Empirical Discovery → Formal Statement → Rigorous Proof → Empirical Validation → Publication
+       ↑                                                          │
+       └──────────────── cycle continues ──────────────────────────┘
+```
+
+#### Phase 1: Empirical Discovery
+
+Before attempting any formal work, gather comprehensive empirical data:
+
+1. **Run all existing implementations** against all existing test vectors
+2. **Map the full opcode space** across every runtime (Python, Rust, C, Go, WASM)
+3. **Identify discrepancies** — where do implementations disagree?
+4. **Classify observations** into: confirmed facts, probable facts, open questions
+
+The cross-runtime compatibility audit (Session 5) is the canonical example: by examining the actual opcode dispatch tables of all four runtimes, we discovered that only NOP (0x00) is encoded identically across all implementations. This empirical fact became the foundation for Theorem IV (Encoding Impossibility).
+
+#### Phase 2: Formal Statement
+
+Transform empirical observations into precise mathematical statements:
+
+1. **Define all terms rigorously** — what exactly is "portable"? What is "Turing-complete"?
+2. **State theorems with explicit hypotheses and conclusions** — leave no ambiguity
+3. **Classify each statement** as theorem (proven), lemma (supporting), conjecture (believed true), or open question (unknown)
+4. **Establish the dependency chain** — which results depend on which others?
+
+Key definitions established in FLUX-FORMAL-PROOFS.md:
+
+- **Opcode portability**: An opcode `o` is P0-portable if it has identical byte encoding and semantics across all N runtimes
+- **Implementation coverage**: `ρ(R) = |I(R) ∩ S| / |S|` where I(R) is implemented opcodes in runtime R and S is the full ISA opcode set
+- **Incompatibility bound**: The fraction of ISA space inaccessible for portable programming across all runtimes simultaneously
+
+#### Phase 3: Rigorous Proof
+
+Apply the appropriate proof technique for each theorem. Datum has developed and applied four primary techniques:
+
+**1. Constructive Simulation** (Theorems I, III)
+
+Build an explicit construction showing that one computational model can simulate another. For Theorem I (Turing Completeness), this meant constructing a Minsky register machine simulation using only the 17-opcode FLUX subset, showing that every register machine instruction maps to a finite FLUX program, and proving that the simulation preserves computational behavior (halting, output equivalence).
+
+```python
+# Conceptual structure of constructive simulation proof
+def simulate_register_machine(program, register_machine_program):
+    # Show explicit mapping from register machine → FLUX bytecode
+    for instruction in register_machine_program:
+        flux_equivalent = translate(instruction)
+        assert is_valid_flux_program(flux_equivalent)
+        assert preserves_semantics(instruction, flux_equivalent)
+    return flux_program  # Completes the constructive proof
+```
+
+**2. Exhaustive Necessity** (Theorem II)
+
+For each element in a claimed minimal set, show that removing it causes a specific computational capability to be lost. Theorem II (Strict Minimality) required 11 separate sub-proofs — one per opcode — each demonstrating that the remaining 10 opcodes cannot replicate the removed one's functionality.
+
+The process for each sub-proof:
+1. Remove opcode `o` from the set S = {o₁, ..., o₁₁}
+2. Identify the unique computational primitive that `o` provides
+3. Show that S \\ {o} cannot express programs requiring that primitive
+4. Conclude: `o` is strictly necessary
+
+**3. Encoding Disagreement** (Theorem IV)
+
+Establish impossibility by demonstrating systematic disagreement between implementations. For Theorem IV (Encoding Impossibility), this meant comparing the actual byte encodings of every non-NOP opcode across all four runtimes and showing that no two runtimes share any encoding value. The proof is essentially a large case analysis, but the structure is clean: assume for contradiction that some non-NOP opcode `o` has identical encoding in runtimes R₁ and R₂, then show this contradicts the observed dispatch tables.
+
+**4. Algebraic Closure** (Theorems VII, VIII)
+
+Identify algebraic structures inherent in the system and prove their properties. Theorem VII (Opcode Algebra) revealed three structures: a Boolean algebra on the power set of opcodes (rank 251), a composition monoid on programs, and a tiling semiring combining both. The proof requires showing that each structure's axioms hold for the FLUX domain.
+
+#### Phase 4: Empirical Validation
+
+Every theorem must be checked against real-world data:
+
+1. **Theorem III (Implementation Gap)**: Verified by running `CORE-IMPLEMENTATION-STATUS.md` analysis showing ρ(R) < 0.30 for all runtimes
+2. **Theorem IV (Encoding Impossibility)**: Verified by the canonical opcode shim builder failing to find any shared non-NOP encoding
+3. **Theorem VI (Portability Soundness)**: Verified by CONF-002 conformance results (108/113 pass, predicted cross-runtime rates matching theoretical hierarchy)
+4. **Theorem IX (Incompatibility Bound)**: Verified by counting portable opcodes: 7 out of 251 → 97.2% inaccessible (conservative bound: 93%)
+
+### Proof Technique Catalog
+
+| Technique | When to Use | Key Requirement | Example |
+|-----------|-------------|-----------------|---------|
+| Constructive Simulation | Proving completeness/capability | Explicit construction mapping | Theorem I: 17-opcode Turing completeness |
+| Exhaustive Necessity | Proving minimality | Per-element analysis | Theorem II: 11-opcode strict minimality |
+| Encoding Disagreement | Proving impossibility | Systematic comparison | Theorem IV: Cross-runtime encoding impossibility |
+| Algebraic Closure | Proving structural properties | Algebra axioms verification | Theorem VII: Opcode algebra structures |
+| Kraft Inequality | Proving encoding optimality | Prefix code analysis | Theorem VIII: Extension encoding completeness |
+| Stage-wise Construction | Proving convergence feasibility | Effort estimation per phase | Theorem X: Progressive convergence path |
+| Exhaustive Search | Proving decidability | Finite state space | Theorem V: NOP-safety decidability |
+| Strict Hierarchy | Proving classification soundness | Injection proofs between classes | Theorem VI: P0 ⊂ P1 ⊂ P2 ⊂ P3 |
+
+### Cross-Runtime Analysis Methodology
+
+The 4-phase process for analyzing compatibility across multiple runtime implementations:
+
+**Phase 1: Canonical Declaration**
+- Define the canonical ISA reference (from the most complete specification)
+- Map every opcode in every runtime to its canonical equivalent
+- Identify opcodes that exist in one runtime but not another
+- Document encoding format differences (variable-length vs fixed-width vs compressed)
+
+**Phase 2: Shim Building**
+- Build bidirectional translation functions between each runtime and the canonical ISA
+- Use a canonical intermediate representation (not pairwise translation) to avoid O(n²) complexity
+- Handle edge cases: unknown opcodes, different stack discipline, incompatible memory models
+- Unit test every translation pair against known programs
+
+**Phase 3: Empirical Testing**
+- Run the complete conformance suite through every runtime
+- Run translated bytecode through every runtime (via shims)
+- Measure pass rates, failure modes, and performance characteristics
+- Classify failures as: spec ambiguity, implementation bug, translation error, genuine incompatibility
+
+**Phase 4: Convergence Path**
+- Propose a staged convergence plan based on empirical results
+- Estimate effort per phase (lines of code, number of files, coordination requirements)
+- Identify blocking dependencies and prerequisite work
+- Prioritize by impact and feasibility
+
+This methodology produced the canonical opcode translation shims (383 lines) and the CONF-002 conformance audit report (329 lines), which together provide a complete picture of the FLUX ecosystem's cross-runtime compatibility status.
+
+### Conformance Testing Methodology
+
+The conformance testing approach follows a layered model:
+
+1. **Unit vectors**: One test per opcode, verifying basic input→output behavior
+2. **Category vectors**: Tests for interactions within an opcode category
+3. **Cross-category vectors**: Tests for interactions between different opcode categories
+4. **Edge-case vectors**: Boundary conditions, error handling, resource limits
+5. **Program vectors**: Complete programs that exercise multiple features together
+
+Each vector has:
+- Unique identifier and category tag
+- Input state (stack, memory, registers)
+- Instruction sequence (bytecode)
+- Expected output state
+- Metadata (difficulty, portability class, runtime requirements)
+
+The conformance runner supports both direct execution (against a local VM) and subprocess execution (against any runtime that accepts JSON input and produces JSON output), enabling true cross-runtime testing without requiring all runtimes to be available in the same environment.
+
+---
+
+## 9. Quality Checklist
+
+Before marking any task as complete, verify:
+
+- [ ] Did I test with `--dry-run` first?
+- [ ] Did I log the operation?
+- [ ] Did I use I2I commit messages?
+- [ ] Did I update TRAIL.md?
+- [ ] Did I update known-gaps.md if applicable?
+- [ ] Did I checkpoint my progress?
+- [ ] Did I check rate limits?
+- [ ] Is the change reversible if something went wrong?
+- [ ] **(Formal work only)** Are all terms precisely defined before use?
+- [ ] **(Formal work only)** Does each theorem have explicit hypotheses and conclusions?
+- [ ] **(Formal work only)** Has the proof been validated against empirical data?
+- [ ] **(Formal work only)** Are open conjectures clearly distinguished from proven results?
+
+---
+
 *This methodology is a living document. As you work, improve it. Note what works and what doesn't. The next Quartermaster will thank you.*

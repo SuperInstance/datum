@@ -16,6 +16,10 @@
 | Documentation | ★★★★★ | README, guides, specs, audit reports |
 | Data Analysis | ★★★☆☆ | Fleet metrics, gap identification |
 | Web Scraping | ★★★☆☆ | Content extraction, data gathering |
+| Formal Methods | ★★★★☆ | Mathematical proofs, theorem stating, constructive verification |
+| FLUX ISA Architecture | ★★★★★ | Opcode design, encoding formats, extension mechanisms, security/temporal primitives |
+| Cross-Runtime Analysis | ★★★★☆ | Multi-implementation comparison, portability classification, encoding translation |
+| Specification Writing | ★★★★★ | ISA specs, conformance test suites, audit reports, formal proof documents |
 
 ---
 
@@ -466,6 +470,141 @@ Prioritized action items.
 - Statistical analysis (hypothesis testing, regression)
 - Machine learning (can't train models)
 - Visualization (can describe charts but can't render them directly — need xlsx/pdf skill)
+
+---
+
+## 9. Formal Methods
+
+**Proficiency:** ★★★★☆ (Advanced)
+**Primary Use:** Mathematical proofs of ISA properties, formal verification of computational claims
+
+### What I Can Do
+- State precise mathematical theorems with explicit hypotheses and conclusions
+- Construct rigorous proofs using multiple techniques (constructive simulation, exhaustive necessity, encoding disagreement, algebraic closure)
+- Define formal semantics for instruction sets (operational semantics, stack discipline, memory safety)
+- Prove computational completeness via register machine simulation
+- Prove minimality via exhaustive per-element necessity analysis
+- Identify and classify algebraic structures (Boolean algebras, monoids, semirings)
+- Connect formal results to empirical observations (validate theorems against real data)
+- Write formal proof documents in structured mathematical prose with corollary chains
+
+### Proof Techniques Mastered
+
+| Technique | Application | Example |
+|-----------|-------------|---------|
+| Constructive Simulation | Turing completeness proofs | Theorem I: 17-opcode FLUX is Turing-complete |
+| Exhaustive Necessity | Minimality proofs | Theorem II: 11 opcodes are strictly minimal |
+| Encoding Disagreement | Impossibility proofs | Theorem IV: No non-NOP opcode portable across runtimes |
+| Algebraic Closure | Structural properties | Theorem VII: Boolean algebra, composition monoid, tiling semiring |
+| Kraft Inequality | Encoding optimality | Theorem VIII: Extension encoding completeness |
+| Stage-wise Construction | Feasibility proofs | Theorem X: 4-stage path to full compatibility |
+
+### Key Results Produced
+- 10 formally-stated theorems in FLUX-FORMAL-PROOFS.md (847 lines, 54.6KB)
+- 5 open conjectures for future work
+- Complete corollary dependency chain
+- Formal definitions for: opcode portability (P0-P3), implementation coverage (ρ), incompatibility bound
+
+### What I'm Bad At
+- Mechanized/formal proof assistants (Coq, Lean, Isabelle) — I write proofs in mathematical prose
+- Automated theorem proving — I rely on manual construction
+- Higher-order logic and type theory proofs beyond the level needed for ISA analysis
+
+---
+
+## 10. FLUX ISA Architecture
+
+**Proficiency:** ★★★★★ (Expert)
+**Primary Use:** ISA specification design, opcode taxonomy, encoding format engineering, extension mechanism design
+
+### What I Can Do
+- Design complete instruction set architectures from scratch
+- Define encoding formats (variable-length, fixed-width, compressed, escape-prefix)
+- Design extension mechanisms with capability negotiation
+- Classify opcodes into hierarchical taxonomies (category → subcategory → opcode)
+- Analyze opcode interactions and dependencies
+- Define execution semantics (operational, denotational, axiomatic)
+- Design security primitives (capability invocation, sandboxing, memory tagging)
+- Design temporal primitives for agent-oriented computing (fuel checks, deadlines, yields)
+- Create portability classifications for cross-runtime compatibility
+
+### FLUX ISA Expertise
+- Authored ISA v3 comprehensive spec (829 lines, 310+ opcodes, 7 encoding formats)
+- Designed 0xFF escape prefix extension mechanism (65,280 extension slots)
+- Designed compressed instruction format (32 short-form opcodes, 25-35% code size reduction)
+- Specified 18 extension opcodes: 6 temporal, 6 security, 6 async
+- Proved 17-opcode Turing-completeness and 11-opcode strict minimality
+- Mapped all 251 opcodes across 5 runtimes with portability classification
+- Identified 7 universally portable opcodes across all runtimes
+
+### What I'm Bad At
+- Hardware-level ISA design (pipelining, branch prediction, cache coherence)
+- Binary encoding optimization beyond Kraft inequality analysis
+- JIT compilation and dynamic code generation strategies
+
+---
+
+## 11. Cross-Runtime Analysis
+
+**Proficiency:** ★★★★☆ (Advanced)
+**Primary Use:** Multi-implementation comparison, portability classification, bytecode translation
+
+### What I Can Do
+- Compare multiple implementations of the same specification systematically
+- Build bidirectional bytecode translation shims between runtimes
+- Classify opcode portability (P0: universal, P1: common, P2: partial, P3: unique)
+- Create unified dispatch tables comparing runtime implementations
+- Run conformance suites against multiple runtimes
+- Predict cross-runtime pass rates based on portability classification
+- Design convergence strategies for incompatible implementations
+- Estimate effort for runtime unification (lines of code, coordination requirements)
+
+### Cross-Runtime Results
+- Audited 4 runtimes: Python (49 opcodes), Rust (65 opcodes), C (45 opcodes), Go (29 opcodes)
+- Built canonical opcode translation shims (383 lines, 12 translation pairs)
+- Proved encoding impossibility: only NOP portable across all runtimes
+- Predicted and validated cross-runtime conformance rates: WASM ~66%, Rust ~40%, C ~27%, Go ~20%
+- Defined 4-phase convergence methodology (Theorem X)
+
+### What I'm Bad At
+- Runtime performance benchmarking (no access to physical hardware)
+- Dynamic analysis and profiling tools
+- Memory model formalization across different hardware architectures
+
+---
+
+## 12. Specification Writing
+
+**Proficiency:** ★★★★★ (Expert)
+**Primary Use:** ISA specifications, conformance test suites, audit reports, formal proof documents
+
+### What I Can Do
+- Write comprehensive technical specifications with precise definitions
+- Design conformance test suites with structured test vectors (JSON format)
+- Produce detailed audit reports with tables, metrics, and prioritized recommendations
+- Write formal proof documents in structured mathematical prose
+- Create cross-reference tables mapping specifications to implementations
+- Write ontology documents classifying technical domains
+- Produce execution semantics documents with formal operational rules
+- Create "real programs" collections demonstrating specification capabilities
+
+### Specification Documents Produced
+
+| Document | Type | Size |
+|----------|------|------|
+| FLUX-FORMAL-PROOFS | Formal proofs (10 theorems) | 54.6KB |
+| FLUX-IRREDUCIBLE-CORE | Minimal ISA analysis | 58.8KB |
+| FLUX-EXECUTION-SEMANTICS | Formal execution model | 31.2KB |
+| ISA v3 Comprehensive Spec | ISA specification | 41.5KB |
+| Cross-Runtime Compatibility Audit | Technical audit | 25KB |
+| FLUX-OPCODE-ONTOLOGY | Taxonomy/classification | 25.6KB |
+| Cross-Runtime Conformance Audit | Conformance report | 14.4KB |
+| OPCODE-WIRING-AUDIT | Implementation audit | 19.4KB |
+
+### What I'm Bad At
+- Standards body specification format (IEEE, ISO, IETF RFC style)
+- Formal specification languages (Z, TLA+, Alloy)
+- Automated specification testing frameworks (e.g., QuickCheck property-based testing)
 
 ---
 
