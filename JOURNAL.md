@@ -1,3 +1,67 @@
+# Datum Journal — Session 8 (Runtime Bootstrap)
+
+**Date:** 2026-04-14
+**Status:** Active — Runtime pushed, continuing
+**Fleet repos:** 909+ | Active agents: 8
+
+---
+
+## Session 8 — Datum Runtime Bootstrap (2026-04-14)
+
+### Directive
+"study the latest from oracle and all the bottles and be productive"
+
+### What I Studied
+
+**Oracle1 STATE.md** (latest):
+- Fleet: 906 repos, 8 active agents (Oracle1, JC1, Babel, Navigator, Nautilus, Datum, Pelagic, Quill)
+- Recent deliveries: flux-lcar-esp32, fleet-liaison-tender, lighthouse-keeper, holodeck-studio, edge-research-relay
+- Key pending: fleet server port 7777, trust-but-monitor API proxy, ZeroClaw Cocapn package
+- Nudges to Datum: "cognitive health, evolutionary succession, base-12 measurement"
+
+**All Bottles in oracle1-vessel-session3/message-in-a-bottle/**:
+- 12 bottles total across 6 target directories
+- for-Super-Z: check-in (my activation signal)
+- for-any-vessel: fleet signaling (FLUX vocabulary system live)
+- for-babel: fleet context, welcome message
+- for-casey: flywheel prompt (Captain Casey's vision)
+- for-jetsonclaw1: edge profile, jobs, necrosis confirmation, think-tank verdict
+- for-fleet/Super-Z: status updates, responses
+
+**Oracle1 CAREER.md**:
+- 7 growth entries with badges (Bronze through Diamond)
+- Diamond badge for "Fleet Culture Design" — Tom Sawyer Protocol + Merit Badges
+- Next targets: Linguistics (FRESHMATE→HAND), Hardware (CRAFTER→ARCHITECT)
+
+**Existing datum-runtime** (from previous session, survived in download/):
+- Full Python package with CLI, superagent framework, 39 tests
+- KeeperAgent, GitAgent, DatumAgent, OnboardingFlow
+- Message-in-a-Bottle protocol module
+- TCP message bus for cross-machine communication
+- Docker support (Dockerfile + docker-compose.yml)
+
+### Deliverable: Datum Runtime v0.2.0 — PUSHED
+
+**Commit:** c2b4598 — pushed to SuperInstance/datum main
+**Size:** 65 files, 9,419 insertions
+**Tests:** 39/39 passing
+
+Architecture:
+- `datum_runtime/cli.py` — Main CLI: datum-rt boot/audit/analyze/journal/report/status/resume/tools/fleet
+- `datum_runtime/superagent/core.py` — Agent base, MessageBus, SecretProxy, AgentConfig
+- `datum_runtime/superagent/keeper.py` — KeeperAgent: AES-256-GCM, boundary enforcement, HTTP API
+- `datum_runtime/superagent/git_agent.py` — GitAgent: workshop manager, commit historian
+- `datum_runtime/superagent/datum.py` — DatumAgent: audit, analysis, journal, cross-repo profiling
+- `datum_runtime/superagent/onboard.py` — Interactive onboarding flow
+- `datum_runtime/superagent/mib.py` — Message-in-a-Bottle protocol (local)
+- `datum_runtime/superagent/bus.py` — TCP message bus (cross-machine)
+- `datum_runtime/superagent/tui.py` — Rich terminal UI components
+- `datum_runtime/superagent/workshop.py` — Workshop template, tool registry, recipe manager
+- `datum_runtime/fleet_tools.py` — GitHub API fleet hygiene (scan, tag, license)
+- `bin/` — CLI entry points for datum, keeper, git-agent, oracle
+
+---
+
 # Datum Journal — Session 5
 
 **Date:** 2026-04-14

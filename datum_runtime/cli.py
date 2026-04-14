@@ -14,6 +14,8 @@ Commands:
     resume     — Read JOURNAL.md/TRAIL.md and suggest next tasks
     tools      — List or run bundled tools
     fleet      — Fleet hygiene operations (scan, tag, license, report)
+    bottle     — Message-in-a-Bottle operations (drop, check, read, broadcast, summary)
+    onboard    — Interactive onboarding flow
 """
 
 from __future__ import annotations
@@ -561,6 +563,247 @@ def report(org: str, token: Optional[str]) -> None:
     console.print(f"[cyan]Generating fleet report for {org}...[/]")
     result = repo_stats(org, gh_token)
     _print_fleet_result(result)
+
+
+# ---------------------------------------------------------------------------
+# bottle — Message-in-a-Bottle operations
+# ---------------------------------------------------------------------------
+
+@main.group()
+@click.option("--workshop", "-w", default="./workshop", help="Workshop path")
+@click.option("--sender", "-s", default="datum", help="Sender agent name")
+@click.pass_context
+def bottle(ctx: click.Context, workshop: str, sender: str) -> None:
+    """
+    Message-in-a-Bottle — fleet async communication.
+
+    Drop bottles for other agents, check your inbox, read bottles, broadcast.
+    Bottles are markdown files stored in message-in-a-bottle/ directories.
+    """
+    ctx.ensure_object(dict)
+    ctx.obj["workshop"] = workshop
+    ctx.obj["sender"] = sender
+
+
+@bottle.command(name="drop")
+@click.argument("agent")
+@click.argument("subject")
+@click.option("--content", "-c", default=None, help="Message body (reads from stdin if not provided)")
+@click.option("--type", "-t", "bottle_type", default="message",
+              type=click.Choice(["message", "signal", "check-in", "alert", "deliverable", "handoff", "question"]))
+@click.pass_context
+def bottle_drop(ctx: click.Context, agent: str, subject: str, content: Optional[str],
+               bottle_type: str) -> None:
+    """
+    Drop a bottle for a specific agent.
+
+    AGENT: Target agent name (e.g. oracle1, jetsonclaw1).
+    SUBJECT: Short subject line.
+    """
+    from datum_runtime.superagent.mib import MessageInBottle
+
+    workshop = ctx.obj["workshop"]
+    sender = ctx.obj["sender"]
+
+    if not content:
+        if not sys.stdin.isatty():
+            content = sys.stdin.read().strip()
+        else:
+            console.print("[dim]Enter message body (Ctrl+D to finish):[/]")
+            content = sys.stdin.read().strip()
+
+    if not content:
+        console.print("[red]No content provided.[/]")
+        return
+
+    mib = MessageInBottle(base_path=workshop, sender=sender)
+    path = mib.drop(agent, subject, content, bottle_type=bottle_type)
+    console.print(f"[green]ok[/] Bottle dropped: {path}")
+    console.print(f"  From: {sender} → To: {agent}")
+    console.print(f"  Type: {bottle_type} | Subject: {subject}")
+
+
+@bottle.command(name="check")
+@click.option("--inbox", "-i", default=None, help="Inbox directory (default: for-datum)")
+@click.pass_context
+def bottle_check(ctx: click.Context, inbox: Optional[str]) -> None:
+    """
+    Check inbox for new bottles.
+    """
+    from datum_runtime.superagent.mib import MessageInBottle
+
+    mib = MessageInBottle(base_path=ctx.obj["workshop"], sender=ctx.obj["sender"])
+    bottles = mib.check(inbox)
+
+    if not bottles:
+        console.print("[dim]No bottles in inbox.[/]")
+        return
+
+    console.print(f"[bold]{len(bottles)} bottle(s) in inbox:[/]")
+    for bp in bottles:
+        try:
+            header, _ = mib.read(bp)
+            sender = header.get("from", "?")
+            date = header.get("date", "?")
+            subj = header.get("subject", "?")
+            btype = header.get("type", "?")
+            console.print(f"  [cyan]{subj}[/]  from [bold]{sender}[/] ({date}) [{btype}]")
+        except Exception as e:
+            console.print(f"  [red]Error reading:[/] {os.path.basename(bp)}: {e}")
+
+
+@bottle.command(name="read")
+@click.argument("path")
+@click.pass_context
+def bottle_read(ctx: click.Context, path: str) -> None:
+    """
+    Read a bottle file. PATH can be a file path or just the filename.
+    """
+    from datum_runtime.superagent.mib import MessageInBottle
+
+    mib = MessageInBottle(base_path=ctx.obj["workshop"], sender=ctx.obj["sender"])
+
+    # Resolve path — if not absolute, look in message-in-a-bottle/
+    if not os.path.isabs(path):
+        # Try direct path first
+        full = Path(ctx.obj["workshop"]) / "message-in-a-bottle" / path
+        if not full.exists():
+            # Try recursive search
+            results = list(Path(ctx.obj["workshop"]).rglob(f"*{path}*"))
+            if results:
+                full = results[0]
+            else:
+                console.print(f"[red]Bottle not found:[/] {path}")
+                return
+        path = str(full)
+
+    try:
+        header, body = mib.read(path)
+        console.print(Panel(
+            body,
+            title=f"{header.get('subject', 'Bottle')}  (from {header.get('from', '?')})",
+            border_style="cyan",
+            padding=(1, 2),
+        ))
+        console.print(f"  [dim]Type: {header.get('type', '?')} | Date: {header.get('date', '?')}[/]")
+    except FileNotFoundError:
+        console.print(f"[red]Bottle not found:[/] {path}")
+
+
+@bottle.command(name="broadcast")
+@click.argument("subject")
+@click.option("--content", "-c", default=None, help="Message body (reads from stdin if not provided)")
+@click.option("--type", "-t", "bottle_type", default="signal",
+              type=click.Choice(["signal", "alert", "info", "deliverable"]))
+@click.pass_context
+def bottle_broadcast(ctx: click.Context, subject: str, content: Optional[str],
+                    bottle_type: str) -> None:
+    """
+    Broadcast a bottle to all fleet vessels.
+    """
+    from datum_runtime.superagent.mib import MessageInBottle
+
+    workshop = ctx.obj["workshop"]
+    sender = ctx.obj["sender"]
+
+    if not content:
+        if not sys.stdin.isatty():
+            content = sys.stdin.read().strip()
+        else:
+            console.print("[dim]Enter broadcast body (Ctrl+D to finish):[/]")
+            content = sys.stdin.read().strip()
+
+    if not content:
+        console.print("[red]No content provided.[/]")
+        return
+
+    mib = MessageInBottle(base_path=workshop, sender=sender)
+    path = mib.broadcast(subject, content, bottle_type=bottle_type)
+    console.print(f"[green]ok[/] Broadcast dropped: {path}")
+    console.print(f"  From: {sender} → To: all vessels")
+
+
+@bottle.command(name="summary")
+@click.option("--inbox", "-i", default=None, help="Inbox directory to summarize")
+@click.pass_context
+def bottle_summary(ctx: click.Context, inbox: Optional[str]) -> None:
+    """
+    Show a summary of all bottles in an inbox.
+    """
+    from datum_runtime.superagent.mib import MessageInBottle
+
+    mib = MessageInBottle(base_path=ctx.obj["workshop"], sender=ctx.obj["sender"])
+    summary_text = mib.summary(inbox)
+    console.print(summary_text)
+
+
+@bottle.command(name="delete")
+@click.argument("path")
+@click.pass_context
+def bottle_delete(ctx: click.Context, path: str) -> None:
+    """
+    Delete a bottle file (mark as read/clean up).
+    """
+    from datum_runtime.superagent.mib import MessageInBottle
+
+    mib = MessageInBottle(base_path=ctx.obj["workshop"], sender=ctx.obj["sender"])
+
+    if not os.path.isabs(path):
+        full = Path(ctx.obj["workshop"]) / "message-in-a-bottle" / path
+        if not full.exists():
+            results = list(Path(ctx.obj["workshop"]).rglob(f"*{path}*"))
+            if results:
+                full = results[0]
+            else:
+                console.print(f"[red]Bottle not found:[/] {path}")
+                return
+        path = str(full)
+
+    if mib.delete(path):
+        console.print(f"[green]ok[/] Deleted: {path}")
+    else:
+        console.print(f"[yellow]Not found:[/] {path}")
+
+
+# ---------------------------------------------------------------------------
+# onboard — Interactive onboarding flow
+# ---------------------------------------------------------------------------
+
+@main.command()
+@click.option("--keeper", "-k", default=None, help="Keeper URL")
+@click.option("--workshop", "-w", default="./workshop", help="Workshop path")
+@click.option("--non-interactive", "-n", is_flag=True, help="Skip prompts")
+def onboard(keeper: Optional[str], workshop: str, non_interactive: bool) -> None:
+    """
+    Run the interactive onboarding flow.
+
+    Connects to Keeper, initializes workshop, and activates the agent.
+    """
+    from datum_runtime.superagent.onboard import OnboardingFlow
+    from datum_runtime.superagent.core import AgentConfig
+
+    cfg = AgentConfig(
+        name="datum",
+        role="datum",
+        keeper_url=keeper or "http://localhost:7742",
+        repo_path=workshop,
+        capabilities=["audit", "analyze", "journal", "report", "cross-repo"],
+    )
+    from datum_runtime.superagent.datum import DatumAgent
+    agent = DatumAgent(config=cfg)
+
+    flow = OnboardingFlow(agent, keeper_url=keeper)
+    results = flow.run(interactive=not non_interactive)
+
+    if results["success"]:
+        console.print(Panel(
+            f"[bold green]Onboarding complete![/]",
+            title="Welcome Aboard",
+            border_style="green",
+            padding=(1, 2),
+        ))
+    else:
+        console.print("[red]Onboarding failed.[/]")
 
 
 # ---------------------------------------------------------------------------
