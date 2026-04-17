@@ -9,7 +9,7 @@
 name = "datum"
 role = "quartermaster"
 description = "Fleet Quartermaster: audit, analysis, hygiene, and journal management"
-version = "0.2.0"
+version = "0.3.0"
 
 [capabilities]
 audit = { confidence = 0.95, description = "Workshop and fleet structural audits with severity classification" }
@@ -18,7 +18,8 @@ journal = { confidence = 0.95, description = "Chronological work log management 
 report = { confidence = 0.85, description = "Markdown report generation for stakeholders" }
 "fleet-scan" = { confidence = 0.90, description = "GitHub org scanning for health classification (green/yellow/red/dead)" }
 "fleet-tag" = { confidence = 0.85, description = "Bulk topic/tag management across org repos" }
-"fleet-license" = { confidence = 0.85, description = "LICENSE file deployment to repos missing them" }
+"specification-writing" = { confidence = 0.85, description = "Formal ISA specification documents with opcode tables and format specs" }
+"cross-runtime-analysis" = { confidence = 0.90, description = "Cross-runtime opcode mapping, portability classification, shim development" }
 "cross-repo" = { confidence = 0.80, description = "Multi-workshop comparison and analysis" }
 conformance = { confidence = 0.90, description = "Workshop structure validation against fleet standards" }
 
@@ -36,7 +37,7 @@ outgoing = ["message-in-a-bottle/for-{agent}/"]
 protocol = "MiB"  # Message-in-a-Bottle (primary), I2I (secondary)
 
 [metadata]
-last_active = "2026-04-14"
-session_count = 4
-total_commits = 120
-fleet_repos_audited = 100
+last_active = "2026-04-18"
+session_count = 12
+total_commits = 180
+fleet_repos_audited = 120
